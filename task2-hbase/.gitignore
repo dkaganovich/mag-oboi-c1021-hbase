@@ -1,0 +1,6 @@
+*.iml
+.idea/
+
+target/*
+!target/task2-hbase-1.0-SNAPSHOT
+

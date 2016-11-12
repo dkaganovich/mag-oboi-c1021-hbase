@@ -1,0 +1,429 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/flume-ng/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+16/11/12 04:33:45 INFO spark.SparkContext: Running Spark version 1.6.0
+16/11/12 04:33:47 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/11/12 04:33:48 INFO spark.SecurityManager: Changing view acls to: cloudera
+16/11/12 04:33:48 INFO spark.SecurityManager: Changing modify acls to: cloudera
+16/11/12 04:33:48 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(cloudera); users with modify permissions: Set(cloudera)
+16/11/12 04:33:49 INFO util.Utils: Successfully started service 'sparkDriver' on port 53351.
+16/11/12 04:33:49 INFO slf4j.Slf4jLogger: Slf4jLogger started
+16/11/12 04:33:49 INFO Remoting: Starting remoting
+16/11/12 04:33:50 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@10.0.2.15:58157]
+16/11/12 04:33:50 INFO Remoting: Remoting now listens on addresses: [akka.tcp://sparkDriverActorSystem@10.0.2.15:58157]
+16/11/12 04:33:50 INFO util.Utils: Successfully started service 'sparkDriverActorSystem' on port 58157.
+16/11/12 04:33:50 INFO spark.SparkEnv: Registering MapOutputTracker
+16/11/12 04:33:50 INFO spark.SparkEnv: Registering BlockManagerMaster
+16/11/12 04:33:50 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-97938dbf-4b96-4bdc-a0a7-39648929bfa2
+16/11/12 04:33:50 INFO storage.MemoryStore: MemoryStore started with capacity 530.3 MB
+16/11/12 04:33:50 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+16/11/12 04:33:50 INFO server.Server: jetty-8.y.z-SNAPSHOT
+16/11/12 04:33:51 INFO server.AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040
+16/11/12 04:33:51 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+16/11/12 04:33:51 INFO ui.SparkUI: Started SparkUI at http://10.0.2.15:4040
+16/11/12 04:33:51 INFO spark.SparkContext: Added JAR file:/home/cloudera/projs/hw3-skeleton/Task2/target/task2-1.0.jar at spark://10.0.2.15:53351/jars/task2-1.0.jar with timestamp 1478954031302
+16/11/12 04:33:51 INFO executor.Executor: Starting executor ID driver on host localhost
+16/11/12 04:33:51 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 54693.
+16/11/12 04:33:51 INFO netty.NettyBlockTransferService: Server created on 54693
+16/11/12 04:33:51 INFO storage.BlockManagerMaster: Trying to register BlockManager
+16/11/12 04:33:51 INFO storage.BlockManagerMasterEndpoint: Registering block manager localhost:54693 with 530.3 MB RAM, BlockManagerId(driver, localhost, 54693)
+16/11/12 04:33:51 INFO storage.BlockManagerMaster: Registered BlockManager
+16/11/12 04:33:55 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 127.0 KB, free 127.0 KB)
+16/11/12 04:33:55 INFO storage.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 15.4 KB, free 142.5 KB)
+16/11/12 04:33:55 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:54693 (size: 15.4 KB, free: 530.3 MB)
+16/11/12 04:33:55 INFO spark.SparkContext: Created broadcast 0 from textFile at Task2.scala:11
+16/11/12 04:33:58 WARN shortcircuit.DomainSocketFactory: The short-circuit local reads feature cannot be used because libhadoop cannot be loaded.
+16/11/12 04:33:58 INFO mapred.FileInputFormat: Total input paths to process : 1
+16/11/12 04:33:59 INFO Configuration.deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+16/11/12 04:33:59 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+16/11/12 04:33:59 INFO Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+16/11/12 04:33:59 INFO Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+16/11/12 04:33:59 INFO Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+16/11/12 04:33:59 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:33:59 INFO spark.SparkContext: Starting job: saveAsTextFile at Task2.scala:19
+16/11/12 04:33:59 INFO scheduler.DAGScheduler: Registering RDD 2 (map at Task2.scala:13)
+16/11/12 04:33:59 INFO scheduler.DAGScheduler: Got job 0 (saveAsTextFile at Task2.scala:19) with 7 output partitions
+16/11/12 04:33:59 INFO scheduler.DAGScheduler: Final stage: ResultStage 1 (saveAsTextFile at Task2.scala:19)
+16/11/12 04:33:59 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+16/11/12 04:33:59 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+16/11/12 04:33:59 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[2] at map at Task2.scala:13), which has no missing parents
+16/11/12 04:33:59 INFO storage.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.9 KB, free 146.3 KB)
+16/11/12 04:33:59 INFO storage.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.3 KB, free 148.6 KB)
+16/11/12 04:33:59 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:54693 (size: 2.3 KB, free: 530.3 MB)
+16/11/12 04:33:59 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+16/11/12 04:33:59 INFO scheduler.DAGScheduler: Submitting 7 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[2] at map at Task2.scala:13)
+16/11/12 04:33:59 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 7 tasks
+16/11/12 04:33:59 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,ANY, 2188 bytes)
+16/11/12 04:34:00 INFO executor.Executor: Running task 0.0 in stage 0.0 (TID 0)
+16/11/12 04:34:00 INFO executor.Executor: Fetching spark://10.0.2.15:53351/jars/task2-1.0.jar with timestamp 1478954031302
+16/11/12 04:34:00 INFO util.Utils: Fetching spark://10.0.2.15:53351/jars/task2-1.0.jar to /tmp/spark-88653b8e-2c16-49bb-87f2-3d851cf47992/userFiles-a2a3375b-8566-434f-8c08-59639cc9a97c/fetchFileTemp4760010901965647905.tmp
+16/11/12 04:34:00 INFO executor.Executor: Adding file:/tmp/spark-88653b8e-2c16-49bb-87f2-3d851cf47992/userFiles-a2a3375b-8566-434f-8c08-59639cc9a97c/task2-1.0.jar to class loader
+16/11/12 04:34:00 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:0+134217728
+16/11/12 04:34:24 INFO executor.Executor: Finished task 0.0 in stage 0.0 (TID 0). 2259 bytes result sent to driver
+16/11/12 04:34:24 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, partition 1,ANY, 2188 bytes)
+16/11/12 04:34:24 INFO executor.Executor: Running task 1.0 in stage 0.0 (TID 1)
+16/11/12 04:34:24 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:134217728+134217728
+16/11/12 04:34:25 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 24911 ms on localhost (1/7)
+16/11/12 04:34:42 INFO executor.Executor: Finished task 1.0 in stage 0.0 (TID 1). 2259 bytes result sent to driver
+16/11/12 04:34:42 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, partition 2,ANY, 2188 bytes)
+16/11/12 04:34:42 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 18099 ms on localhost (2/7)
+16/11/12 04:34:42 INFO executor.Executor: Running task 2.0 in stage 0.0 (TID 2)
+16/11/12 04:34:42 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:268435456+134217728
+16/11/12 04:35:08 INFO executor.Executor: Finished task 2.0 in stage 0.0 (TID 2). 2259 bytes result sent to driver
+16/11/12 04:35:08 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, partition 3,ANY, 2188 bytes)
+16/11/12 04:35:08 INFO executor.Executor: Running task 3.0 in stage 0.0 (TID 3)
+16/11/12 04:35:08 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 25798 ms on localhost (3/7)
+16/11/12 04:35:08 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:402653184+134217728
+16/11/12 04:35:30 INFO executor.Executor: Finished task 3.0 in stage 0.0 (TID 3). 2259 bytes result sent to driver
+16/11/12 04:35:30 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, localhost, partition 4,ANY, 2188 bytes)
+16/11/12 04:35:30 INFO executor.Executor: Running task 4.0 in stage 0.0 (TID 4)
+16/11/12 04:35:30 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 21736 ms on localhost (4/7)
+16/11/12 04:35:30 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:536870912+134217728
+16/11/12 04:35:46 INFO executor.Executor: Finished task 4.0 in stage 0.0 (TID 4). 2259 bytes result sent to driver
+16/11/12 04:35:46 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, localhost, partition 5,ANY, 2188 bytes)
+16/11/12 04:35:46 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 16312 ms on localhost (5/7)
+16/11/12 04:35:46 INFO executor.Executor: Running task 5.0 in stage 0.0 (TID 5)
+16/11/12 04:35:46 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:671088640+134217728
+16/11/12 04:36:05 INFO executor.Executor: Finished task 5.0 in stage 0.0 (TID 5). 2259 bytes result sent to driver
+16/11/12 04:36:05 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, localhost, partition 6,ANY, 2188 bytes)
+16/11/12 04:36:05 INFO executor.Executor: Running task 6.0 in stage 0.0 (TID 6)
+16/11/12 04:36:05 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 19146 ms on localhost (6/7)
+16/11/12 04:36:05 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:805306368+106884099
+16/11/12 04:36:25 INFO executor.Executor: Finished task 6.0 in stage 0.0 (TID 6). 2259 bytes result sent to driver
+16/11/12 04:36:26 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 20720 ms on localhost (7/7)
+16/11/12 04:36:27 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (map at Task2.scala:13) finished in 146.570 s
+16/11/12 04:36:27 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+16/11/12 04:36:27 INFO scheduler.DAGScheduler: looking for newly runnable stages
+16/11/12 04:36:27 INFO scheduler.DAGScheduler: running: Set()
+16/11/12 04:36:27 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 1)
+16/11/12 04:36:27 INFO scheduler.DAGScheduler: failed: Set()
+16/11/12 04:36:27 INFO scheduler.DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at saveAsTextFile at Task2.scala:19), which has no missing parents
+16/11/12 04:36:27 INFO storage.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 71.2 KB, free 219.8 KB)
+16/11/12 04:36:27 INFO storage.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 25.2 KB, free 245.0 KB)
+16/11/12 04:36:27 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:54693 (size: 25.2 KB, free: 530.2 MB)
+16/11/12 04:36:27 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+16/11/12 04:36:27 INFO scheduler.DAGScheduler: Submitting 7 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at saveAsTextFile at Task2.scala:19)
+16/11/12 04:36:27 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 7 tasks
+16/11/12 04:36:27 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 7, localhost, partition 0,NODE_LOCAL, 1946 bytes)
+16/11/12 04:36:27 INFO executor.Executor: Running task 0.0 in stage 1.0 (TID 7)
+16/11/12 04:36:28 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:36:28 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 21 ms
+16/11/12 04:36:34 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:36:36 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120433_0001_m_000000_7' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120433_0001_m_000000
+16/11/12 04:36:36 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120433_0001_m_000000_7: Committed
+16/11/12 04:36:36 INFO executor.Executor: Finished task 0.0 in stage 1.0 (TID 7). 2080 bytes result sent to driver
+16/11/12 04:36:36 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 8, localhost, partition 1,NODE_LOCAL, 1946 bytes)
+16/11/12 04:36:36 INFO executor.Executor: Running task 1.0 in stage 1.0 (TID 8)
+16/11/12 04:36:36 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 7) in 8856 ms on localhost (1/7)
+16/11/12 04:36:36 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:36:36 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/12 04:36:38 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:36:38 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120433_0001_m_000001_8' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120433_0001_m_000001
+16/11/12 04:36:38 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120433_0001_m_000001_8: Committed
+16/11/12 04:36:38 INFO executor.Executor: Finished task 1.0 in stage 1.0 (TID 8). 2080 bytes result sent to driver
+16/11/12 04:36:38 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 1.0 (TID 9, localhost, partition 2,NODE_LOCAL, 1946 bytes)
+16/11/12 04:36:38 INFO executor.Executor: Running task 2.0 in stage 1.0 (TID 9)
+16/11/12 04:36:38 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 8) in 2130 ms on localhost (2/7)
+16/11/12 04:36:38 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:36:38 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+16/11/12 04:36:40 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:36:40 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120433_0001_m_000002_9' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120433_0001_m_000002
+16/11/12 04:36:40 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120433_0001_m_000002_9: Committed
+16/11/12 04:36:40 INFO executor.Executor: Finished task 2.0 in stage 1.0 (TID 9). 2080 bytes result sent to driver
+16/11/12 04:36:40 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 1.0 (TID 10, localhost, partition 3,NODE_LOCAL, 1946 bytes)
+16/11/12 04:36:40 INFO executor.Executor: Running task 3.0 in stage 1.0 (TID 10)
+16/11/12 04:36:40 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 1.0 (TID 9) in 2033 ms on localhost (3/7)
+16/11/12 04:36:40 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:36:40 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/12 04:36:42 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:36:43 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120433_0001_m_000003_10' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120433_0001_m_000003
+16/11/12 04:36:43 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120433_0001_m_000003_10: Committed
+16/11/12 04:36:43 INFO executor.Executor: Finished task 3.0 in stage 1.0 (TID 10). 2080 bytes result sent to driver
+16/11/12 04:36:43 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 1.0 (TID 11, localhost, partition 4,NODE_LOCAL, 1946 bytes)
+16/11/12 04:36:43 INFO executor.Executor: Running task 4.0 in stage 1.0 (TID 11)
+16/11/12 04:36:43 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 1.0 (TID 10) in 2432 ms on localhost (4/7)
+16/11/12 04:36:43 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:36:43 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/12 04:36:44 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:36:45 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120433_0001_m_000004_11' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120433_0001_m_000004
+16/11/12 04:36:45 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120433_0001_m_000004_11: Committed
+16/11/12 04:36:45 INFO executor.Executor: Finished task 4.0 in stage 1.0 (TID 11). 2080 bytes result sent to driver
+16/11/12 04:36:45 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 1.0 (TID 12, localhost, partition 5,NODE_LOCAL, 1946 bytes)
+16/11/12 04:36:45 INFO executor.Executor: Running task 5.0 in stage 1.0 (TID 12)
+16/11/12 04:36:45 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 1.0 (TID 11) in 1750 ms on localhost (5/7)
+16/11/12 04:36:45 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:36:45 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/12 04:36:46 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:36:46 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120433_0001_m_000005_12' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120433_0001_m_000005
+16/11/12 04:36:46 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120433_0001_m_000005_12: Committed
+16/11/12 04:36:46 INFO executor.Executor: Finished task 5.0 in stage 1.0 (TID 12). 2080 bytes result sent to driver
+16/11/12 04:36:46 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 1.0 (TID 13, localhost, partition 6,NODE_LOCAL, 1946 bytes)
+16/11/12 04:36:46 INFO executor.Executor: Running task 6.0 in stage 1.0 (TID 13)
+16/11/12 04:36:46 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 1.0 (TID 12) in 1572 ms on localhost (6/7)
+16/11/12 04:36:46 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:36:46 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/12 04:36:47 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:36:48 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120433_0001_m_000006_13' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120433_0001_m_000006
+16/11/12 04:36:48 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120433_0001_m_000006_13: Committed
+16/11/12 04:36:48 INFO executor.Executor: Finished task 6.0 in stage 1.0 (TID 13). 2080 bytes result sent to driver
+16/11/12 04:36:48 INFO scheduler.DAGScheduler: ResultStage 1 (saveAsTextFile at Task2.scala:19) finished in 20.346 s
+16/11/12 04:36:48 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 1.0 (TID 13) in 1593 ms on localhost (7/7)
+16/11/12 04:36:48 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+16/11/12 04:36:48 INFO scheduler.DAGScheduler: Job 0 finished: saveAsTextFile at Task2.scala:19, took 168.651656 s
+16/11/12 04:36:48 INFO spark.SparkContext: Invoking stop() from shutdown hook
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/api,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/static,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+16/11/12 04:36:48 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs,null}
+16/11/12 04:36:48 INFO ui.SparkUI: Stopped Spark web UI at http://10.0.2.15:4040
+16/11/12 04:36:48 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+16/11/12 04:36:48 INFO storage.MemoryStore: MemoryStore cleared
+16/11/12 04:36:48 INFO storage.BlockManager: BlockManager stopped
+16/11/12 04:36:48 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+16/11/12 04:36:48 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+16/11/12 04:36:48 INFO spark.SparkContext: Successfully stopped SparkContext
+16/11/12 04:36:48 INFO util.ShutdownHookManager: Shutdown hook called
+16/11/12 04:36:48 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-88653b8e-2c16-49bb-87f2-3d851cf47992
+16/11/12 04:36:49 INFO remote.RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+
+real	3m8.407s
+user	2m36.332s
+sys	0m11.368s
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/flume-ng/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+16/11/12 04:38:02 INFO spark.SparkContext: Running Spark version 1.6.0
+16/11/12 04:38:04 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/11/12 04:38:05 INFO spark.SecurityManager: Changing view acls to: cloudera
+16/11/12 04:38:05 INFO spark.SecurityManager: Changing modify acls to: cloudera
+16/11/12 04:38:05 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(cloudera); users with modify permissions: Set(cloudera)
+16/11/12 04:38:06 INFO util.Utils: Successfully started service 'sparkDriver' on port 42134.
+16/11/12 04:38:08 INFO slf4j.Slf4jLogger: Slf4jLogger started
+16/11/12 04:38:08 INFO Remoting: Starting remoting
+16/11/12 04:38:09 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@10.0.2.15:60263]
+16/11/12 04:38:09 INFO Remoting: Remoting now listens on addresses: [akka.tcp://sparkDriverActorSystem@10.0.2.15:60263]
+16/11/12 04:38:09 INFO util.Utils: Successfully started service 'sparkDriverActorSystem' on port 60263.
+16/11/12 04:38:09 INFO spark.SparkEnv: Registering MapOutputTracker
+16/11/12 04:38:09 INFO spark.SparkEnv: Registering BlockManagerMaster
+16/11/12 04:38:09 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-1e1b7c53-4791-40d8-ae5c-ad7537af81a1
+16/11/12 04:38:09 INFO storage.MemoryStore: MemoryStore started with capacity 530.3 MB
+16/11/12 04:38:10 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+16/11/12 04:38:11 INFO server.Server: jetty-8.y.z-SNAPSHOT
+16/11/12 04:38:11 INFO server.AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040
+16/11/12 04:38:11 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+16/11/12 04:38:11 INFO ui.SparkUI: Started SparkUI at http://10.0.2.15:4040
+16/11/12 04:38:11 INFO spark.SparkContext: Added JAR file:/home/cloudera/projs/hw3-skeleton/Task2/target/task2-1.0.jar at spark://10.0.2.15:42134/jars/task2-1.0.jar with timestamp 1478954291489
+16/11/12 04:38:11 INFO executor.Executor: Starting executor ID driver on host localhost
+16/11/12 04:38:11 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 48214.
+16/11/12 04:38:11 INFO netty.NettyBlockTransferService: Server created on 48214
+16/11/12 04:38:11 INFO storage.BlockManagerMaster: Trying to register BlockManager
+16/11/12 04:38:11 INFO storage.BlockManagerMasterEndpoint: Registering block manager localhost:48214 with 530.3 MB RAM, BlockManagerId(driver, localhost, 48214)
+16/11/12 04:38:11 INFO storage.BlockManagerMaster: Registered BlockManager
+16/11/12 04:38:14 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 127.0 KB, free 127.0 KB)
+16/11/12 04:38:15 INFO storage.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 15.4 KB, free 142.5 KB)
+16/11/12 04:38:15 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:48214 (size: 15.4 KB, free: 530.3 MB)
+16/11/12 04:38:15 INFO spark.SparkContext: Created broadcast 0 from textFile at Task2.scala:11
+16/11/12 04:38:17 WARN shortcircuit.DomainSocketFactory: The short-circuit local reads feature cannot be used because libhadoop cannot be loaded.
+16/11/12 04:38:17 INFO mapred.FileInputFormat: Total input paths to process : 1
+16/11/12 04:38:17 INFO Configuration.deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+16/11/12 04:38:17 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+16/11/12 04:38:17 INFO Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+16/11/12 04:38:17 INFO Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+16/11/12 04:38:17 INFO Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+16/11/12 04:38:17 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:38:18 INFO spark.SparkContext: Starting job: saveAsTextFile at Task2.scala:19
+16/11/12 04:38:18 INFO scheduler.DAGScheduler: Registering RDD 2 (map at Task2.scala:13)
+16/11/12 04:38:18 INFO scheduler.DAGScheduler: Got job 0 (saveAsTextFile at Task2.scala:19) with 7 output partitions
+16/11/12 04:38:18 INFO scheduler.DAGScheduler: Final stage: ResultStage 1 (saveAsTextFile at Task2.scala:19)
+16/11/12 04:38:18 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+16/11/12 04:38:18 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+16/11/12 04:38:18 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[2] at map at Task2.scala:13), which has no missing parents
+16/11/12 04:38:18 INFO storage.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.9 KB, free 146.3 KB)
+16/11/12 04:38:18 INFO storage.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.3 KB, free 148.6 KB)
+16/11/12 04:38:18 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:48214 (size: 2.3 KB, free: 530.3 MB)
+16/11/12 04:38:18 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+16/11/12 04:38:18 INFO scheduler.DAGScheduler: Submitting 7 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[2] at map at Task2.scala:13)
+16/11/12 04:38:18 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 7 tasks
+16/11/12 04:38:18 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,ANY, 2188 bytes)
+16/11/12 04:38:18 INFO executor.Executor: Running task 0.0 in stage 0.0 (TID 0)
+16/11/12 04:38:18 INFO executor.Executor: Fetching spark://10.0.2.15:42134/jars/task2-1.0.jar with timestamp 1478954291489
+16/11/12 04:38:18 INFO util.Utils: Fetching spark://10.0.2.15:42134/jars/task2-1.0.jar to /tmp/spark-ee59b436-38f1-4ed9-a3a4-2339285308e9/userFiles-477ed9af-79b4-4e32-a864-93c9b7676fc6/fetchFileTemp3426116577385725288.tmp
+16/11/12 04:38:19 INFO executor.Executor: Adding file:/tmp/spark-ee59b436-38f1-4ed9-a3a4-2339285308e9/userFiles-477ed9af-79b4-4e32-a864-93c9b7676fc6/task2-1.0.jar to class loader
+16/11/12 04:38:19 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:0+134217728
+16/11/12 04:38:37 INFO executor.Executor: Finished task 0.0 in stage 0.0 (TID 0). 2259 bytes result sent to driver
+16/11/12 04:38:37 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, partition 1,ANY, 2188 bytes)
+16/11/12 04:38:37 INFO executor.Executor: Running task 1.0 in stage 0.0 (TID 1)
+16/11/12 04:38:37 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:134217728+134217728
+16/11/12 04:38:37 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 18477 ms on localhost (1/7)
+16/11/12 04:38:57 INFO executor.Executor: Finished task 1.0 in stage 0.0 (TID 1). 2259 bytes result sent to driver
+16/11/12 04:38:57 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, partition 2,ANY, 2188 bytes)
+16/11/12 04:38:57 INFO executor.Executor: Running task 2.0 in stage 0.0 (TID 2)
+16/11/12 04:38:57 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 19883 ms on localhost (2/7)
+16/11/12 04:38:57 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:268435456+134217728
+16/11/12 04:39:18 INFO executor.Executor: Finished task 2.0 in stage 0.0 (TID 2). 2259 bytes result sent to driver
+16/11/12 04:39:18 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, partition 3,ANY, 2188 bytes)
+16/11/12 04:39:18 INFO executor.Executor: Running task 3.0 in stage 0.0 (TID 3)
+16/11/12 04:39:18 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 21201 ms on localhost (3/7)
+16/11/12 04:39:18 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:402653184+134217728
+16/11/12 04:39:42 INFO executor.Executor: Finished task 3.0 in stage 0.0 (TID 3). 2259 bytes result sent to driver
+16/11/12 04:39:42 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, localhost, partition 4,ANY, 2188 bytes)
+16/11/12 04:39:42 INFO executor.Executor: Running task 4.0 in stage 0.0 (TID 4)
+16/11/12 04:39:42 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 24139 ms on localhost (4/7)
+16/11/12 04:39:42 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:536870912+134217728
+16/11/12 04:39:57 INFO executor.Executor: Finished task 4.0 in stage 0.0 (TID 4). 2259 bytes result sent to driver
+16/11/12 04:39:57 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, localhost, partition 5,ANY, 2188 bytes)
+16/11/12 04:39:57 INFO executor.Executor: Running task 5.0 in stage 0.0 (TID 5)
+16/11/12 04:39:57 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 15472 ms on localhost (5/7)
+16/11/12 04:39:57 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:671088640+134217728
+16/11/12 04:40:12 INFO executor.Executor: Finished task 5.0 in stage 0.0 (TID 5). 2259 bytes result sent to driver
+16/11/12 04:40:12 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, localhost, partition 6,ANY, 2188 bytes)
+16/11/12 04:40:12 INFO executor.Executor: Running task 6.0 in stage 0.0 (TID 6)
+16/11/12 04:40:12 INFO rdd.HadoopRDD: Input split: hdfs://localhost:8020/user/cse6242/graph2.tsv:805306368+106884099
+16/11/12 04:40:12 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 14332 ms on localhost (6/7)
+16/11/12 04:40:27 INFO executor.Executor: Finished task 6.0 in stage 0.0 (TID 6). 2259 bytes result sent to driver
+16/11/12 04:40:27 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 15467 ms on localhost (7/7)
+16/11/12 04:40:27 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (map at Task2.scala:13) finished in 128.895 s
+16/11/12 04:40:27 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+16/11/12 04:40:27 INFO scheduler.DAGScheduler: looking for newly runnable stages
+16/11/12 04:40:27 INFO scheduler.DAGScheduler: running: Set()
+16/11/12 04:40:27 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 1)
+16/11/12 04:40:27 INFO scheduler.DAGScheduler: failed: Set()
+16/11/12 04:40:27 INFO scheduler.DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[5] at saveAsTextFile at Task2.scala:19), which has no missing parents
+16/11/12 04:40:27 INFO storage.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 71.2 KB, free 219.8 KB)
+16/11/12 04:40:27 INFO storage.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 25.2 KB, free 245.0 KB)
+16/11/12 04:40:27 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:48214 (size: 25.2 KB, free: 530.2 MB)
+16/11/12 04:40:27 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+16/11/12 04:40:27 INFO scheduler.DAGScheduler: Submitting 7 missing tasks from ResultStage 1 (MapPartitionsRDD[5] at saveAsTextFile at Task2.scala:19)
+16/11/12 04:40:27 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 7 tasks
+16/11/12 04:40:27 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 7, localhost, partition 0,NODE_LOCAL, 1946 bytes)
+16/11/12 04:40:27 INFO executor.Executor: Running task 0.0 in stage 1.0 (TID 7)
+16/11/12 04:40:28 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:40:28 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 18 ms
+16/11/12 04:40:32 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:40:35 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120438_0001_m_000000_7' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120438_0001_m_000000
+16/11/12 04:40:35 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120438_0001_m_000000_7: Committed
+16/11/12 04:40:35 INFO executor.Executor: Finished task 0.0 in stage 1.0 (TID 7). 2080 bytes result sent to driver
+16/11/12 04:40:35 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 8, localhost, partition 1,NODE_LOCAL, 1946 bytes)
+16/11/12 04:40:35 INFO executor.Executor: Running task 1.0 in stage 1.0 (TID 8)
+16/11/12 04:40:35 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 7) in 7384 ms on localhost (1/7)
+16/11/12 04:40:35 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:40:35 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+16/11/12 04:40:38 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:40:39 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120438_0001_m_000001_8' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120438_0001_m_000001
+16/11/12 04:40:39 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120438_0001_m_000001_8: Committed
+16/11/12 04:40:39 INFO executor.Executor: Finished task 1.0 in stage 1.0 (TID 8). 2080 bytes result sent to driver
+16/11/12 04:40:39 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 1.0 (TID 9, localhost, partition 2,NODE_LOCAL, 1946 bytes)
+16/11/12 04:40:39 INFO executor.Executor: Running task 2.0 in stage 1.0 (TID 9)
+16/11/12 04:40:39 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 8) in 4308 ms on localhost (2/7)
+16/11/12 04:40:39 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:40:39 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+16/11/12 04:40:42 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:40:43 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120438_0001_m_000002_9' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120438_0001_m_000002
+16/11/12 04:40:43 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120438_0001_m_000002_9: Committed
+16/11/12 04:40:43 INFO executor.Executor: Finished task 2.0 in stage 1.0 (TID 9). 2080 bytes result sent to driver
+16/11/12 04:40:43 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 1.0 (TID 10, localhost, partition 3,NODE_LOCAL, 1946 bytes)
+16/11/12 04:40:43 INFO executor.Executor: Running task 3.0 in stage 1.0 (TID 10)
+16/11/12 04:40:43 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 1.0 (TID 9) in 4237 ms on localhost (3/7)
+16/11/12 04:40:44 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:40:44 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 7 ms
+16/11/12 04:40:46 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:40:47 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120438_0001_m_000003_10' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120438_0001_m_000003
+16/11/12 04:40:47 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120438_0001_m_000003_10: Committed
+16/11/12 04:40:47 INFO executor.Executor: Finished task 3.0 in stage 1.0 (TID 10). 2080 bytes result sent to driver
+16/11/12 04:40:47 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 1.0 (TID 11, localhost, partition 4,NODE_LOCAL, 1946 bytes)
+16/11/12 04:40:47 INFO executor.Executor: Running task 4.0 in stage 1.0 (TID 11)
+16/11/12 04:40:47 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 1.0 (TID 10) in 3635 ms on localhost (4/7)
+16/11/12 04:40:47 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:40:47 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+16/11/12 04:40:50 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:40:51 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120438_0001_m_000004_11' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120438_0001_m_000004
+16/11/12 04:40:51 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120438_0001_m_000004_11: Committed
+16/11/12 04:40:51 INFO executor.Executor: Finished task 4.0 in stage 1.0 (TID 11). 2080 bytes result sent to driver
+16/11/12 04:40:51 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 1.0 (TID 12, localhost, partition 5,NODE_LOCAL, 1946 bytes)
+16/11/12 04:40:51 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 1.0 (TID 11) in 3989 ms on localhost (5/7)
+16/11/12 04:40:51 INFO executor.Executor: Running task 5.0 in stage 1.0 (TID 12)
+16/11/12 04:40:51 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:40:51 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/12 04:40:53 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:40:54 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120438_0001_m_000005_12' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120438_0001_m_000005
+16/11/12 04:40:54 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120438_0001_m_000005_12: Committed
+16/11/12 04:40:54 INFO executor.Executor: Finished task 5.0 in stage 1.0 (TID 12). 2080 bytes result sent to driver
+16/11/12 04:40:54 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 1.0 (TID 13, localhost, partition 6,NODE_LOCAL, 1946 bytes)
+16/11/12 04:40:54 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 1.0 (TID 12) in 2756 ms on localhost (6/7)
+16/11/12 04:40:54 INFO executor.Executor: Running task 6.0 in stage 1.0 (TID 13)
+16/11/12 04:40:54 INFO storage.ShuffleBlockFetcherIterator: Getting 7 non-empty blocks out of 7 blocks
+16/11/12 04:40:54 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 6 ms
+16/11/12 04:40:56 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+16/11/12 04:40:56 INFO output.FileOutputCommitter: Saved output of task 'attempt_201611120438_0001_m_000006_13' to hdfs://localhost:8020/user/cse6242/task2output2/_temporary/0/task_201611120438_0001_m_000006
+16/11/12 04:40:56 INFO mapred.SparkHadoopMapRedUtil: attempt_201611120438_0001_m_000006_13: Committed
+16/11/12 04:40:56 INFO executor.Executor: Finished task 6.0 in stage 1.0 (TID 13). 2080 bytes result sent to driver
+16/11/12 04:40:56 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 1.0 (TID 13) in 2508 ms on localhost (7/7)
+16/11/12 04:40:56 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+16/11/12 04:40:56 INFO scheduler.DAGScheduler: ResultStage 1 (saveAsTextFile at Task2.scala:19) finished in 28.769 s
+16/11/12 04:40:56 INFO scheduler.DAGScheduler: Job 0 finished: saveAsTextFile at Task2.scala:19, took 158.316083 s
+16/11/12 04:40:56 INFO spark.SparkContext: Invoking stop() from shutdown hook
+16/11/12 04:40:56 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+16/11/12 04:40:56 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+16/11/12 04:40:56 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/api,null}
+16/11/12 04:40:56 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/,null}
+16/11/12 04:40:56 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/static,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+16/11/12 04:40:57 INFO handler.ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs,null}
+16/11/12 04:40:57 INFO ui.SparkUI: Stopped Spark web UI at http://10.0.2.15:4040
+16/11/12 04:40:57 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+16/11/12 04:40:57 INFO storage.MemoryStore: MemoryStore cleared
+16/11/12 04:40:57 INFO storage.BlockManager: BlockManager stopped
+16/11/12 04:40:57 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+16/11/12 04:40:57 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+16/11/12 04:40:57 INFO spark.SparkContext: Successfully stopped SparkContext
+16/11/12 04:40:57 INFO util.ShutdownHookManager: Shutdown hook called
+16/11/12 04:40:57 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-ee59b436-38f1-4ed9-a3a4-2339285308e9
+16/11/12 04:40:57 INFO remote.RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+16/11/12 04:40:57 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+
+real	3m0.926s
+user	2m35.685s
+sys	0m10.875s

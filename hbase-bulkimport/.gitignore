@@ -1,0 +1,6 @@
+*.iml
+.idea/
+
+target/*
+!target/hbase-bulkimport-1.0-SNAPSHOT-job
+

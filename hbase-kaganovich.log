@@ -1,0 +1,1674 @@
+Preparing file system...
+Creating tables...
+2016-11-12 02:00:09,437 INFO  [main] Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+HBase Shell; enter 'help<RETURN>' for list of supported commands.
+Type "exit<RETURN>" to leave the HBase Shell
+Version 1.2.0-cdh5.8.0, rUnknown, Thu Jun 16 12:46:57 PDT 2016
+
+create 'kaganovich-graph-1', 'al'; create 'kaganovich-graph-2', 'al'
+0 row(s) in 2.5930 seconds
+
+0 row(s) in 1.2690 seconds
+
+Hbase::Table - kaganovich-graph-2
+Graph1: importing...
+16/11/12 02:00:38 INFO zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x1c00ee0c connecting to ZooKeeper ensemble=localhost:2181
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.5-cdh5.8.0--1, built on 06/16/2016 19:37 GMT
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:host.name=quickstart.cloudera
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:java.version=1.7.0_67
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:java.home=/usr/java/jdk1.7.0_67-cloudera/jre
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:java.class.path=/etc/hadoop/conf:/usr/lib/hadoop/lib/jsch-0.1.42.jar:/usr/lib/hadoop/lib/commons-collections-3.2.2.jar:/usr/lib/hadoop/lib/api-asn1-api-1.0.0-M20.jar:/usr/lib/hadoop/lib/apacheds-i18n-2.0.0-M15.jar:/usr/lib/hadoop/lib/guava-11.0.2.jar:/usr/lib/hadoop/lib/jaxb-api-2.2.2.jar:/usr/lib/hadoop/lib/commons-cli-1.2.jar:/usr/lib/hadoop/lib/activation-1.1.jar:/usr/lib/hadoop/lib/curator-framework-2.7.1.jar:/usr/lib/hadoop/lib/jersey-server-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-core-1.8.0.jar:/usr/lib/hadoop/lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop/lib/commons-lang-2.6.jar:/usr/lib/hadoop/lib/avro.jar:/usr/lib/hadoop/lib/commons-httpclient-3.1.jar:/usr/lib/hadoop/lib/jersey-core-1.9.jar:/usr/lib/hadoop/lib/commons-codec-1.4.jar:/usr/lib/hadoop/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hadoop/lib/commons-el-1.0.jar:/usr/lib/hadoop/lib/junit-4.11.jar:/usr/lib/hadoop/lib/jersey-json-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-1.7.0.jar:/usr/lib/hadoop/lib/commons-digester-1.8.jar:/usr/lib/hadoop/lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop/lib/jettison-1.1.jar:/usr/lib/hadoop/lib/xz-1.0.jar:/usr/lib/hadoop/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop/lib/snappy-java-1.0.4.1.jar:/usr/lib/hadoop/lib/commons-math3-3.1.1.jar:/usr/lib/hadoop/lib/aws-java-sdk-s3-1.10.6.jar:/usr/lib/hadoop/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop/lib/paranamer-2.3.jar:/usr/lib/hadoop/lib/jsr305-3.0.0.jar:/usr/lib/hadoop/lib/api-util-1.0.0-M20.jar:/usr/lib/hadoop/lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop/lib/aws-java-sdk-core-1.10.6.jar:/usr/lib/hadoop/lib/logredactor-1.0.3.jar:/usr/lib/hadoop/lib/curator-recipes-2.7.1.jar:/usr/lib/hadoop/lib/java-xmlbuilder-0.4.jar:/usr/lib/hadoop/lib/hamcrest-core-1.3.jar:/usr/lib/hadoop/lib/asm-3.2.jar:/usr/lib/hadoop/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/httpcore-4.2.5.jar:/usr/lib/hadoop/lib/httpclient-4.2.5.jar:/usr/lib/hadoop/lib/curator-client-2.7.1.jar:/usr/lib/hadoop/lib/jasper-compiler-5.5.23.jar:/usr/lib/hadoop/lib/jets3t-0.9.0.jar:/usr/lib/hadoop/lib/hue-plugins-3.9.0-cdh5.8.0.jar:/usr/lib/hadoop/lib/commons-net-3.1.jar:/usr/lib/hadoop/lib/stax-api-1.0-2.jar:/usr/lib/hadoop/lib/jsp-api-2.1.jar:/usr/lib/hadoop/lib/commons-io-2.4.jar:/usr/lib/hadoop/lib/servlet-api-2.5.jar:/usr/lib/hadoop/lib/slf4j-api-1.7.5.jar:/usr/lib/hadoop/lib/gson-2.2.4.jar:/usr/lib/hadoop/lib/xmlenc-0.52.jar:/usr/lib/hadoop/lib/slf4j-log4j12.jar:/usr/lib/hadoop/lib/aws-java-sdk-kms-1.10.6.jar:/usr/lib/hadoop/lib/jackson-xc-1.8.8.jar:/usr/lib/hadoop/lib/jasper-runtime-5.5.23.jar:/usr/lib/hadoop/lib/commons-configuration-1.6.jar:/usr/lib/hadoop/lib/log4j-1.2.17.jar:/usr/lib/hadoop/lib/zookeeper.jar:/usr/lib/hadoop/lib/mockito-all-1.8.5.jar:/usr/lib/hadoop/.//parquet-tools.jar:/usr/lib/hadoop/.//parquet-hadoop-bundle.jar:/usr/lib/hadoop/.//parquet-format-javadoc.jar:/usr/lib/hadoop/.//parquet-avro.jar:/usr/lib/hadoop/.//parquet-pig.jar:/usr/lib/hadoop/.//hadoop-nfs.jar:/usr/lib/hadoop/.//parquet-pig-bundle.jar:/usr/lib/hadoop/.//parquet-column.jar:/usr/lib/hadoop/.//hadoop-common.jar:/usr/lib/hadoop/.//hadoop-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-format-sources.jar:/usr/lib/hadoop/.//hadoop-aws-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//hadoop-auth-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-protobuf.jar:/usr/lib/hadoop/.//hadoop-common-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop/.//hadoop-annotations-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-scrooge_2.10.jar:/usr/lib/hadoop/.//parquet-generator.jar:/usr/lib/hadoop/.//hadoop-common-tests.jar:/usr/lib/hadoop/.//parquet-common.jar:/usr/lib/hadoop/.//hadoop-aws.jar:/usr/lib/hadoop/.//parquet-test-hadoop2.jar:/usr/lib/hadoop/.//parquet-scala_2.10.jar:/usr/lib/hadoop/.//hadoop-nfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-jackson.jar:/usr/lib/hadoop/.//hadoop-auth.jar:/usr/lib/hadoop/.//parquet-encoding.jar:/usr/lib/hadoop/.//parquet-format.jar:/usr/lib/hadoop/.//parquet-cascading.jar:/usr/lib/hadoop/.//parquet-hadoop.jar:/usr/lib/hadoop/.//hadoop-annotations.jar:/usr/lib/hadoop/.//parquet-thrift.jar:/usr/lib/hadoop-hdfs/./:/usr/lib/hadoop-hdfs/lib/guava-11.0.2.jar:/usr/lib/hadoop-hdfs/lib/commons-cli-1.2.jar:/usr/lib/hadoop-hdfs/lib/xercesImpl-2.9.1.jar:/usr/lib/hadoop-hdfs/lib/jersey-server-1.9.jar:/usr/lib/hadoop-hdfs/lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop-hdfs/lib/xml-apis-1.3.04.jar:/usr/lib/hadoop-hdfs/lib/commons-lang-2.6.jar:/usr/lib/hadoop-hdfs/lib/jersey-core-1.9.jar:/usr/lib/hadoop-hdfs/lib/commons-codec-1.4.jar:/usr/lib/hadoop-hdfs/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-hdfs/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-hdfs/lib/commons-el-1.0.jar:/usr/lib/hadoop-hdfs/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop-hdfs/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop-hdfs/lib/jsr305-3.0.0.jar:/usr/lib/hadoop-hdfs/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-hdfs/lib/commons-daemon-1.0.13.jar:/usr/lib/hadoop-hdfs/lib/asm-3.2.jar:/usr/lib/hadoop-hdfs/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-hdfs/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-hdfs/lib/jsp-api-2.1.jar:/usr/lib/hadoop-hdfs/lib/commons-io-2.4.jar:/usr/lib/hadoop-hdfs/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-hdfs/lib/servlet-api-2.5.jar:/usr/lib/hadoop-hdfs/lib/xmlenc-0.52.jar:/usr/lib/hadoop-hdfs/lib/jasper-runtime-5.5.23.jar:/usr/lib/hadoop-hdfs/lib/log4j-1.2.17.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-tests.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-nfs.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-nfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs.jar:/usr/lib/hadoop-yarn/lib/commons-collections-3.2.2.jar:/usr/lib/hadoop-yarn/lib/guava-11.0.2.jar:/usr/lib/hadoop-yarn/lib/jaxb-api-2.2.2.jar:/usr/lib/hadoop-yarn/lib/commons-cli-1.2.jar:/usr/lib/hadoop-yarn/lib/activation-1.1.jar:/usr/lib/hadoop-yarn/lib/jersey-server-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-lang-2.6.jar:/usr/lib/hadoop-yarn/lib/jersey-core-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-codec-1.4.jar:/usr/lib/hadoop-yarn/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop-yarn/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-yarn/lib/guice-servlet-3.0.jar:/usr/lib/hadoop-yarn/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-yarn/lib/jersey-json-1.9.jar:/usr/lib/hadoop-yarn/lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop-yarn/lib/jline-2.11.jar:/usr/lib/hadoop-yarn/lib/jettison-1.1.jar:/usr/lib/hadoop-yarn/lib/xz-1.0.jar:/usr/lib/hadoop-yarn/lib/spark-1.6.0-cdh5.8.0-yarn-shuffle.jar:/usr/lib/hadoop-yarn/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop-yarn/lib/jsr305-3.0.0.jar:/usr/lib/hadoop-yarn/lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop-yarn/lib/guice-3.0.jar:/usr/lib/hadoop-yarn/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-yarn/lib/asm-3.2.jar:/usr/lib/hadoop-yarn/lib/spark-yarn-shuffle.jar:/usr/lib/hadoop-yarn/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-yarn/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-yarn/lib/aopalliance-1.0.jar:/usr/lib/hadoop-yarn/lib/javax.inject-1.jar:/usr/lib/hadoop-yarn/lib/stax-api-1.0-2.jar:/usr/lib/hadoop-yarn/lib/jersey-client-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-io-2.4.jar:/usr/lib/hadoop-yarn/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-yarn/lib/jersey-guice-1.9.jar:/usr/lib/hadoop-yarn/lib/servlet-api-2.5.jar:/usr/lib/hadoop-yarn/lib/jackson-xc-1.8.8.jar:/usr/lib/hadoop-yarn/lib/log4j-1.2.17.jar:/usr/lib/hadoop-yarn/lib/zookeeper.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-client-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-unmanaged-am-launcher.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-nodemanager-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-nodemanager.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-common.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-api.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-registry.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-unmanaged-am-launcher-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-api-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-distributedshell-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-web-proxy-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-applicationhistoryservice.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-tests.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-distributedshell.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-common.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-resourcemanager-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-web-proxy.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-registry-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-tests-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-client.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-applicationhistoryservice-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-resourcemanager.jar:/usr/lib/hadoop-mapreduce/lib/jersey-server-1.9.jar:/usr/lib/hadoop-mapreduce/lib/avro.jar:/usr/lib/hadoop-mapreduce/lib/jersey-core-1.9.jar:/usr/lib/hadoop-mapreduce/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop-mapreduce/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-mapreduce/lib/guice-servlet-3.0.jar:/usr/lib/hadoop-mapreduce/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-mapreduce/lib/junit-4.11.jar:/usr/lib/hadoop-mapreduce/lib/xz-1.0.jar:/usr/lib/hadoop-mapreduce/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop-mapreduce/lib/snappy-java-1.0.4.1.jar:/usr/lib/hadoop-mapreduce/lib/paranamer-2.3.jar:/usr/lib/hadoop-mapreduce/lib/guice-3.0.jar:/usr/lib/hadoop-mapreduce/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/lib/hamcrest-core-1.3.jar:/usr/lib/hadoop-mapreduce/lib/asm-3.2.jar:/usr/lib/hadoop-mapreduce/lib/aopalliance-1.0.jar:/usr/lib/hadoop-mapreduce/lib/javax.inject-1.jar:/usr/lib/hadoop-mapreduce/lib/commons-io-2.4.jar:/usr/lib/hadoop-mapreduce/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/lib/jersey-guice-1.9.jar:/usr/lib/hadoop-mapreduce/lib/log4j-1.2.17.jar:/usr/lib/hadoop-mapreduce/.//jsch-0.1.42.jar:/usr/lib/hadoop-mapreduce/.//hadoop-distcp-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-collections-3.2.2.jar:/usr/lib/hadoop-mapreduce/.//api-asn1-api-1.0.0-M20.jar:/usr/lib/hadoop-mapreduce/.//apacheds-i18n-2.0.0-M15.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//guava-11.0.2.jar:/usr/lib/hadoop-mapreduce/.//jaxb-api-2.2.2.jar:/usr/lib/hadoop-mapreduce/.//jackson-annotations-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-app-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jackson-core-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-distcp.jar:/usr/lib/hadoop-mapreduce/.//commons-cli-1.2.jar:/usr/lib/hadoop-mapreduce/.//activation-1.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-datajoin.jar:/usr/lib/hadoop-mapreduce/.//curator-framework-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-openstack-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jersey-server-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-beanutils-core-1.8.0.jar:/usr/lib/hadoop-mapreduce/.//htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop-mapreduce/.//commons-lang-2.6.jar:/usr/lib/hadoop-mapreduce/.//avro.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs.jar:/usr/lib/hadoop-mapreduce/.//commons-httpclient-3.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-gridmix-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jersey-core-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-codec-1.4.jar:/usr/lib/hadoop-mapreduce/.//commons-compress-1.4.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-plugins-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//protobuf-java-2.5.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-ant-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hadoop-mapreduce/.//commons-el-1.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-tests.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//junit-4.11.jar:/usr/lib/hadoop-mapreduce/.//jersey-json-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-beanutils-1.7.0.jar:/usr/lib/hadoop-mapreduce/.//commons-digester-1.8.jar:/usr/lib/hadoop-mapreduce/.//metrics-core-3.0.2.jar:/usr/lib/hadoop-mapreduce/.//jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//hadoop-azure.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-common.jar:/usr/lib/hadoop-mapreduce/.//jettison-1.1.jar:/usr/lib/hadoop-mapreduce/.//xz-1.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-datajoin-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//snappy-java-1.0.4.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-extras-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-core-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-math3-3.1.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-extras.jar:/usr/lib/hadoop-mapreduce/.//hadoop-streaming-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-openstack.jar:/usr/lib/hadoop-mapreduce/.//hadoop-auth-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-logging-1.1.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-rumen-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//paranamer-2.3.jar:/usr/lib/hadoop-mapreduce/.//jsr305-3.0.0.jar:/usr/lib/hadoop-mapreduce/.//api-util-1.0.0-M20.jar:/usr/lib/hadoop-mapreduce/.//jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archives-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archives.jar:/usr/lib/hadoop-mapreduce/.//jackson-databind-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-core.jar:/usr/lib/hadoop-mapreduce/.//curator-recipes-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//java-xmlbuilder-0.4.jar:/usr/lib/hadoop-mapreduce/.//hamcrest-core-1.3.jar:/usr/lib/hadoop-mapreduce/.//asm-3.2.jar:/usr/lib/hadoop-mapreduce/.//hadoop-rumen.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-nativetask.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-nativetask-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-mapreduce/.//jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-mapreduce/.//hadoop-azure-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//httpcore-4.2.5.jar:/usr/lib/hadoop-mapreduce/.//httpclient-4.2.5.jar:/usr/lib/hadoop-mapreduce/.//curator-client-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop-mapreduce/.//jasper-compiler-5.5.23.jar:/usr/lib/hadoop-mapreduce/.//jets3t-0.9.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-examples.jar:/usr/lib/hadoop-mapreduce/.//commons-net-3.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-app.jar:/usr/lib/hadoop-mapreduce/.//hadoop-sls.jar:/usr/lib/hadoop-mapreduce/.//hadoop-gridmix.jar:/usr/lib/hadoop-mapreduce/.//stax-api-1.0-2.jar:/usr/lib/hadoop-mapreduce/.//jsp-api-2.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-examples-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archive-logs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-plugins.jar:/usr/lib/hadoop-mapreduce/.//commons-io-2.4.jar:/usr/lib/hadoop-mapreduce/.//jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//servlet-api-2.5.jar:/usr/lib/hadoop-mapreduce/.//hadoop-sls-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//gson-2.2.4.jar:/usr/lib/hadoop-mapreduce/.//xmlenc-0.52.jar:/usr/lib/hadoop-mapreduce/.//hadoop-auth.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-shuffle-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-shuffle.jar:/usr/lib/hadoop-mapreduce/.//jackson-xc-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//microsoft-windowsazure-storage-sdk-0.6.0.jar:/usr/lib/hadoop-mapreduce/.//jasper-runtime-5.5.23.jar:/usr/lib/hadoop-mapreduce/.//hadoop-streaming.jar:/usr/lib/hadoop-mapreduce/.//commons-configuration-1.6.jar:/usr/lib/hadoop-mapreduce/.//log4j-1.2.17.jar:/usr/lib/hadoop-mapreduce/.//hadoop-ant.jar:/usr/lib/hadoop-mapreduce/.//zookeeper.jar:/usr/lib/hadoop-mapreduce/.//mockito-all-1.8.5.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archive-logs.jar
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:java.library.path=/usr/lib/hadoop/lib/native
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:os.name=Linux
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:os.arch=amd64
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:os.version=2.6.32-573.el6.x86_64
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:user.name=cloudera
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:user.home=/home/cloudera
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Client environment:user.dir=/home/cloudera/projs/mag-oboi-c1021-hbase
+16/11/12 02:00:38 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=180000 watcher=hconnection-0x1c00ee0c0x0, quorum=localhost:2181, baseZNode=/hbase
+16/11/12 02:00:39 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+16/11/12 02:00:39 INFO zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:56798, server: localhost/127.0.0.1:2181
+16/11/12 02:00:39 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x15855553f3d0034, negotiated timeout = 40000
+16/11/12 02:00:42 INFO Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+16/11/12 02:00:42 INFO mapreduce.HFileOutputFormat2: Looking up current regions for table kaganovich-graph-1
+16/11/12 02:00:42 INFO mapreduce.HFileOutputFormat2: Configuring 1 reduce partitions to match current region count
+16/11/12 02:00:42 INFO mapreduce.HFileOutputFormat2: Writing partition information to /user/cloudera/hbase-staging/partitions_8ac41d02-4a2a-4ef5-87f1-297dc679ad8b
+16/11/12 02:00:42 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+16/11/12 02:00:42 INFO compress.CodecPool: Got brand-new compressor [.deflate]
+16/11/12 02:00:43 INFO mapreduce.HFileOutputFormat2: Incremental table kaganovich-graph-1 output configured.
+16/11/12 02:00:43 INFO client.ConnectionManager$HConnectionImplementation: Closing master protocol: MasterService
+16/11/12 02:00:43 INFO client.ConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x15855553f3d0034
+16/11/12 02:00:43 INFO zookeeper.ClientCnxn: EventThread shut down
+16/11/12 02:00:43 INFO zookeeper.ZooKeeper: Session: 0x15855553f3d0034 closed
+16/11/12 02:00:43 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+16/11/12 02:00:48 INFO input.FileInputFormat: Total input paths to process : 1
+16/11/12 02:00:49 INFO mapreduce.JobSubmitter: number of splits:1
+16/11/12 02:00:50 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1478900462625_0003
+16/11/12 02:00:50 INFO impl.YarnClientImpl: Submitted application application_1478900462625_0003
+16/11/12 02:00:50 INFO mapreduce.Job: The url to track the job: http://quickstart.cloudera:8088/proxy/application_1478900462625_0003/
+16/11/12 02:00:50 INFO mapreduce.Job: Running job: job_1478900462625_0003
+16/11/12 02:01:10 INFO mapreduce.Job: Job job_1478900462625_0003 running in uber mode : false
+16/11/12 02:01:10 INFO mapreduce.Job:  map 0% reduce 0%
+16/11/12 02:01:34 INFO mapreduce.Job:  map 67% reduce 0%
+16/11/12 02:01:35 INFO mapreduce.Job:  map 100% reduce 0%
+16/11/12 02:01:58 INFO mapreduce.Job:  map 100% reduce 67%
+16/11/12 02:02:01 INFO mapreduce.Job:  map 100% reduce 72%
+16/11/12 02:02:04 INFO mapreduce.Job:  map 100% reduce 79%
+16/11/12 02:02:06 INFO mapreduce.Job:  map 100% reduce 100%
+16/11/12 02:02:07 INFO mapreduce.Job: Job job_1478900462625_0003 completed successfully
+16/11/12 02:02:08 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=15452070
+		FILE: Number of bytes written=31156505
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=4077864
+		HDFS: Number of bytes written=11414078
+		HDFS: Number of read operations=8
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=20595
+		Total time spent by all reduces in occupied slots (ms)=29245
+		Total time spent by all map tasks (ms)=20595
+		Total time spent by all reduce tasks (ms)=29245
+		Total vcore-seconds taken by all map tasks=20595
+		Total vcore-seconds taken by all reduce tasks=29245
+		Total megabyte-seconds taken by all map tasks=21089280
+		Total megabyte-seconds taken by all reduce tasks=29946880
+	Map-Reduce Framework
+		Map input records=321918
+		Map output records=321918
+		Map output bytes=14808228
+		Map output materialized bytes=15452070
+		Input split bytes=132
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=77897
+		Reduce shuffle bytes=15452070
+		Reduce input records=321918
+		Reduce output records=321918
+		Spilled Records=643836
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=414
+		CPU time spent (ms)=30850
+		Physical memory (bytes) snapshot=622014464
+		Virtual memory (bytes) snapshot=3139334144
+		Total committed heap usage (bytes)=606076928
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=4077732
+	File Output Format Counters 
+		Bytes Written=11414078
+2016-11-12 02:02:27,038 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x7d1f4fe connecting to ZooKeeper ensemble=localhost:2181
+2016-11-12 02:02:27,085 INFO  [main] zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.5-cdh5.8.0--1, built on 06/16/2016 19:37 GMT
+2016-11-12 02:02:27,086 INFO  [main] zookeeper.ZooKeeper: Client environment:host.name=quickstart.cloudera
+2016-11-12 02:02:27,086 INFO  [main] zookeeper.ZooKeeper: Client environment:java.version=1.7.0_67
+2016-11-12 02:02:27,086 INFO  [main] zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+2016-11-12 02:02:27,087 INFO  [main] zookeeper.ZooKeeper: Client environment:java.home=/usr/java/jdk1.7.0_67-cloudera/jre
+2016-11-12 02:02:27,087 INFO  [main] zookeeper.ZooKeeper: Client environment:java.class.path=/usr/lib/hbase/bin/../conf:/usr/java/jdk1.7.0_67-cloudera/lib/tools.jar:/usr/lib/hbase/bin/..:/usr/lib/hbase/bin/../lib/activation-1.1.jar:/usr/lib/hbase/bin/../lib/antisamy-1.4.3.jar:/usr/lib/hbase/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/usr/lib/hbase/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hbase/bin/../lib/api-asn1-api-1.0.0-M20.jar:/usr/lib/hbase/bin/../lib/api-util-1.0.0-M20.jar:/usr/lib/hbase/bin/../lib/asm-3.2.jar:/usr/lib/hbase/bin/../lib/avro.jar:/usr/lib/hbase/bin/../lib/aws-java-sdk-core-1.10.6.jar:/usr/lib/hbase/bin/../lib/aws-java-sdk-kms-1.10.6.jar:/usr/lib/hbase/bin/../lib/aws-java-sdk-s3-1.10.6.jar:/usr/lib/hbase/bin/../lib/batik-css-1.7.jar:/usr/lib/hbase/bin/../lib/batik-ext-1.7.jar:/usr/lib/hbase/bin/../lib/batik-util-1.7.jar:/usr/lib/hbase/bin/../lib/bsh-core-2.0b4.jar:/usr/lib/hbase/bin/../lib/commons-beanutils-1.7.0.jar:/usr/lib/hbase/bin/../lib/commons-beanutils-core-1.7.0.jar:/usr/lib/hbase/bin/../lib/commons-cli-1.2.jar:/usr/lib/hbase/bin/../lib/commons-codec-1.9.jar:/usr/lib/hbase/bin/../lib/commons-collections-3.2.2.jar:/usr/lib/hbase/bin/../lib/commons-compress-1.4.1.jar:/usr/lib/hbase/bin/../lib/commons-configuration-1.6.jar:/usr/lib/hbase/bin/../lib/commons-daemon-1.0.3.jar:/usr/lib/hbase/bin/../lib/commons-digester-1.8.jar:/usr/lib/hbase/bin/../lib/commons-el-1.0.jar:/usr/lib/hbase/bin/../lib/commons-fileupload-1.2.jar:/usr/lib/hbase/bin/../lib/commons-httpclient-3.1.jar:/usr/lib/hbase/bin/../lib/commons-io-2.4.jar:/usr/lib/hbase/bin/../lib/commons-lang-2.6.jar:/usr/lib/hbase/bin/../lib/commons-logging-1.2.jar:/usr/lib/hbase/bin/../lib/commons-math-2.1.jar:/usr/lib/hbase/bin/../lib/commons-math3-3.1.1.jar:/usr/lib/hbase/bin/../lib/commons-net-3.1.jar:/usr/lib/hbase/bin/../lib/core-3.1.1.jar:/usr/lib/hbase/bin/../lib/curator-client-2.7.1.jar:/usr/lib/hbase/bin/../lib/curator-framework-2.7.1.jar:/usr/lib/hbase/bin/../lib/curator-recipes-2.7.1.jar:/usr/lib/hbase/bin/../lib/disruptor-3.3.0.jar:/usr/lib/hbase/bin/../lib/esapi-2.1.0.jar:/usr/lib/hbase/bin/../lib/findbugs-annotations-1.3.9-1.jar:/usr/lib/hbase/bin/../lib/gson-2.2.4.jar:/usr/lib/hbase/bin/../lib/guava-12.0.1.jar:/usr/lib/hbase/bin/../lib/hamcrest-core-1.3.jar:/usr/lib/hbase/bin/../lib/hbase-annotations-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-annotations-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-client-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-common-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-common-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-examples-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-external-blockcache-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-hadoop2-compat-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-hadoop2-compat-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-hadoop-compat-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-hadoop-compat-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-it-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-it-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-prefix-tree-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-procedure-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-protocol-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-resource-bundle-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-rest-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-server-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-server-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-shell-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-spark-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-thrift-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/high-scale-lib-1.1.1.jar:/usr/lib/hbase/bin/../lib/hsqldb-1.8.0.10.jar:/usr/lib/hbase/bin/../lib/htrace-core-3.2.0-incubating.jar:/usr/lib/hbase/bin/../lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hbase/bin/../lib/htrace-core.jar:/usr/lib/hbase/bin/../lib/httpclient-4.2.5.jar:/usr/lib/hbase/bin/../lib/httpcore-4.2.5.jar:/usr/lib/hbase/bin/../lib/jackson-annotations-2.2.3.jar:/usr/lib/hbase/bin/../lib/jackson-core-2.2.3.jar:/usr/lib/hbase/bin/../lib/jackson-core-asl-1.8.8.jar:/usr/lib/hbase/bin/../lib/jackson-databind-2.2.3.jar:/usr/lib/hbase/bin/../lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hbase/bin/../lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hbase/bin/../lib/jackson-xc-1.8.8.jar:/usr/lib/hbase/bin/../lib/jamon-runtime-2.4.1.jar:/usr/lib/hbase/bin/../lib/jasper-compiler-5.5.23.jar:/usr/lib/hbase/bin/../lib/jasper-runtime-5.5.23.jar:/usr/lib/hbase/bin/../lib/java-xmlbuilder-0.4.jar:/usr/lib/hbase/bin/../lib/jaxb-api-2.1.jar:/usr/lib/hbase/bin/../lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hbase/bin/../lib/jcodings-1.0.8.jar:/usr/lib/hbase/bin/../lib/jersey-client-1.9.jar:/usr/lib/hbase/bin/../lib/jersey-core-1.9.jar:/usr/lib/hbase/bin/../lib/jersey-json-1.9.jar:/usr/lib/hbase/bin/../lib/jersey-server-1.9.jar:/usr/lib/hbase/bin/../lib/jets3t-0.9.0.jar:/usr/lib/hbase/bin/../lib/jettison-1.3.3.jar:/usr/lib/hbase/bin/../lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hbase/bin/../lib/jetty-sslengine-6.1.26.cloudera.4.jar:/usr/lib/hbase/bin/../lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hbase/bin/../lib/joni-2.1.2.jar:/usr/lib/hbase/bin/../lib/jruby-cloudera-1.0.0.jar:/usr/lib/hbase/bin/../lib/jsch-0.1.42.jar:/usr/lib/hbase/bin/../lib/jsp-2.1-6.1.14.jar:/usr/lib/hbase/bin/../lib/jsp-api-2.1-6.1.14.jar:/usr/lib/hbase/bin/../lib/jsp-api-2.1.jar:/usr/lib/hbase/bin/../lib/jsr305-1.3.9.jar:/usr/lib/hbase/bin/../lib/junit-4.12.jar:/usr/lib/hbase/bin/../lib/leveldbjni-all-1.8.jar:/usr/lib/hbase/bin/../lib/libthrift-0.9.3.jar:/usr/lib/hbase/bin/../lib/log4j-1.2.17.jar:/usr/lib/hbase/bin/../lib/metrics-core-2.2.0.jar:/usr/lib/hbase/bin/../lib/nekohtml-1.9.12.jar:/usr/lib/hbase/bin/../lib/netty-all-4.0.23.Final.jar:/usr/lib/hbase/bin/../lib/paranamer-2.3.jar:/usr/lib/hbase/bin/../lib/protobuf-java-2.5.0.jar:/usr/lib/hbase/bin/../lib/servlet-api-2.5-6.1.14.jar:/usr/lib/hbase/bin/../lib/servlet-api-2.5.jar:/usr/lib/hbase/bin/../lib/slf4j-api-1.7.5.jar:/usr/lib/hbase/bin/../lib/slf4j-log4j12.jar:/usr/lib/hbase/bin/../lib/snappy-java-1.0.4.1.jar:/usr/lib/hbase/bin/../lib/spymemcached-2.11.6.jar:/usr/lib/hbase/bin/../lib/xalan-2.7.0.jar:/usr/lib/hbase/bin/../lib/xercesImpl-2.9.1.jar:/usr/lib/hbase/bin/../lib/xml-apis-1.3.03.jar:/usr/lib/hbase/bin/../lib/xml-apis-ext-1.3.04.jar:/usr/lib/hbase/bin/../lib/xmlenc-0.52.jar:/usr/lib/hbase/bin/../lib/xom-1.2.5.jar:/usr/lib/hbase/bin/../lib/xz-1.0.jar:/usr/lib/hbase/bin/../lib/zookeeper.jar:/etc/hadoop/conf:/usr/lib/hadoop/lib/jsch-0.1.42.jar:/usr/lib/hadoop/lib/commons-collections-3.2.2.jar:/usr/lib/hadoop/lib/api-asn1-api-1.0.0-M20.jar:/usr/lib/hadoop/lib/apacheds-i18n-2.0.0-M15.jar:/usr/lib/hadoop/lib/guava-11.0.2.jar:/usr/lib/hadoop/lib/jaxb-api-2.2.2.jar:/usr/lib/hadoop/lib/commons-cli-1.2.jar:/usr/lib/hadoop/lib/activation-1.1.jar:/usr/lib/hadoop/lib/curator-framework-2.7.1.jar:/usr/lib/hadoop/lib/jersey-server-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-core-1.8.0.jar:/usr/lib/hadoop/lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop/lib/commons-lang-2.6.jar:/usr/lib/hadoop/lib/avro.jar:/usr/lib/hadoop/lib/commons-httpclient-3.1.jar:/usr/lib/hadoop/lib/jersey-core-1.9.jar:/usr/lib/hadoop/lib/commons-codec-1.4.jar:/usr/lib/hadoop/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hadoop/lib/commons-el-1.0.jar:/usr/lib/hadoop/lib/junit-4.11.jar:/usr/lib/hadoop/lib/jersey-json-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-1.7.0.jar:/usr/lib/hadoop/lib/commons-digester-1.8.jar:/usr/lib/hadoop/lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop/lib/jettison-1.1.jar:/usr/lib/hadoop/lib/xz-1.0.jar:/usr/lib/hadoop/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop/lib/snappy-java-1.0.4.1.jar:/usr/lib/hadoop/lib/commons-math3-3.1.1.jar:/usr/lib/hadoop/lib/aws-java-sdk-s3-1.10.6.jar:/usr/lib/hadoop/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop/lib/paranamer-2.3.jar:/usr/lib/hadoop/lib/jsr305-3.0.0.jar:/usr/lib/hadoop/lib/api-util-1.0.0-M20.jar:/usr/lib/hadoop/lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop/lib/aws-java-sdk-core-1.10.6.jar:/usr/lib/hadoop/lib/logredactor-1.0.3.jar:/usr/lib/hadoop/lib/curator-recipes-2.7.1.jar:/usr/lib/hadoop/lib/java-xmlbuilder-0.4.jar:/usr/lib/hadoop/lib/hamcrest-core-1.3.jar:/usr/lib/hadoop/lib/asm-3.2.jar:/usr/lib/hadoop/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/httpcore-4.2.5.jar:/usr/lib/hadoop/lib/httpclient-4.2.5.jar:/usr/lib/hadoop/lib/curator-client-2.7.1.jar:/usr/lib/hadoop/lib/jasper-compiler-5.5.23.jar:/usr/lib/hadoop/lib/jets3t-0.9.0.jar:/usr/lib/hadoop/lib/hue-plugins-3.9.0-cdh5.8.0.jar:/usr/lib/hadoop/lib/commons-net-3.1.jar:/usr/lib/hadoop/lib/stax-api-1.0-2.jar:/usr/lib/hadoop/lib/jsp-api-2.1.jar:/usr/lib/hadoop/lib/commons-io-2.4.jar:/usr/lib/hadoop/lib/servlet-api-2.5.jar:/usr/lib/hadoop/lib/slf4j-api-1.7.5.jar:/usr/lib/hadoop/lib/gson-2.2.4.jar:/usr/lib/hadoop/lib/xmlenc-0.52.jar:/usr/lib/hadoop/lib/slf4j-log4j12.jar:/usr/lib/hadoop/lib/aws-java-sdk-kms-1.10.6.jar:/usr/lib/hadoop/lib/jackson-xc-1.8.8.jar:/usr/lib/hadoop/lib/jasper-runtime-5.5.23.jar:/usr/lib/hadoop/lib/commons-configuration-1.6.jar:/usr/lib/hadoop/lib/log4j-1.2.17.jar:/usr/lib/hadoop/lib/zookeeper.jar:/usr/lib/hadoop/lib/mockito-all-1.8.5.jar:/usr/lib/hadoop/.//parquet-tools.jar:/usr/lib/hadoop/.//parquet-hadoop-bundle.jar:/usr/lib/hadoop/.//parquet-format-javadoc.jar:/usr/lib/hadoop/.//parquet-avro.jar:/usr/lib/hadoop/.//parquet-pig.jar:/usr/lib/hadoop/.//hadoop-nfs.jar:/usr/lib/hadoop/.//parquet-pig-bundle.jar:/usr/lib/hadoop/.//parquet-column.jar:/usr/lib/hadoop/.//hadoop-common.jar:/usr/lib/hadoop/.//hadoop-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-format-sources.jar:/usr/lib/hadoop/.//hadoop-aws-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//hadoop-auth-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-protobuf.jar:/usr/lib/hadoop/.//hadoop-common-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop/.//hadoop-annotations-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-scrooge_2.10.jar:/usr/lib/hadoop/.//parquet-generator.jar:/usr/lib/hadoop/.//hadoop-common-tests.jar:/usr/lib/hadoop/.//parquet-common.jar:/usr/lib/hadoop/.//hadoop-aws.jar:/usr/lib/hadoop/.//parquet-test-hadoop2.jar:/usr/lib/hadoop/.//parquet-scala_2.10.jar:/usr/lib/hadoop/.//hadoop-nfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-jackson.jar:/usr/lib/hadoop/.//hadoop-auth.jar:/usr/lib/hadoop/.//parquet-encoding.jar:/usr/lib/hadoop/.//parquet-format.jar:/usr/lib/hadoop/.//parquet-cascading.jar:/usr/lib/hadoop/.//parquet-hadoop.jar:/usr/lib/hadoop/.//hadoop-annotations.jar:/usr/lib/hadoop/.//parquet-thrift.jar:/usr/lib/hadoop-hdfs/./:/usr/lib/hadoop-hdfs/lib/guava-11.0.2.jar:/usr/lib/hadoop-hdfs/lib/commons-cli-1.2.jar:/usr/lib/hadoop-hdfs/lib/xercesImpl-2.9.1.jar:/usr/lib/hadoop-hdfs/lib/jersey-server-1.9.jar:/usr/lib/hadoop-hdfs/lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop-hdfs/lib/xml-apis-1.3.04.jar:/usr/lib/hadoop-hdfs/lib/commons-lang-2.6.jar:/usr/lib/hadoop-hdfs/lib/jersey-core-1.9.jar:/usr/lib/hadoop-hdfs/lib/commons-codec-1.4.jar:/usr/lib/hadoop-hdfs/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-hdfs/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-hdfs/lib/commons-el-1.0.jar:/usr/lib/hadoop-hdfs/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop-hdfs/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop-hdfs/lib/jsr305-3.0.0.jar:/usr/lib/hadoop-hdfs/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-hdfs/lib/commons-daemon-1.0.13.jar:/usr/lib/hadoop-hdfs/lib/asm-3.2.jar:/usr/lib/hadoop-hdfs/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-hdfs/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-hdfs/lib/jsp-api-2.1.jar:/usr/lib/hadoop-hdfs/lib/commons-io-2.4.jar:/usr/lib/hadoop-hdfs/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-hdfs/lib/servlet-api-2.5.jar:/usr/lib/hadoop-hdfs/lib/xmlenc-0.52.jar:/usr/lib/hadoop-hdfs/lib/jasper-runtime-5.5.23.jar:/usr/lib/hadoop-hdfs/lib/log4j-1.2.17.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-tests.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-nfs.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-nfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs.jar:/usr/lib/hadoop-yarn/lib/commons-collections-3.2.2.jar:/usr/lib/hadoop-yarn/lib/guava-11.0.2.jar:/usr/lib/hadoop-yarn/lib/jaxb-api-2.2.2.jar:/usr/lib/hadoop-yarn/lib/commons-cli-1.2.jar:/usr/lib/hadoop-yarn/lib/activation-1.1.jar:/usr/lib/hadoop-yarn/lib/jersey-server-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-lang-2.6.jar:/usr/lib/hadoop-yarn/lib/jersey-core-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-codec-1.4.jar:/usr/lib/hadoop-yarn/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop-yarn/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-yarn/lib/guice-servlet-3.0.jar:/usr/lib/hadoop-yarn/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-yarn/lib/jersey-json-1.9.jar:/usr/lib/hadoop-yarn/lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop-yarn/lib/jline-2.11.jar:/usr/lib/hadoop-yarn/lib/jettison-1.1.jar:/usr/lib/hadoop-yarn/lib/xz-1.0.jar:/usr/lib/hadoop-yarn/lib/spark-1.6.0-cdh5.8.0-yarn-shuffle.jar:/usr/lib/hadoop-yarn/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop-yarn/lib/jsr305-3.0.0.jar:/usr/lib/hadoop-yarn/lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop-yarn/lib/guice-3.0.jar:/usr/lib/hadoop-yarn/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-yarn/lib/asm-3.2.jar:/usr/lib/hadoop-yarn/lib/spark-yarn-shuffle.jar:/usr/lib/hadoop-yarn/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-yarn/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-yarn/lib/aopalliance-1.0.jar:/usr/lib/hadoop-yarn/lib/javax.inject-1.jar:/usr/lib/hadoop-yarn/lib/stax-api-1.0-2.jar:/usr/lib/hadoop-yarn/lib/jersey-client-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-io-2.4.jar:/usr/lib/hadoop-yarn/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-yarn/lib/jersey-guice-1.9.jar:/usr/lib/hadoop-yarn/lib/servlet-api-2.5.jar:/usr/lib/hadoop-yarn/lib/jackson-xc-1.8.8.jar:/usr/lib/hadoop-yarn/lib/log4j-1.2.17.jar:/usr/lib/hadoop-yarn/lib/zookeeper.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-client-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-unmanaged-am-launcher.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-nodemanager-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-nodemanager.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-common.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-api.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-registry.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-unmanaged-am-launcher-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-api-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-distributedshell-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-web-proxy-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-applicationhistoryservice.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-tests.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-distributedshell.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-common.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-resourcemanager-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-web-proxy.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-registry-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-tests-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-client.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-applicationhistoryservice-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-resourcemanager.jar:/usr/lib/hadoop-mapreduce/lib/jersey-server-1.9.jar:/usr/lib/hadoop-mapreduce/lib/avro.jar:/usr/lib/hadoop-mapreduce/lib/jersey-core-1.9.jar:/usr/lib/hadoop-mapreduce/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop-mapreduce/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-mapreduce/lib/guice-servlet-3.0.jar:/usr/lib/hadoop-mapreduce/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-mapreduce/lib/junit-4.11.jar:/usr/lib/hadoop-mapreduce/lib/xz-1.0.jar:/usr/lib/hadoop-mapreduce/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop-mapreduce/lib/snappy-java-1.0.4.1.jar:/usr/lib/hadoop-mapreduce/lib/paranamer-2.3.jar:/usr/lib/hadoop-mapreduce/lib/guice-3.0.jar:/usr/lib/hadoop-mapreduce/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/lib/hamcrest-core-1.3.jar:/usr/lib/hadoop-mapreduce/lib/asm-3.2.jar:/usr/lib/hadoop-mapreduce/lib/aopalliance-1.0.jar:/usr/lib/hadoop-mapreduce/lib/javax.inject-1.jar:/usr/lib/hadoop-mapreduce/lib/commons-io-2.4.jar:/usr/lib/hadoop-mapreduce/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/lib/jersey-guice-1.9.jar:/usr/lib/hadoop-mapreduce/lib/log4j-1.2.17.jar:/usr/lib/hadoop-mapreduce/.//jsch-0.1.42.jar:/usr/lib/hadoop-mapreduce/.//hadoop-distcp-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-collections-3.2.2.jar:/usr/lib/hadoop-mapreduce/.//api-asn1-api-1.0.0-M20.jar:/usr/lib/hadoop-mapreduce/.//apacheds-i18n-2.0.0-M15.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//guava-11.0.2.jar:/usr/lib/hadoop-mapreduce/.//jaxb-api-2.2.2.jar:/usr/lib/hadoop-mapreduce/.//jackson-annotations-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-app-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jackson-core-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-distcp.jar:/usr/lib/hadoop-mapreduce/.//commons-cli-1.2.jar:/usr/lib/hadoop-mapreduce/.//activation-1.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-datajoin.jar:/usr/lib/hadoop-mapreduce/.//curator-framework-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-openstack-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jersey-server-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-beanutils-core-1.8.0.jar:/usr/lib/hadoop-mapreduce/.//htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop-mapreduce/.//commons-lang-2.6.jar:/usr/lib/hadoop-mapreduce/.//avro.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs.jar:/usr/lib/hadoop-mapreduce/.//commons-httpclient-3.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-gridmix-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jersey-core-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-codec-1.4.jar:/usr/lib/hadoop-mapreduce/.//commons-compress-1.4.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-plugins-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//protobuf-java-2.5.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-ant-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hadoop-mapreduce/.//commons-el-1.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-tests.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//junit-4.11.jar:/usr/lib/hadoop-mapreduce/.//jersey-json-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-beanutils-1.7.0.jar:/usr/lib/hadoop-mapreduce/.//commons-digester-1.8.jar:/usr/lib/hadoop-mapreduce/.//metrics-core-3.0.2.jar:/usr/lib/hadoop-mapreduce/.//jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//hadoop-azure.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-common.jar:/usr/lib/hadoop-mapreduce/.//jettison-1.1.jar:/usr/lib/hadoop-mapreduce/.//xz-1.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-datajoin-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//snappy-java-1.0.4.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-extras-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-core-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-math3-3.1.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-extras.jar:/usr/lib/hadoop-mapreduce/.//hadoop-streaming-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-openstack.jar:/usr/lib/hadoop-mapreduce/.//hadoop-auth-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-logging-1.1.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-rumen-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//paranamer-2.3.jar:/usr/lib/hadoop-mapreduce/.//jsr305-3.0.0.jar:/usr/lib/hadoop-mapreduce/.//api-util-1.0.0-M20.jar:/usr/lib/hadoop-mapreduce/.//jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archives-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archives.jar:/usr/lib/hadoop-mapreduce/.//jackson-databind-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-core.jar:/usr/lib/hadoop-mapreduce/.//curator-recipes-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//java-xmlbuilder-0.4.jar:/usr/lib/hadoop-mapreduce/.//hamcrest-core-1.3.jar:/usr/lib/hadoop-mapreduce/.//asm-3.2.jar:/usr/lib/hadoop-mapreduce/.//hadoop-rumen.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-nativetask.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-nativetask-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-mapreduce/.//jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-mapreduce/.//hadoop-azure-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//httpcore-4.2.5.jar:/usr/lib/hadoop-mapreduce/.//httpclient-4.2.5.jar:/usr/lib/hadoop-mapreduce/.//curator-client-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop-mapreduce/.//jasper-compiler-5.5.23.jar:/usr/lib/hadoop-mapreduce/.//jets3t-0.9.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-examples.jar:/usr/lib/hadoop-mapreduce/.//commons-net-3.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-app.jar:/usr/lib/hadoop-mapreduce/.//hadoop-sls.jar:/usr/lib/hadoop-mapreduce/.//hadoop-gridmix.jar:/usr/lib/hadoop-mapreduce/.//stax-api-1.0-2.jar:/usr/lib/hadoop-mapreduce/.//jsp-api-2.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-examples-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archive-logs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-plugins.jar:/usr/lib/hadoop-mapreduce/.//commons-io-2.4.jar:/usr/lib/hadoop-mapreduce/.//jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//servlet-api-2.5.jar:/usr/lib/hadoop-mapreduce/.//hadoop-sls-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//gson-2.2.4.jar:/usr/lib/hadoop-mapreduce/.//xmlenc-0.52.jar:/usr/lib/hadoop-mapreduce/.//hadoop-auth.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-shuffle-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-shuffle.jar:/usr/lib/hadoop-mapreduce/.//jackson-xc-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//microsoft-windowsazure-storage-sdk-0.6.0.jar:/usr/lib/hadoop-mapreduce/.//jasper-runtime-5.5.23.jar:/usr/lib/hadoop-mapreduce/.//hadoop-streaming.jar:/usr/lib/hadoop-mapreduce/.//commons-configuration-1.6.jar:/usr/lib/hadoop-mapreduce/.//log4j-1.2.17.jar:/usr/lib/hadoop-mapreduce/.//hadoop-ant.jar:/usr/lib/hadoop-mapreduce/.//zookeeper.jar:/usr/lib/hadoop-mapreduce/.//mockito-all-1.8.5.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archive-logs.jar:/etc/hadoop/conf:/usr/lib/hadoop/parquet-tools.jar:/usr/lib/hadoop/parquet-hadoop-bundle.jar:/usr/lib/hadoop/parquet-format-javadoc.jar:/usr/lib/hadoop/parquet-avro.jar:/usr/lib/hadoop/parquet-pig.jar:/usr/lib/hadoop/hadoop-nfs.jar:/usr/lib/hadoop/parquet-pig-bundle.jar:/usr/lib/hadoop/parquet-column.jar:/usr/lib/hadoop/hadoop-common.jar:/usr/lib/hadoop/hadoop-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/parquet-format-sources.jar:/usr/lib/hadoop/hadoop-aws-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/hadoop-auth-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/parquet-protobuf.jar:/usr/lib/hadoop/hadoop-common-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop/hadoop-annotations-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/parquet-scrooge_2.10.jar:/usr/lib/hadoop/parquet-generator.jar:/usr/lib/hadoop/hadoop-common-tests.jar:/usr/lib/hadoop/parquet-common.jar:/usr/lib/hadoop/hadoop-aws.jar:/usr/lib/hadoop/parquet-test-hadoop2.jar:/usr/lib/hadoop/parquet-scala_2.10.jar:/usr/lib/hadoop/hadoop-nfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/parquet-jackson.jar:/usr/lib/hadoop/hadoop-auth.jar:/usr/lib/hadoop/parquet-encoding.jar:/usr/lib/hadoop/parquet-format.jar:/usr/lib/hadoop/parquet-cascading.jar:/usr/lib/hadoop/parquet-hadoop.jar:/usr/lib/hadoop/hadoop-annotations.jar:/usr/lib/hadoop/parquet-thrift.jar:/usr/lib/hadoop/lib/jsch-0.1.42.jar:/usr/lib/hadoop/lib/commons-collections-3.2.2.jar:/usr/lib/hadoop/lib/api-asn1-api-1.0.0-M20.jar:/usr/lib/hadoop/lib/apacheds-i18n-2.0.0-M15.jar:/usr/lib/hadoop/lib/guava-11.0.2.jar:/usr/lib/hadoop/lib/jaxb-api-2.2.2.jar:/usr/lib/hadoop/lib/commons-cli-1.2.jar:/usr/lib/hadoop/lib/activation-1.1.jar:/usr/lib/hadoop/lib/curator-framework-2.7.1.jar:/usr/lib/hadoop/lib/jersey-server-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-core-1.8.0.jar:/usr/lib/hadoop/lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop/lib/commons-lang-2.6.jar:/usr/lib/hadoop/lib/avro.jar:/usr/lib/hadoop/lib/commons-httpclient-3.1.jar:/usr/lib/hadoop/lib/jersey-core-1.9.jar:/usr/lib/hadoop/lib/commons-codec-1.4.jar:/usr/lib/hadoop/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hadoop/lib/commons-el-1.0.jar:/usr/lib/hadoop/lib/junit-4.11.jar:/usr/lib/hadoop/lib/jersey-json-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-1.7.0.jar:/usr/lib/hadoop/lib/commons-digester-1.8.jar:/usr/lib/hadoop/lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop/lib/jettison-1.1.jar:/usr/lib/hadoop/lib/xz-1.0.jar:/usr/lib/hadoop/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop/lib/snappy-java-1.0.4.1.jar:/usr/lib/hadoop/lib/commons-math3-3.1.1.jar:/usr/lib/hadoop/lib/aws-java-sdk-s3-1.10.6.jar:/usr/lib/hadoop/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop/lib/paranamer-2.3.jar:/usr/lib/hadoop/lib/jsr305-3.0.0.jar:/usr/lib/hadoop/lib/api-util-1.0.0-M20.jar:/usr/lib/hadoop/lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop/lib/aws-java-sdk-core-1.10.6.jar:/usr/lib/hadoop/lib/logredactor-1.0.3.jar:/usr/lib/hadoop/lib/curator-recipes-2.7.1.jar:/usr/lib/hadoop/lib/java-xmlbuilder-0.4.jar:/usr/lib/hadoop/lib/hamcrest-core-1.3.jar:/usr/lib/hadoop/lib/asm-3.2.jar:/usr/lib/hadoop/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/httpcore-4.2.5.jar:/usr/lib/hadoop/lib/httpclient-4.2.5.jar:/usr/lib/hadoop/lib/curator-client-2.7.1.jar:/usr/lib/hadoop/lib/jasper-compiler-5.5.23.jar:/usr/lib/hadoop/lib/jets3t-0.9.0.jar:/usr/lib/hadoop/lib/hue-plugins-3.9.0-cdh5.8.0.jar:/usr/lib/hadoop/lib/commons-net-3.1.jar:/usr/lib/hadoop/lib/stax-api-1.0-2.jar:/usr/lib/hadoop/lib/jsp-api-2.1.jar:/usr/lib/hadoop/lib/commons-io-2.4.jar:/usr/lib/hadoop/lib/servlet-api-2.5.jar:/usr/lib/hadoop/lib/slf4j-api-1.7.5.jar:/usr/lib/hadoop/lib/gson-2.2.4.jar:/usr/lib/hadoop/lib/xmlenc-0.52.jar:/usr/lib/hadoop/lib/slf4j-log4j12.jar:/usr/lib/hadoop/lib/aws-java-sdk-kms-1.10.6.jar:/usr/lib/hadoop/lib/jackson-xc-1.8.8.jar:/usr/lib/hadoop/lib/jasper-runtime-5.5.23.jar:/usr/lib/hadoop/lib/commons-configuration-1.6.jar:/usr/lib/hadoop/lib/log4j-1.2.17.jar:/usr/lib/hadoop/lib/zookeeper.jar:/usr/lib/hadoop/lib/mockito-all-1.8.5.jar:/usr/lib/zookeeper/zookeeper-3.4.5-cdh5.8.0.jar:/usr/lib/zookeeper/zookeeper.jar:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar:/usr/lib/zookeeper/lib/jline-2.11.jar:/usr/lib/zookeeper/lib/netty-3.10.5.Final.jar:/usr/lib/zookeeper/lib/log4j-1.2.16.jar:/usr/lib/zookeeper/lib/slf4j-api-1.7.5.jar:/usr/lib/zookeeper/lib/slf4j-log4j12.jar:
+2016-11-12 02:02:27,091 INFO  [main] zookeeper.ZooKeeper: Client environment:java.library.path=/usr/lib/hadoop/lib/native:/usr/lib/hbase/bin/../lib/native/Linux-amd64-64
+2016-11-12 02:02:27,091 INFO  [main] zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2016-11-12 02:02:27,091 INFO  [main] zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2016-11-12 02:02:27,091 INFO  [main] zookeeper.ZooKeeper: Client environment:os.name=Linux
+2016-11-12 02:02:27,094 INFO  [main] zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2016-11-12 02:02:27,095 INFO  [main] zookeeper.ZooKeeper: Client environment:os.version=2.6.32-573.el6.x86_64
+2016-11-12 02:02:27,095 INFO  [main] zookeeper.ZooKeeper: Client environment:user.name=cloudera
+2016-11-12 02:02:27,096 INFO  [main] zookeeper.ZooKeeper: Client environment:user.home=/home/cloudera
+2016-11-12 02:02:27,097 INFO  [main] zookeeper.ZooKeeper: Client environment:user.dir=/home/cloudera/projs/mag-oboi-c1021-hbase
+2016-11-12 02:02:27,105 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=90000 watcher=hconnection-0x7d1f4fe0x0, quorum=localhost:2181, baseZNode=/hbase
+2016-11-12 02:02:27,241 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-12 02:02:27,297 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:56880, server: localhost/127.0.0.1:2181
+2016-11-12 02:02:27,356 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x15855553f3d0035, negotiated timeout = 40000
+2016-11-12 02:02:31,473 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x3fe455f connecting to ZooKeeper ensemble=localhost:2181
+2016-11-12 02:02:31,474 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=90000 watcher=hconnection-0x3fe455f0x0, quorum=localhost:2181, baseZNode=/hbase
+2016-11-12 02:02:31,477 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-12 02:02:31,479 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:56882, server: localhost/127.0.0.1:2181
+2016-11-12 02:02:31,483 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x15855553f3d0036, negotiated timeout = 40000
+2016-11-12 02:02:31,833 WARN  [main] mapreduce.LoadIncrementalHFiles: Skipping non-directory hdfs://quickstart.cloudera:8020/user/cloudera/kaganovich-graph-1-hfiles/_SUCCESS
+2016-11-12 02:02:31,975 INFO  [main] Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+2016-11-12 02:02:33,039 INFO  [LoadIncrementalHFiles-0] hfile.CacheConfig: CacheConfig:disabled
+2016-11-12 02:02:33,336 INFO  [LoadIncrementalHFiles-0] mapreduce.LoadIncrementalHFiles: Trying to load hfile=hdfs://quickstart.cloudera:8020/user/cloudera/kaganovich-graph-1-hfiles/al/f095189249c740159693ee9fdaa6acfb first=\x00\x00\x00\x01 last=\x00\x01T\xE9
+2016-11-12 02:02:33,584 INFO  [main] client.ConnectionManager$HConnectionImplementation: Closing master protocol: MasterService
+2016-11-12 02:02:33,585 INFO  [main] client.ConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x15855553f3d0036
+2016-11-12 02:02:33,588 INFO  [main] zookeeper.ZooKeeper: Session: 0x15855553f3d0036 closed
+2016-11-12 02:02:33,589 INFO  [main-EventThread] zookeeper.ClientCnxn: EventThread shut down
+Deleted /user/cloudera/kaganovich-graph-1-hfiles
+Deleted /user/cse6242/kaganovich-graph-1.tsv
+Graph1: fetching stats...
+2016-11-12 02:03:01,162 INFO  [main] Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+HBase Shell; enter 'help<RETURN>' for list of supported commands.
+Type "exit<RETURN>" to leave the HBase Shell
+Version 1.2.0-cdh5.8.0, rUnknown, Thu Jun 16 12:46:57 PDT 2016
+
+count 'kaganovich-graph-1'
+Current count: 1000, row: \x00\x00\x04\x00
+Current count: 2000, row: \x00\x00\x08\x0B
+Current count: 3000, row: \x00\x00\x0C2
+Current count: 4000, row: \x00\x00\x10&
+Current count: 5000, row: \x00\x00\x14+
+Current count: 6000, row: \x00\x00\x18=
+Current count: 7000, row: \x00\x00\x1CL
+Current count: 8000, row: \x00\x00 \x92
+Current count: 9000, row: \x00\x00$\x93
+Current count: 10000, row: \x00\x00(\x96
+Current count: 11000, row: \x00\x00,\xA3
+Current count: 12000, row: \x00\x001?
+Current count: 13000, row: \x00\x005\xC2
+Current count: 14000, row: \x00\x00:\x5C
+Current count: 15000, row: \x00\x00B\xD0
+Current count: 16000, row: \x00\x00F\xEA
+Current count: 17000, row: \x00\x00J\xF1
+Current count: 18000, row: \x00\x00P\x0C
+Current count: 19000, row: \x00\x00T\x18
+Current count: 20000, row: \x00\x00XT
+Current count: 21000, row: \x00\x00\x5CU
+Current count: 22000, row: \x00\x00`s
+Current count: 23000, row: \x00\x00d\x84
+Current count: 24000, row: \x00\x00h\xA1
+Current count: 25000, row: \x00\x00l\xCB
+Current count: 26000, row: \x00\x00q\x0C
+Current count: 27000, row: \x00\x00ub
+Current count: 28000, row: \x00\x00y\x89
+Current count: 29000, row: \x00\x00~\xDC
+Current count: 30000, row: \x00\x00\x83\x88
+Current count: 31000, row: \x00\x00\x87\x88
+Current count: 32000, row: \x00\x00\x8B\xB2
+Current count: 33000, row: \x00\x00\x8F\xDE
+Current count: 34000, row: \x00\x00\x94m
+Current count: 35000, row: \x00\x00\x98\xAF
+Current count: 36000, row: \x00\x00\x9D/
+Current count: 37000, row: \x00\x00\xA1\xB2
+Current count: 38000, row: \x00\x00\xA64
+Current count: 39000, row: \x00\x00\xAA\x89
+Current count: 40000, row: \x00\x00\xAE\xC4
+Current count: 41000, row: \x00\x00\xB3T
+Current count: 42000, row: \x00\x00\xB7\xB2
+Current count: 43000, row: \x00\x00\xBC\x06
+Current count: 44000, row: \x00\x00\xC0\x0F
+Current count: 45000, row: \x00\x00\xC45
+Current count: 46000, row: \x00\x00\xC8X
+Current count: 47000, row: \x00\x00\xCC\x8D
+Current count: 48000, row: \x00\x00\xD0\xDA
+Current count: 49000, row: \x00\x00\xD4\xEE
+Current count: 50000, row: \x00\x00\xD8\xF4
+Current count: 51000, row: \x00\x00\xDDn
+Current count: 52000, row: \x00\x00\xE2\xCC
+Current count: 53000, row: \x00\x00\xE7_
+Current count: 54000, row: \x00\x00\xEB\xAD
+Current count: 55000, row: \x00\x00\xEF\xD4
+Current count: 56000, row: \x00\x00\xF3\xFF
+Current count: 57000, row: \x00\x00\xF8>
+Current count: 58000, row: \x00\x00\xFC\xF1
+Current count: 59000, row: \x00\x01\x01\xA4
+Current count: 60000, row: \x00\x01\x05\xD5
+Current count: 61000, row: \x00\x01\x0A]
+Current count: 62000, row: \x00\x01\x0E\xF1
+Current count: 63000, row: \x00\x01\x13\xA6
+Current count: 64000, row: \x00\x01\x18\x06
+Current count: 65000, row: \x00\x01\x1B\xF8
+Current count: 66000, row: \x00\x01 \x13
+Current count: 67000, row: \x00\x01$\xDA
+Current count: 68000, row: \x00\x01)D
+Current count: 69000, row: \x00\x01-\x9B
+Current count: 70000, row: \x00\x011\xCC
+Current count: 71000, row: \x00\x0165
+Current count: 72000, row: \x00\x01:\x80
+Current count: 73000, row: \x00\x01>\xBD
+Current count: 74000, row: \x00\x01CA
+Current count: 75000, row: \x00\x01Hs
+Current count: 76000, row: \x00\x01L\xFD
+Current count: 77000, row: \x00\x01Q'
+77897 row(s) in 22.0700 seconds
+
+77897
+Graph1: 77897 records were created
+Graph2: importing...
+16/11/12 02:04:54 INFO zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x1ac7352a connecting to ZooKeeper ensemble=localhost:2181
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.5-cdh5.8.0--1, built on 06/16/2016 19:37 GMT
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:host.name=quickstart.cloudera
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:java.version=1.7.0_67
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:java.home=/usr/java/jdk1.7.0_67-cloudera/jre
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:java.class.path=/etc/hadoop/conf:/usr/lib/hadoop/lib/jsch-0.1.42.jar:/usr/lib/hadoop/lib/commons-collections-3.2.2.jar:/usr/lib/hadoop/lib/api-asn1-api-1.0.0-M20.jar:/usr/lib/hadoop/lib/apacheds-i18n-2.0.0-M15.jar:/usr/lib/hadoop/lib/guava-11.0.2.jar:/usr/lib/hadoop/lib/jaxb-api-2.2.2.jar:/usr/lib/hadoop/lib/commons-cli-1.2.jar:/usr/lib/hadoop/lib/activation-1.1.jar:/usr/lib/hadoop/lib/curator-framework-2.7.1.jar:/usr/lib/hadoop/lib/jersey-server-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-core-1.8.0.jar:/usr/lib/hadoop/lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop/lib/commons-lang-2.6.jar:/usr/lib/hadoop/lib/avro.jar:/usr/lib/hadoop/lib/commons-httpclient-3.1.jar:/usr/lib/hadoop/lib/jersey-core-1.9.jar:/usr/lib/hadoop/lib/commons-codec-1.4.jar:/usr/lib/hadoop/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hadoop/lib/commons-el-1.0.jar:/usr/lib/hadoop/lib/junit-4.11.jar:/usr/lib/hadoop/lib/jersey-json-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-1.7.0.jar:/usr/lib/hadoop/lib/commons-digester-1.8.jar:/usr/lib/hadoop/lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop/lib/jettison-1.1.jar:/usr/lib/hadoop/lib/xz-1.0.jar:/usr/lib/hadoop/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop/lib/snappy-java-1.0.4.1.jar:/usr/lib/hadoop/lib/commons-math3-3.1.1.jar:/usr/lib/hadoop/lib/aws-java-sdk-s3-1.10.6.jar:/usr/lib/hadoop/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop/lib/paranamer-2.3.jar:/usr/lib/hadoop/lib/jsr305-3.0.0.jar:/usr/lib/hadoop/lib/api-util-1.0.0-M20.jar:/usr/lib/hadoop/lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop/lib/aws-java-sdk-core-1.10.6.jar:/usr/lib/hadoop/lib/logredactor-1.0.3.jar:/usr/lib/hadoop/lib/curator-recipes-2.7.1.jar:/usr/lib/hadoop/lib/java-xmlbuilder-0.4.jar:/usr/lib/hadoop/lib/hamcrest-core-1.3.jar:/usr/lib/hadoop/lib/asm-3.2.jar:/usr/lib/hadoop/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/httpcore-4.2.5.jar:/usr/lib/hadoop/lib/httpclient-4.2.5.jar:/usr/lib/hadoop/lib/curator-client-2.7.1.jar:/usr/lib/hadoop/lib/jasper-compiler-5.5.23.jar:/usr/lib/hadoop/lib/jets3t-0.9.0.jar:/usr/lib/hadoop/lib/hue-plugins-3.9.0-cdh5.8.0.jar:/usr/lib/hadoop/lib/commons-net-3.1.jar:/usr/lib/hadoop/lib/stax-api-1.0-2.jar:/usr/lib/hadoop/lib/jsp-api-2.1.jar:/usr/lib/hadoop/lib/commons-io-2.4.jar:/usr/lib/hadoop/lib/servlet-api-2.5.jar:/usr/lib/hadoop/lib/slf4j-api-1.7.5.jar:/usr/lib/hadoop/lib/gson-2.2.4.jar:/usr/lib/hadoop/lib/xmlenc-0.52.jar:/usr/lib/hadoop/lib/slf4j-log4j12.jar:/usr/lib/hadoop/lib/aws-java-sdk-kms-1.10.6.jar:/usr/lib/hadoop/lib/jackson-xc-1.8.8.jar:/usr/lib/hadoop/lib/jasper-runtime-5.5.23.jar:/usr/lib/hadoop/lib/commons-configuration-1.6.jar:/usr/lib/hadoop/lib/log4j-1.2.17.jar:/usr/lib/hadoop/lib/zookeeper.jar:/usr/lib/hadoop/lib/mockito-all-1.8.5.jar:/usr/lib/hadoop/.//parquet-tools.jar:/usr/lib/hadoop/.//parquet-hadoop-bundle.jar:/usr/lib/hadoop/.//parquet-format-javadoc.jar:/usr/lib/hadoop/.//parquet-avro.jar:/usr/lib/hadoop/.//parquet-pig.jar:/usr/lib/hadoop/.//hadoop-nfs.jar:/usr/lib/hadoop/.//parquet-pig-bundle.jar:/usr/lib/hadoop/.//parquet-column.jar:/usr/lib/hadoop/.//hadoop-common.jar:/usr/lib/hadoop/.//hadoop-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-format-sources.jar:/usr/lib/hadoop/.//hadoop-aws-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//hadoop-auth-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-protobuf.jar:/usr/lib/hadoop/.//hadoop-common-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop/.//hadoop-annotations-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-scrooge_2.10.jar:/usr/lib/hadoop/.//parquet-generator.jar:/usr/lib/hadoop/.//hadoop-common-tests.jar:/usr/lib/hadoop/.//parquet-common.jar:/usr/lib/hadoop/.//hadoop-aws.jar:/usr/lib/hadoop/.//parquet-test-hadoop2.jar:/usr/lib/hadoop/.//parquet-scala_2.10.jar:/usr/lib/hadoop/.//hadoop-nfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-jackson.jar:/usr/lib/hadoop/.//hadoop-auth.jar:/usr/lib/hadoop/.//parquet-encoding.jar:/usr/lib/hadoop/.//parquet-format.jar:/usr/lib/hadoop/.//parquet-cascading.jar:/usr/lib/hadoop/.//parquet-hadoop.jar:/usr/lib/hadoop/.//hadoop-annotations.jar:/usr/lib/hadoop/.//parquet-thrift.jar:/usr/lib/hadoop-hdfs/./:/usr/lib/hadoop-hdfs/lib/guava-11.0.2.jar:/usr/lib/hadoop-hdfs/lib/commons-cli-1.2.jar:/usr/lib/hadoop-hdfs/lib/xercesImpl-2.9.1.jar:/usr/lib/hadoop-hdfs/lib/jersey-server-1.9.jar:/usr/lib/hadoop-hdfs/lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop-hdfs/lib/xml-apis-1.3.04.jar:/usr/lib/hadoop-hdfs/lib/commons-lang-2.6.jar:/usr/lib/hadoop-hdfs/lib/jersey-core-1.9.jar:/usr/lib/hadoop-hdfs/lib/commons-codec-1.4.jar:/usr/lib/hadoop-hdfs/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-hdfs/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-hdfs/lib/commons-el-1.0.jar:/usr/lib/hadoop-hdfs/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop-hdfs/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop-hdfs/lib/jsr305-3.0.0.jar:/usr/lib/hadoop-hdfs/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-hdfs/lib/commons-daemon-1.0.13.jar:/usr/lib/hadoop-hdfs/lib/asm-3.2.jar:/usr/lib/hadoop-hdfs/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-hdfs/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-hdfs/lib/jsp-api-2.1.jar:/usr/lib/hadoop-hdfs/lib/commons-io-2.4.jar:/usr/lib/hadoop-hdfs/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-hdfs/lib/servlet-api-2.5.jar:/usr/lib/hadoop-hdfs/lib/xmlenc-0.52.jar:/usr/lib/hadoop-hdfs/lib/jasper-runtime-5.5.23.jar:/usr/lib/hadoop-hdfs/lib/log4j-1.2.17.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-tests.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-nfs.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-nfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs.jar:/usr/lib/hadoop-yarn/lib/commons-collections-3.2.2.jar:/usr/lib/hadoop-yarn/lib/guava-11.0.2.jar:/usr/lib/hadoop-yarn/lib/jaxb-api-2.2.2.jar:/usr/lib/hadoop-yarn/lib/commons-cli-1.2.jar:/usr/lib/hadoop-yarn/lib/activation-1.1.jar:/usr/lib/hadoop-yarn/lib/jersey-server-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-lang-2.6.jar:/usr/lib/hadoop-yarn/lib/jersey-core-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-codec-1.4.jar:/usr/lib/hadoop-yarn/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop-yarn/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-yarn/lib/guice-servlet-3.0.jar:/usr/lib/hadoop-yarn/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-yarn/lib/jersey-json-1.9.jar:/usr/lib/hadoop-yarn/lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop-yarn/lib/jline-2.11.jar:/usr/lib/hadoop-yarn/lib/jettison-1.1.jar:/usr/lib/hadoop-yarn/lib/xz-1.0.jar:/usr/lib/hadoop-yarn/lib/spark-1.6.0-cdh5.8.0-yarn-shuffle.jar:/usr/lib/hadoop-yarn/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop-yarn/lib/jsr305-3.0.0.jar:/usr/lib/hadoop-yarn/lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop-yarn/lib/guice-3.0.jar:/usr/lib/hadoop-yarn/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-yarn/lib/asm-3.2.jar:/usr/lib/hadoop-yarn/lib/spark-yarn-shuffle.jar:/usr/lib/hadoop-yarn/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-yarn/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-yarn/lib/aopalliance-1.0.jar:/usr/lib/hadoop-yarn/lib/javax.inject-1.jar:/usr/lib/hadoop-yarn/lib/stax-api-1.0-2.jar:/usr/lib/hadoop-yarn/lib/jersey-client-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-io-2.4.jar:/usr/lib/hadoop-yarn/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-yarn/lib/jersey-guice-1.9.jar:/usr/lib/hadoop-yarn/lib/servlet-api-2.5.jar:/usr/lib/hadoop-yarn/lib/jackson-xc-1.8.8.jar:/usr/lib/hadoop-yarn/lib/log4j-1.2.17.jar:/usr/lib/hadoop-yarn/lib/zookeeper.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-client-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-unmanaged-am-launcher.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-nodemanager-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-nodemanager.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-common.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-api.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-registry.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-unmanaged-am-launcher-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-api-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-distributedshell-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-web-proxy-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-applicationhistoryservice.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-tests.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-distributedshell.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-common.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-resourcemanager-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-web-proxy.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-registry-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-tests-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-client.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-applicationhistoryservice-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-resourcemanager.jar:/usr/lib/hadoop-mapreduce/lib/jersey-server-1.9.jar:/usr/lib/hadoop-mapreduce/lib/avro.jar:/usr/lib/hadoop-mapreduce/lib/jersey-core-1.9.jar:/usr/lib/hadoop-mapreduce/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop-mapreduce/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-mapreduce/lib/guice-servlet-3.0.jar:/usr/lib/hadoop-mapreduce/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-mapreduce/lib/junit-4.11.jar:/usr/lib/hadoop-mapreduce/lib/xz-1.0.jar:/usr/lib/hadoop-mapreduce/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop-mapreduce/lib/snappy-java-1.0.4.1.jar:/usr/lib/hadoop-mapreduce/lib/paranamer-2.3.jar:/usr/lib/hadoop-mapreduce/lib/guice-3.0.jar:/usr/lib/hadoop-mapreduce/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/lib/hamcrest-core-1.3.jar:/usr/lib/hadoop-mapreduce/lib/asm-3.2.jar:/usr/lib/hadoop-mapreduce/lib/aopalliance-1.0.jar:/usr/lib/hadoop-mapreduce/lib/javax.inject-1.jar:/usr/lib/hadoop-mapreduce/lib/commons-io-2.4.jar:/usr/lib/hadoop-mapreduce/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/lib/jersey-guice-1.9.jar:/usr/lib/hadoop-mapreduce/lib/log4j-1.2.17.jar:/usr/lib/hadoop-mapreduce/.//jsch-0.1.42.jar:/usr/lib/hadoop-mapreduce/.//hadoop-distcp-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-collections-3.2.2.jar:/usr/lib/hadoop-mapreduce/.//api-asn1-api-1.0.0-M20.jar:/usr/lib/hadoop-mapreduce/.//apacheds-i18n-2.0.0-M15.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//guava-11.0.2.jar:/usr/lib/hadoop-mapreduce/.//jaxb-api-2.2.2.jar:/usr/lib/hadoop-mapreduce/.//jackson-annotations-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-app-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jackson-core-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-distcp.jar:/usr/lib/hadoop-mapreduce/.//commons-cli-1.2.jar:/usr/lib/hadoop-mapreduce/.//activation-1.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-datajoin.jar:/usr/lib/hadoop-mapreduce/.//curator-framework-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-openstack-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jersey-server-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-beanutils-core-1.8.0.jar:/usr/lib/hadoop-mapreduce/.//htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop-mapreduce/.//commons-lang-2.6.jar:/usr/lib/hadoop-mapreduce/.//avro.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs.jar:/usr/lib/hadoop-mapreduce/.//commons-httpclient-3.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-gridmix-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jersey-core-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-codec-1.4.jar:/usr/lib/hadoop-mapreduce/.//commons-compress-1.4.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-plugins-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//protobuf-java-2.5.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-ant-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hadoop-mapreduce/.//commons-el-1.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-tests.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//junit-4.11.jar:/usr/lib/hadoop-mapreduce/.//jersey-json-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-beanutils-1.7.0.jar:/usr/lib/hadoop-mapreduce/.//commons-digester-1.8.jar:/usr/lib/hadoop-mapreduce/.//metrics-core-3.0.2.jar:/usr/lib/hadoop-mapreduce/.//jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//hadoop-azure.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-common.jar:/usr/lib/hadoop-mapreduce/.//jettison-1.1.jar:/usr/lib/hadoop-mapreduce/.//xz-1.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-datajoin-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//snappy-java-1.0.4.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-extras-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-core-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-math3-3.1.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-extras.jar:/usr/lib/hadoop-mapreduce/.//hadoop-streaming-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-openstack.jar:/usr/lib/hadoop-mapreduce/.//hadoop-auth-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-logging-1.1.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-rumen-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//paranamer-2.3.jar:/usr/lib/hadoop-mapreduce/.//jsr305-3.0.0.jar:/usr/lib/hadoop-mapreduce/.//api-util-1.0.0-M20.jar:/usr/lib/hadoop-mapreduce/.//jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archives-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archives.jar:/usr/lib/hadoop-mapreduce/.//jackson-databind-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-core.jar:/usr/lib/hadoop-mapreduce/.//curator-recipes-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//java-xmlbuilder-0.4.jar:/usr/lib/hadoop-mapreduce/.//hamcrest-core-1.3.jar:/usr/lib/hadoop-mapreduce/.//asm-3.2.jar:/usr/lib/hadoop-mapreduce/.//hadoop-rumen.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-nativetask.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-nativetask-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-mapreduce/.//jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-mapreduce/.//hadoop-azure-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//httpcore-4.2.5.jar:/usr/lib/hadoop-mapreduce/.//httpclient-4.2.5.jar:/usr/lib/hadoop-mapreduce/.//curator-client-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop-mapreduce/.//jasper-compiler-5.5.23.jar:/usr/lib/hadoop-mapreduce/.//jets3t-0.9.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-examples.jar:/usr/lib/hadoop-mapreduce/.//commons-net-3.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-app.jar:/usr/lib/hadoop-mapreduce/.//hadoop-sls.jar:/usr/lib/hadoop-mapreduce/.//hadoop-gridmix.jar:/usr/lib/hadoop-mapreduce/.//stax-api-1.0-2.jar:/usr/lib/hadoop-mapreduce/.//jsp-api-2.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-examples-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archive-logs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-plugins.jar:/usr/lib/hadoop-mapreduce/.//commons-io-2.4.jar:/usr/lib/hadoop-mapreduce/.//jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//servlet-api-2.5.jar:/usr/lib/hadoop-mapreduce/.//hadoop-sls-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//gson-2.2.4.jar:/usr/lib/hadoop-mapreduce/.//xmlenc-0.52.jar:/usr/lib/hadoop-mapreduce/.//hadoop-auth.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-shuffle-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-shuffle.jar:/usr/lib/hadoop-mapreduce/.//jackson-xc-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//microsoft-windowsazure-storage-sdk-0.6.0.jar:/usr/lib/hadoop-mapreduce/.//jasper-runtime-5.5.23.jar:/usr/lib/hadoop-mapreduce/.//hadoop-streaming.jar:/usr/lib/hadoop-mapreduce/.//commons-configuration-1.6.jar:/usr/lib/hadoop-mapreduce/.//log4j-1.2.17.jar:/usr/lib/hadoop-mapreduce/.//hadoop-ant.jar:/usr/lib/hadoop-mapreduce/.//zookeeper.jar:/usr/lib/hadoop-mapreduce/.//mockito-all-1.8.5.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archive-logs.jar
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:java.library.path=/usr/lib/hadoop/lib/native
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:os.name=Linux
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:os.arch=amd64
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:os.version=2.6.32-573.el6.x86_64
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:user.name=cloudera
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:user.home=/home/cloudera
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Client environment:user.dir=/home/cloudera/projs/mag-oboi-c1021-hbase
+16/11/12 02:04:54 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=180000 watcher=hconnection-0x1ac7352a0x0, quorum=localhost:2181, baseZNode=/hbase
+16/11/12 02:04:54 INFO zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+16/11/12 02:04:54 INFO zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:56933, server: localhost/127.0.0.1:2181
+16/11/12 02:04:54 INFO zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x15855553f3d0038, negotiated timeout = 40000
+16/11/12 02:04:59 INFO Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+16/11/12 02:05:00 INFO mapreduce.HFileOutputFormat2: Looking up current regions for table kaganovich-graph-2
+16/11/12 02:05:00 INFO mapreduce.HFileOutputFormat2: Configuring 1 reduce partitions to match current region count
+16/11/12 02:05:00 INFO mapreduce.HFileOutputFormat2: Writing partition information to /user/cloudera/hbase-staging/partitions_580ecac9-c037-47ef-91cf-00c611667987
+16/11/12 02:05:01 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+16/11/12 02:05:01 INFO compress.CodecPool: Got brand-new compressor [.deflate]
+16/11/12 02:05:01 INFO mapreduce.HFileOutputFormat2: Incremental table kaganovich-graph-2 output configured.
+16/11/12 02:05:01 INFO client.ConnectionManager$HConnectionImplementation: Closing master protocol: MasterService
+16/11/12 02:05:01 INFO client.ConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x15855553f3d0038
+16/11/12 02:05:01 INFO zookeeper.ClientCnxn: EventThread shut down
+16/11/12 02:05:01 INFO zookeeper.ZooKeeper: Session: 0x15855553f3d0038 closed
+16/11/12 02:05:01 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+16/11/12 02:05:07 INFO input.FileInputFormat: Total input paths to process : 1
+16/11/12 02:05:08 INFO mapreduce.JobSubmitter: number of splits:7
+16/11/12 02:05:08 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1478900462625_0004
+16/11/12 02:05:09 INFO impl.YarnClientImpl: Submitted application application_1478900462625_0004
+16/11/12 02:05:09 INFO mapreduce.Job: The url to track the job: http://quickstart.cloudera:8088/proxy/application_1478900462625_0004/
+16/11/12 02:05:09 INFO mapreduce.Job: Running job: job_1478900462625_0004
+16/11/12 02:05:35 INFO mapreduce.Job: Job job_1478900462625_0004 running in uber mode : false
+16/11/12 02:05:35 INFO mapreduce.Job:  map 0% reduce 0%
+16/11/12 02:06:36 INFO mapreduce.Job:  map 1% reduce 0%
+16/11/12 02:06:40 INFO mapreduce.Job:  map 2% reduce 0%
+16/11/12 02:06:44 INFO mapreduce.Job:  map 3% reduce 0%
+16/11/12 02:06:45 INFO mapreduce.Job:  map 4% reduce 0%
+16/11/12 02:06:51 INFO mapreduce.Job:  map 5% reduce 0%
+16/11/12 02:06:54 INFO mapreduce.Job:  map 6% reduce 0%
+16/11/12 02:06:56 INFO mapreduce.Job:  map 7% reduce 0%
+16/11/12 02:07:00 INFO mapreduce.Job:  map 8% reduce 0%
+16/11/12 02:07:09 INFO mapreduce.Job:  map 9% reduce 0%
+16/11/12 02:07:13 INFO mapreduce.Job:  map 10% reduce 0%
+16/11/12 02:07:16 INFO mapreduce.Job:  map 11% reduce 0%
+16/11/12 02:07:22 INFO mapreduce.Job:  map 12% reduce 0%
+16/11/12 02:07:50 INFO mapreduce.Job:  map 13% reduce 0%
+16/11/12 02:07:55 INFO mapreduce.Job:  map 14% reduce 0%
+16/11/12 02:08:02 INFO mapreduce.Job:  map 15% reduce 0%
+16/11/12 02:08:09 INFO mapreduce.Job:  map 16% reduce 0%
+16/11/12 02:08:12 INFO mapreduce.Job:  map 17% reduce 0%
+16/11/12 02:08:16 INFO mapreduce.Job:  map 18% reduce 0%
+16/11/12 02:08:20 INFO mapreduce.Job:  map 19% reduce 0%
+16/11/12 02:08:24 INFO mapreduce.Job:  map 20% reduce 0%
+16/11/12 02:08:27 INFO mapreduce.Job:  map 21% reduce 0%
+16/11/12 02:08:33 INFO mapreduce.Job:  map 22% reduce 0%
+16/11/12 02:09:00 INFO mapreduce.Job:  map 23% reduce 0%
+16/11/12 02:09:11 INFO mapreduce.Job:  map 24% reduce 0%
+16/11/12 02:09:17 INFO mapreduce.Job:  map 25% reduce 0%
+16/11/12 02:09:23 INFO mapreduce.Job:  map 26% reduce 0%
+16/11/12 02:09:30 INFO mapreduce.Job:  map 27% reduce 0%
+16/11/12 02:09:32 INFO mapreduce.Job:  map 28% reduce 0%
+16/11/12 02:09:33 INFO mapreduce.Job:  map 29% reduce 0%
+16/11/12 02:09:38 INFO mapreduce.Job:  map 30% reduce 0%
+16/11/12 02:09:43 INFO mapreduce.Job:  map 31% reduce 0%
+16/11/12 02:09:44 INFO mapreduce.Job:  map 32% reduce 0%
+16/11/12 02:09:49 INFO mapreduce.Job:  map 33% reduce 0%
+16/11/12 02:10:07 INFO mapreduce.Job:  map 35% reduce 0%
+16/11/12 02:10:09 INFO mapreduce.Job:  map 36% reduce 0%
+16/11/12 02:10:10 INFO mapreduce.Job:  map 37% reduce 0%
+16/11/12 02:10:15 INFO mapreduce.Job:  map 38% reduce 0%
+16/11/12 02:10:19 INFO mapreduce.Job:  map 39% reduce 0%
+16/11/12 02:10:21 INFO mapreduce.Job:  map 40% reduce 0%
+16/11/12 02:10:23 INFO mapreduce.Job:  map 41% reduce 0%
+16/11/12 02:10:26 INFO mapreduce.Job:  map 42% reduce 0%
+16/11/12 02:10:31 INFO mapreduce.Job:  map 43% reduce 0%
+16/11/12 02:10:48 INFO mapreduce.Job:  map 44% reduce 0%
+16/11/12 02:10:49 INFO mapreduce.Job:  map 45% reduce 0%
+16/11/12 02:10:52 INFO mapreduce.Job:  map 46% reduce 0%
+16/11/12 02:10:55 INFO mapreduce.Job:  map 47% reduce 0%
+16/11/12 02:10:58 INFO mapreduce.Job:  map 48% reduce 0%
+16/11/12 02:11:00 INFO mapreduce.Job:  map 49% reduce 0%
+16/11/12 02:11:03 INFO mapreduce.Job:  map 50% reduce 0%
+16/11/12 02:11:07 INFO mapreduce.Job:  map 51% reduce 0%
+16/11/12 02:11:10 INFO mapreduce.Job:  map 52% reduce 0%
+16/11/12 02:11:28 INFO mapreduce.Job:  map 53% reduce 0%
+16/11/12 02:11:35 INFO mapreduce.Job:  map 54% reduce 0%
+16/11/12 02:11:39 INFO mapreduce.Job:  map 55% reduce 0%
+16/11/12 02:11:42 INFO mapreduce.Job:  map 56% reduce 0%
+16/11/12 02:11:45 INFO mapreduce.Job:  map 57% reduce 0%
+16/11/12 02:11:50 INFO mapreduce.Job:  map 58% reduce 0%
+16/11/12 02:12:16 INFO mapreduce.Job:  map 59% reduce 0%
+16/11/12 02:12:42 INFO mapreduce.Job:  map 60% reduce 0%
+16/11/12 02:12:58 INFO mapreduce.Job:  map 61% reduce 0%
+16/11/12 02:13:11 INFO mapreduce.Job:  map 62% reduce 0%
+16/11/12 02:13:17 INFO mapreduce.Job:  map 63% reduce 0%
+16/11/12 02:13:35 INFO mapreduce.Job:  map 64% reduce 0%
+16/11/12 02:13:46 INFO mapreduce.Job:  map 65% reduce 0%
+16/11/12 02:13:59 INFO mapreduce.Job:  map 66% reduce 0%
+16/11/12 02:14:09 INFO mapreduce.Job:  map 67% reduce 0%
+16/11/12 02:14:21 INFO mapreduce.Job:  map 68% reduce 0%
+16/11/12 02:14:28 INFO mapreduce.Job:  map 69% reduce 0%
+16/11/12 02:14:44 INFO mapreduce.Job:  map 70% reduce 0%
+16/11/12 02:14:53 INFO mapreduce.Job:  map 71% reduce 0%
+16/11/12 02:15:05 INFO mapreduce.Job:  map 72% reduce 0%
+16/11/12 02:15:15 INFO mapreduce.Job:  map 73% reduce 0%
+16/11/12 02:15:25 INFO mapreduce.Job:  map 74% reduce 0%
+16/11/12 02:15:33 INFO mapreduce.Job:  map 75% reduce 0%
+16/11/12 02:15:44 INFO mapreduce.Job:  map 76% reduce 0%
+16/11/12 02:15:53 INFO mapreduce.Job:  map 77% reduce 0%
+16/11/12 02:16:05 INFO mapreduce.Job:  map 78% reduce 0%
+16/11/12 02:16:16 INFO mapreduce.Job:  map 79% reduce 0%
+16/11/12 02:16:24 INFO mapreduce.Job:  map 80% reduce 0%
+16/11/12 02:16:39 INFO mapreduce.Job:  map 81% reduce 0%
+16/11/12 02:16:51 INFO mapreduce.Job:  map 82% reduce 0%
+16/11/12 02:17:00 INFO mapreduce.Job:  map 83% reduce 0%
+16/11/12 02:17:15 INFO mapreduce.Job:  map 84% reduce 0%
+16/11/12 02:17:17 INFO mapreduce.Job:  map 85% reduce 0%
+16/11/12 02:17:20 INFO mapreduce.Job:  map 86% reduce 0%
+16/11/12 02:17:55 INFO mapreduce.Job:  map 86% reduce 5%
+16/11/12 02:17:58 INFO mapreduce.Job:  map 87% reduce 5%
+16/11/12 02:18:01 INFO mapreduce.Job:  map 88% reduce 5%
+16/11/12 02:18:02 INFO mapreduce.Job:  map 88% reduce 10%
+16/11/12 02:18:16 INFO mapreduce.Job:  map 88% reduce 14%
+16/11/12 02:18:18 INFO mapreduce.Job:  map 89% reduce 14%
+16/11/12 02:18:25 INFO mapreduce.Job:  map 90% reduce 14%
+16/11/12 02:18:28 INFO mapreduce.Job:  map 90% reduce 19%
+16/11/12 02:18:31 INFO mapreduce.Job:  map 91% reduce 19%
+16/11/12 02:18:41 INFO mapreduce.Job:  map 91% reduce 24%
+16/11/12 02:18:42 INFO mapreduce.Job:  map 92% reduce 24%
+16/11/12 02:18:52 INFO mapreduce.Job:  map 93% reduce 24%
+16/11/12 02:18:55 INFO mapreduce.Job:  map 93% reduce 29%
+16/11/12 02:19:01 INFO mapreduce.Job:  map 94% reduce 29%
+16/11/12 02:19:04 INFO mapreduce.Job:  map 95% reduce 29%
+16/11/12 02:19:24 INFO mapreduce.Job:  map 96% reduce 29%
+16/11/12 02:19:28 INFO mapreduce.Job:  map 97% reduce 29%
+16/11/12 02:19:31 INFO mapreduce.Job:  map 98% reduce 29%
+16/11/12 02:19:37 INFO mapreduce.Job:  map 99% reduce 29%
+16/11/12 02:19:42 INFO mapreduce.Job:  map 100% reduce 29%
+16/11/12 02:19:50 INFO mapreduce.Job:  map 100% reduce 67%
+16/11/12 02:20:11 INFO mapreduce.Job:  map 100% reduce 68%
+16/11/12 02:20:27 INFO mapreduce.Job:  map 100% reduce 69%
+16/11/12 02:20:42 INFO mapreduce.Job:  map 100% reduce 70%
+16/11/12 02:20:55 INFO mapreduce.Job:  map 100% reduce 71%
+16/11/12 02:21:14 INFO mapreduce.Job:  map 100% reduce 72%
+16/11/12 02:21:23 INFO mapreduce.Job:  map 100% reduce 73%
+16/11/12 02:21:35 INFO mapreduce.Job:  map 100% reduce 74%
+16/11/12 02:21:53 INFO mapreduce.Job:  map 100% reduce 75%
+16/11/12 02:22:05 INFO mapreduce.Job:  map 100% reduce 76%
+16/11/12 02:22:21 INFO mapreduce.Job:  map 100% reduce 77%
+16/11/12 02:22:33 INFO mapreduce.Job:  map 100% reduce 78%
+16/11/12 02:22:42 INFO mapreduce.Job:  map 100% reduce 79%
+16/11/12 02:22:54 INFO mapreduce.Job:  map 100% reduce 80%
+16/11/12 02:23:03 INFO mapreduce.Job:  map 100% reduce 81%
+16/11/12 02:23:12 INFO mapreduce.Job:  map 100% reduce 82%
+16/11/12 02:23:21 INFO mapreduce.Job:  map 100% reduce 83%
+16/11/12 02:23:30 INFO mapreduce.Job:  map 100% reduce 84%
+16/11/12 02:23:43 INFO mapreduce.Job:  map 100% reduce 85%
+16/11/12 02:24:02 INFO mapreduce.Job:  map 100% reduce 86%
+16/11/12 02:24:15 INFO mapreduce.Job:  map 100% reduce 87%
+16/11/12 02:24:24 INFO mapreduce.Job:  map 100% reduce 88%
+16/11/12 02:24:33 INFO mapreduce.Job:  map 100% reduce 89%
+16/11/12 02:24:39 INFO mapreduce.Job:  map 100% reduce 90%
+16/11/12 02:24:45 INFO mapreduce.Job:  map 100% reduce 91%
+16/11/12 02:24:54 INFO mapreduce.Job:  map 100% reduce 92%
+16/11/12 02:25:03 INFO mapreduce.Job:  map 100% reduce 93%
+16/11/12 02:25:09 INFO mapreduce.Job:  map 100% reduce 94%
+16/11/12 02:25:15 INFO mapreduce.Job:  map 100% reduce 95%
+16/11/12 02:25:24 INFO mapreduce.Job:  map 100% reduce 96%
+16/11/12 02:25:37 INFO mapreduce.Job:  map 100% reduce 97%
+16/11/12 02:25:47 INFO mapreduce.Job:  map 100% reduce 98%
+16/11/12 02:26:08 INFO mapreduce.Job:  map 100% reduce 99%
+16/11/12 02:26:20 INFO mapreduce.Job:  map 100% reduce 100%
+16/11/12 02:26:27 INFO mapreduce.Job: Job job_1478900462625_0004 completed successfully
+16/11/12 02:26:28 INFO mapreduce.Job: Counters: 50
+	File System Counters
+		FILE: Number of bytes read=5124506598
+		FILE: Number of bytes written=7687769417
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=912215967
+		HDFS: Number of bytes written=1872329036
+		HDFS: Number of read operations=26
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=8
+		Launched reduce tasks=1
+		Data-local map tasks=8
+		Total time spent by all maps in occupied slots (ms)=4455635
+		Total time spent by all reduces in occupied slots (ms)=547356
+		Total time spent by all map tasks (ms)=4455635
+		Total time spent by all reduce tasks (ms)=547356
+		Total vcore-seconds taken by all map tasks=4455635
+		Total vcore-seconds taken by all reduce tasks=547356
+		Total megabyte-seconds taken by all map tasks=4562570240
+		Total megabyte-seconds taken by all reduce tasks=560492544
+	Map-Reduce Framework
+		Map input records=53380274
+		Map output records=53380274
+		Map output bytes=2455492604
+		Map output materialized bytes=2562253194
+		Input split bytes=924
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1150305
+		Reduce shuffle bytes=2562253194
+		Reduce input records=53380274
+		Reduce output records=53380274
+		Spilled Records=160140822
+		Shuffled Maps =7
+		Failed Shuffles=0
+		Merged Map outputs=7
+		GC time elapsed (ms)=78434
+		CPU time spent (ms)=1267550
+		Physical memory (bytes) snapshot=3109539840
+		Virtual memory (bytes) snapshot=12552044544
+		Total committed heap usage (bytes)=3109027840
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=912215043
+	File Output Format Counters 
+		Bytes Written=1872329036
+2016-11-12 02:26:47,870 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x49916083 connecting to ZooKeeper ensemble=localhost:2181
+2016-11-12 02:26:47,910 INFO  [main] zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.5-cdh5.8.0--1, built on 06/16/2016 19:37 GMT
+2016-11-12 02:26:47,911 INFO  [main] zookeeper.ZooKeeper: Client environment:host.name=quickstart.cloudera
+2016-11-12 02:26:47,911 INFO  [main] zookeeper.ZooKeeper: Client environment:java.version=1.7.0_67
+2016-11-12 02:26:47,912 INFO  [main] zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+2016-11-12 02:26:47,912 INFO  [main] zookeeper.ZooKeeper: Client environment:java.home=/usr/java/jdk1.7.0_67-cloudera/jre
+2016-11-12 02:26:47,912 INFO  [main] zookeeper.ZooKeeper: Client environment:java.class.path=/usr/lib/hbase/bin/../conf:/usr/java/jdk1.7.0_67-cloudera/lib/tools.jar:/usr/lib/hbase/bin/..:/usr/lib/hbase/bin/../lib/activation-1.1.jar:/usr/lib/hbase/bin/../lib/antisamy-1.4.3.jar:/usr/lib/hbase/bin/../lib/apacheds-i18n-2.0.0-M15.jar:/usr/lib/hbase/bin/../lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hbase/bin/../lib/api-asn1-api-1.0.0-M20.jar:/usr/lib/hbase/bin/../lib/api-util-1.0.0-M20.jar:/usr/lib/hbase/bin/../lib/asm-3.2.jar:/usr/lib/hbase/bin/../lib/avro.jar:/usr/lib/hbase/bin/../lib/aws-java-sdk-core-1.10.6.jar:/usr/lib/hbase/bin/../lib/aws-java-sdk-kms-1.10.6.jar:/usr/lib/hbase/bin/../lib/aws-java-sdk-s3-1.10.6.jar:/usr/lib/hbase/bin/../lib/batik-css-1.7.jar:/usr/lib/hbase/bin/../lib/batik-ext-1.7.jar:/usr/lib/hbase/bin/../lib/batik-util-1.7.jar:/usr/lib/hbase/bin/../lib/bsh-core-2.0b4.jar:/usr/lib/hbase/bin/../lib/commons-beanutils-1.7.0.jar:/usr/lib/hbase/bin/../lib/commons-beanutils-core-1.7.0.jar:/usr/lib/hbase/bin/../lib/commons-cli-1.2.jar:/usr/lib/hbase/bin/../lib/commons-codec-1.9.jar:/usr/lib/hbase/bin/../lib/commons-collections-3.2.2.jar:/usr/lib/hbase/bin/../lib/commons-compress-1.4.1.jar:/usr/lib/hbase/bin/../lib/commons-configuration-1.6.jar:/usr/lib/hbase/bin/../lib/commons-daemon-1.0.3.jar:/usr/lib/hbase/bin/../lib/commons-digester-1.8.jar:/usr/lib/hbase/bin/../lib/commons-el-1.0.jar:/usr/lib/hbase/bin/../lib/commons-fileupload-1.2.jar:/usr/lib/hbase/bin/../lib/commons-httpclient-3.1.jar:/usr/lib/hbase/bin/../lib/commons-io-2.4.jar:/usr/lib/hbase/bin/../lib/commons-lang-2.6.jar:/usr/lib/hbase/bin/../lib/commons-logging-1.2.jar:/usr/lib/hbase/bin/../lib/commons-math-2.1.jar:/usr/lib/hbase/bin/../lib/commons-math3-3.1.1.jar:/usr/lib/hbase/bin/../lib/commons-net-3.1.jar:/usr/lib/hbase/bin/../lib/core-3.1.1.jar:/usr/lib/hbase/bin/../lib/curator-client-2.7.1.jar:/usr/lib/hbase/bin/../lib/curator-framework-2.7.1.jar:/usr/lib/hbase/bin/../lib/curator-recipes-2.7.1.jar:/usr/lib/hbase/bin/../lib/disruptor-3.3.0.jar:/usr/lib/hbase/bin/../lib/esapi-2.1.0.jar:/usr/lib/hbase/bin/../lib/findbugs-annotations-1.3.9-1.jar:/usr/lib/hbase/bin/../lib/gson-2.2.4.jar:/usr/lib/hbase/bin/../lib/guava-12.0.1.jar:/usr/lib/hbase/bin/../lib/hamcrest-core-1.3.jar:/usr/lib/hbase/bin/../lib/hbase-annotations-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-annotations-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-client-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-common-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-common-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-examples-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-external-blockcache-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-hadoop2-compat-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-hadoop2-compat-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-hadoop-compat-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-hadoop-compat-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-it-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-it-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-prefix-tree-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-procedure-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-protocol-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-resource-bundle-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-rest-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-server-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-server-1.2.0-cdh5.8.0-tests.jar:/usr/lib/hbase/bin/../lib/hbase-shell-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-spark-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/hbase-thrift-1.2.0-cdh5.8.0.jar:/usr/lib/hbase/bin/../lib/high-scale-lib-1.1.1.jar:/usr/lib/hbase/bin/../lib/hsqldb-1.8.0.10.jar:/usr/lib/hbase/bin/../lib/htrace-core-3.2.0-incubating.jar:/usr/lib/hbase/bin/../lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hbase/bin/../lib/htrace-core.jar:/usr/lib/hbase/bin/../lib/httpclient-4.2.5.jar:/usr/lib/hbase/bin/../lib/httpcore-4.2.5.jar:/usr/lib/hbase/bin/../lib/jackson-annotations-2.2.3.jar:/usr/lib/hbase/bin/../lib/jackson-core-2.2.3.jar:/usr/lib/hbase/bin/../lib/jackson-core-asl-1.8.8.jar:/usr/lib/hbase/bin/../lib/jackson-databind-2.2.3.jar:/usr/lib/hbase/bin/../lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hbase/bin/../lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hbase/bin/../lib/jackson-xc-1.8.8.jar:/usr/lib/hbase/bin/../lib/jamon-runtime-2.4.1.jar:/usr/lib/hbase/bin/../lib/jasper-compiler-5.5.23.jar:/usr/lib/hbase/bin/../lib/jasper-runtime-5.5.23.jar:/usr/lib/hbase/bin/../lib/java-xmlbuilder-0.4.jar:/usr/lib/hbase/bin/../lib/jaxb-api-2.1.jar:/usr/lib/hbase/bin/../lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hbase/bin/../lib/jcodings-1.0.8.jar:/usr/lib/hbase/bin/../lib/jersey-client-1.9.jar:/usr/lib/hbase/bin/../lib/jersey-core-1.9.jar:/usr/lib/hbase/bin/../lib/jersey-json-1.9.jar:/usr/lib/hbase/bin/../lib/jersey-server-1.9.jar:/usr/lib/hbase/bin/../lib/jets3t-0.9.0.jar:/usr/lib/hbase/bin/../lib/jettison-1.3.3.jar:/usr/lib/hbase/bin/../lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hbase/bin/../lib/jetty-sslengine-6.1.26.cloudera.4.jar:/usr/lib/hbase/bin/../lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hbase/bin/../lib/joni-2.1.2.jar:/usr/lib/hbase/bin/../lib/jruby-cloudera-1.0.0.jar:/usr/lib/hbase/bin/../lib/jsch-0.1.42.jar:/usr/lib/hbase/bin/../lib/jsp-2.1-6.1.14.jar:/usr/lib/hbase/bin/../lib/jsp-api-2.1-6.1.14.jar:/usr/lib/hbase/bin/../lib/jsp-api-2.1.jar:/usr/lib/hbase/bin/../lib/jsr305-1.3.9.jar:/usr/lib/hbase/bin/../lib/junit-4.12.jar:/usr/lib/hbase/bin/../lib/leveldbjni-all-1.8.jar:/usr/lib/hbase/bin/../lib/libthrift-0.9.3.jar:/usr/lib/hbase/bin/../lib/log4j-1.2.17.jar:/usr/lib/hbase/bin/../lib/metrics-core-2.2.0.jar:/usr/lib/hbase/bin/../lib/nekohtml-1.9.12.jar:/usr/lib/hbase/bin/../lib/netty-all-4.0.23.Final.jar:/usr/lib/hbase/bin/../lib/paranamer-2.3.jar:/usr/lib/hbase/bin/../lib/protobuf-java-2.5.0.jar:/usr/lib/hbase/bin/../lib/servlet-api-2.5-6.1.14.jar:/usr/lib/hbase/bin/../lib/servlet-api-2.5.jar:/usr/lib/hbase/bin/../lib/slf4j-api-1.7.5.jar:/usr/lib/hbase/bin/../lib/slf4j-log4j12.jar:/usr/lib/hbase/bin/../lib/snappy-java-1.0.4.1.jar:/usr/lib/hbase/bin/../lib/spymemcached-2.11.6.jar:/usr/lib/hbase/bin/../lib/xalan-2.7.0.jar:/usr/lib/hbase/bin/../lib/xercesImpl-2.9.1.jar:/usr/lib/hbase/bin/../lib/xml-apis-1.3.03.jar:/usr/lib/hbase/bin/../lib/xml-apis-ext-1.3.04.jar:/usr/lib/hbase/bin/../lib/xmlenc-0.52.jar:/usr/lib/hbase/bin/../lib/xom-1.2.5.jar:/usr/lib/hbase/bin/../lib/xz-1.0.jar:/usr/lib/hbase/bin/../lib/zookeeper.jar:/etc/hadoop/conf:/usr/lib/hadoop/lib/jsch-0.1.42.jar:/usr/lib/hadoop/lib/commons-collections-3.2.2.jar:/usr/lib/hadoop/lib/api-asn1-api-1.0.0-M20.jar:/usr/lib/hadoop/lib/apacheds-i18n-2.0.0-M15.jar:/usr/lib/hadoop/lib/guava-11.0.2.jar:/usr/lib/hadoop/lib/jaxb-api-2.2.2.jar:/usr/lib/hadoop/lib/commons-cli-1.2.jar:/usr/lib/hadoop/lib/activation-1.1.jar:/usr/lib/hadoop/lib/curator-framework-2.7.1.jar:/usr/lib/hadoop/lib/jersey-server-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-core-1.8.0.jar:/usr/lib/hadoop/lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop/lib/commons-lang-2.6.jar:/usr/lib/hadoop/lib/avro.jar:/usr/lib/hadoop/lib/commons-httpclient-3.1.jar:/usr/lib/hadoop/lib/jersey-core-1.9.jar:/usr/lib/hadoop/lib/commons-codec-1.4.jar:/usr/lib/hadoop/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hadoop/lib/commons-el-1.0.jar:/usr/lib/hadoop/lib/junit-4.11.jar:/usr/lib/hadoop/lib/jersey-json-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-1.7.0.jar:/usr/lib/hadoop/lib/commons-digester-1.8.jar:/usr/lib/hadoop/lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop/lib/jettison-1.1.jar:/usr/lib/hadoop/lib/xz-1.0.jar:/usr/lib/hadoop/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop/lib/snappy-java-1.0.4.1.jar:/usr/lib/hadoop/lib/commons-math3-3.1.1.jar:/usr/lib/hadoop/lib/aws-java-sdk-s3-1.10.6.jar:/usr/lib/hadoop/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop/lib/paranamer-2.3.jar:/usr/lib/hadoop/lib/jsr305-3.0.0.jar:/usr/lib/hadoop/lib/api-util-1.0.0-M20.jar:/usr/lib/hadoop/lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop/lib/aws-java-sdk-core-1.10.6.jar:/usr/lib/hadoop/lib/logredactor-1.0.3.jar:/usr/lib/hadoop/lib/curator-recipes-2.7.1.jar:/usr/lib/hadoop/lib/java-xmlbuilder-0.4.jar:/usr/lib/hadoop/lib/hamcrest-core-1.3.jar:/usr/lib/hadoop/lib/asm-3.2.jar:/usr/lib/hadoop/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/httpcore-4.2.5.jar:/usr/lib/hadoop/lib/httpclient-4.2.5.jar:/usr/lib/hadoop/lib/curator-client-2.7.1.jar:/usr/lib/hadoop/lib/jasper-compiler-5.5.23.jar:/usr/lib/hadoop/lib/jets3t-0.9.0.jar:/usr/lib/hadoop/lib/hue-plugins-3.9.0-cdh5.8.0.jar:/usr/lib/hadoop/lib/commons-net-3.1.jar:/usr/lib/hadoop/lib/stax-api-1.0-2.jar:/usr/lib/hadoop/lib/jsp-api-2.1.jar:/usr/lib/hadoop/lib/commons-io-2.4.jar:/usr/lib/hadoop/lib/servlet-api-2.5.jar:/usr/lib/hadoop/lib/slf4j-api-1.7.5.jar:/usr/lib/hadoop/lib/gson-2.2.4.jar:/usr/lib/hadoop/lib/xmlenc-0.52.jar:/usr/lib/hadoop/lib/slf4j-log4j12.jar:/usr/lib/hadoop/lib/aws-java-sdk-kms-1.10.6.jar:/usr/lib/hadoop/lib/jackson-xc-1.8.8.jar:/usr/lib/hadoop/lib/jasper-runtime-5.5.23.jar:/usr/lib/hadoop/lib/commons-configuration-1.6.jar:/usr/lib/hadoop/lib/log4j-1.2.17.jar:/usr/lib/hadoop/lib/zookeeper.jar:/usr/lib/hadoop/lib/mockito-all-1.8.5.jar:/usr/lib/hadoop/.//parquet-tools.jar:/usr/lib/hadoop/.//parquet-hadoop-bundle.jar:/usr/lib/hadoop/.//parquet-format-javadoc.jar:/usr/lib/hadoop/.//parquet-avro.jar:/usr/lib/hadoop/.//parquet-pig.jar:/usr/lib/hadoop/.//hadoop-nfs.jar:/usr/lib/hadoop/.//parquet-pig-bundle.jar:/usr/lib/hadoop/.//parquet-column.jar:/usr/lib/hadoop/.//hadoop-common.jar:/usr/lib/hadoop/.//hadoop-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-format-sources.jar:/usr/lib/hadoop/.//hadoop-aws-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//hadoop-auth-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-protobuf.jar:/usr/lib/hadoop/.//hadoop-common-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop/.//hadoop-annotations-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-scrooge_2.10.jar:/usr/lib/hadoop/.//parquet-generator.jar:/usr/lib/hadoop/.//hadoop-common-tests.jar:/usr/lib/hadoop/.//parquet-common.jar:/usr/lib/hadoop/.//hadoop-aws.jar:/usr/lib/hadoop/.//parquet-test-hadoop2.jar:/usr/lib/hadoop/.//parquet-scala_2.10.jar:/usr/lib/hadoop/.//hadoop-nfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/.//parquet-jackson.jar:/usr/lib/hadoop/.//hadoop-auth.jar:/usr/lib/hadoop/.//parquet-encoding.jar:/usr/lib/hadoop/.//parquet-format.jar:/usr/lib/hadoop/.//parquet-cascading.jar:/usr/lib/hadoop/.//parquet-hadoop.jar:/usr/lib/hadoop/.//hadoop-annotations.jar:/usr/lib/hadoop/.//parquet-thrift.jar:/usr/lib/hadoop-hdfs/./:/usr/lib/hadoop-hdfs/lib/guava-11.0.2.jar:/usr/lib/hadoop-hdfs/lib/commons-cli-1.2.jar:/usr/lib/hadoop-hdfs/lib/xercesImpl-2.9.1.jar:/usr/lib/hadoop-hdfs/lib/jersey-server-1.9.jar:/usr/lib/hadoop-hdfs/lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop-hdfs/lib/xml-apis-1.3.04.jar:/usr/lib/hadoop-hdfs/lib/commons-lang-2.6.jar:/usr/lib/hadoop-hdfs/lib/jersey-core-1.9.jar:/usr/lib/hadoop-hdfs/lib/commons-codec-1.4.jar:/usr/lib/hadoop-hdfs/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-hdfs/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-hdfs/lib/commons-el-1.0.jar:/usr/lib/hadoop-hdfs/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop-hdfs/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop-hdfs/lib/jsr305-3.0.0.jar:/usr/lib/hadoop-hdfs/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-hdfs/lib/commons-daemon-1.0.13.jar:/usr/lib/hadoop-hdfs/lib/asm-3.2.jar:/usr/lib/hadoop-hdfs/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-hdfs/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-hdfs/lib/jsp-api-2.1.jar:/usr/lib/hadoop-hdfs/lib/commons-io-2.4.jar:/usr/lib/hadoop-hdfs/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-hdfs/lib/servlet-api-2.5.jar:/usr/lib/hadoop-hdfs/lib/xmlenc-0.52.jar:/usr/lib/hadoop-hdfs/lib/jasper-runtime-5.5.23.jar:/usr/lib/hadoop-hdfs/lib/log4j-1.2.17.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-tests.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-nfs.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs-nfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-hdfs/.//hadoop-hdfs.jar:/usr/lib/hadoop-yarn/lib/commons-collections-3.2.2.jar:/usr/lib/hadoop-yarn/lib/guava-11.0.2.jar:/usr/lib/hadoop-yarn/lib/jaxb-api-2.2.2.jar:/usr/lib/hadoop-yarn/lib/commons-cli-1.2.jar:/usr/lib/hadoop-yarn/lib/activation-1.1.jar:/usr/lib/hadoop-yarn/lib/jersey-server-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-lang-2.6.jar:/usr/lib/hadoop-yarn/lib/jersey-core-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-codec-1.4.jar:/usr/lib/hadoop-yarn/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop-yarn/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-yarn/lib/guice-servlet-3.0.jar:/usr/lib/hadoop-yarn/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-yarn/lib/jersey-json-1.9.jar:/usr/lib/hadoop-yarn/lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop-yarn/lib/jline-2.11.jar:/usr/lib/hadoop-yarn/lib/jettison-1.1.jar:/usr/lib/hadoop-yarn/lib/xz-1.0.jar:/usr/lib/hadoop-yarn/lib/spark-1.6.0-cdh5.8.0-yarn-shuffle.jar:/usr/lib/hadoop-yarn/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop-yarn/lib/jsr305-3.0.0.jar:/usr/lib/hadoop-yarn/lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop-yarn/lib/guice-3.0.jar:/usr/lib/hadoop-yarn/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-yarn/lib/asm-3.2.jar:/usr/lib/hadoop-yarn/lib/spark-yarn-shuffle.jar:/usr/lib/hadoop-yarn/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-yarn/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-yarn/lib/aopalliance-1.0.jar:/usr/lib/hadoop-yarn/lib/javax.inject-1.jar:/usr/lib/hadoop-yarn/lib/stax-api-1.0-2.jar:/usr/lib/hadoop-yarn/lib/jersey-client-1.9.jar:/usr/lib/hadoop-yarn/lib/commons-io-2.4.jar:/usr/lib/hadoop-yarn/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-yarn/lib/jersey-guice-1.9.jar:/usr/lib/hadoop-yarn/lib/servlet-api-2.5.jar:/usr/lib/hadoop-yarn/lib/jackson-xc-1.8.8.jar:/usr/lib/hadoop-yarn/lib/log4j-1.2.17.jar:/usr/lib/hadoop-yarn/lib/zookeeper.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-client-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-unmanaged-am-launcher.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-nodemanager-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-nodemanager.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-common.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-api.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-registry.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-unmanaged-am-launcher-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-api-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-distributedshell-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-web-proxy-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-applicationhistoryservice.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-tests.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-applications-distributedshell.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-common.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-resourcemanager-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-web-proxy.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-registry-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-tests-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-client.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-applicationhistoryservice-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-yarn/.//hadoop-yarn-server-resourcemanager.jar:/usr/lib/hadoop-mapreduce/lib/jersey-server-1.9.jar:/usr/lib/hadoop-mapreduce/lib/avro.jar:/usr/lib/hadoop-mapreduce/lib/jersey-core-1.9.jar:/usr/lib/hadoop-mapreduce/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop-mapreduce/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop-mapreduce/lib/guice-servlet-3.0.jar:/usr/lib/hadoop-mapreduce/lib/leveldbjni-all-1.8.jar:/usr/lib/hadoop-mapreduce/lib/junit-4.11.jar:/usr/lib/hadoop-mapreduce/lib/xz-1.0.jar:/usr/lib/hadoop-mapreduce/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop-mapreduce/lib/snappy-java-1.0.4.1.jar:/usr/lib/hadoop-mapreduce/lib/paranamer-2.3.jar:/usr/lib/hadoop-mapreduce/lib/guice-3.0.jar:/usr/lib/hadoop-mapreduce/lib/jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/lib/hamcrest-core-1.3.jar:/usr/lib/hadoop-mapreduce/lib/asm-3.2.jar:/usr/lib/hadoop-mapreduce/lib/aopalliance-1.0.jar:/usr/lib/hadoop-mapreduce/lib/javax.inject-1.jar:/usr/lib/hadoop-mapreduce/lib/commons-io-2.4.jar:/usr/lib/hadoop-mapreduce/lib/jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/lib/jersey-guice-1.9.jar:/usr/lib/hadoop-mapreduce/lib/log4j-1.2.17.jar:/usr/lib/hadoop-mapreduce/.//jsch-0.1.42.jar:/usr/lib/hadoop-mapreduce/.//hadoop-distcp-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-collections-3.2.2.jar:/usr/lib/hadoop-mapreduce/.//api-asn1-api-1.0.0-M20.jar:/usr/lib/hadoop-mapreduce/.//apacheds-i18n-2.0.0-M15.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//guava-11.0.2.jar:/usr/lib/hadoop-mapreduce/.//jaxb-api-2.2.2.jar:/usr/lib/hadoop-mapreduce/.//jackson-annotations-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-app-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jackson-core-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-distcp.jar:/usr/lib/hadoop-mapreduce/.//commons-cli-1.2.jar:/usr/lib/hadoop-mapreduce/.//activation-1.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-datajoin.jar:/usr/lib/hadoop-mapreduce/.//curator-framework-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-openstack-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jersey-server-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-beanutils-core-1.8.0.jar:/usr/lib/hadoop-mapreduce/.//htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop-mapreduce/.//commons-lang-2.6.jar:/usr/lib/hadoop-mapreduce/.//avro.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs.jar:/usr/lib/hadoop-mapreduce/.//commons-httpclient-3.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-gridmix-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jersey-core-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-codec-1.4.jar:/usr/lib/hadoop-mapreduce/.//commons-compress-1.4.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-plugins-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//protobuf-java-2.5.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-ant-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hadoop-mapreduce/.//commons-el-1.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-tests.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//junit-4.11.jar:/usr/lib/hadoop-mapreduce/.//jersey-json-1.9.jar:/usr/lib/hadoop-mapreduce/.//commons-beanutils-1.7.0.jar:/usr/lib/hadoop-mapreduce/.//commons-digester-1.8.jar:/usr/lib/hadoop-mapreduce/.//metrics-core-3.0.2.jar:/usr/lib/hadoop-mapreduce/.//jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//hadoop-azure.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-common.jar:/usr/lib/hadoop-mapreduce/.//jettison-1.1.jar:/usr/lib/hadoop-mapreduce/.//xz-1.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-datajoin-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//snappy-java-1.0.4.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-extras-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-core-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-math3-3.1.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-extras.jar:/usr/lib/hadoop-mapreduce/.//hadoop-streaming-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-openstack.jar:/usr/lib/hadoop-mapreduce/.//hadoop-auth-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//commons-logging-1.1.3.jar:/usr/lib/hadoop-mapreduce/.//hadoop-rumen-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//paranamer-2.3.jar:/usr/lib/hadoop-mapreduce/.//jsr305-3.0.0.jar:/usr/lib/hadoop-mapreduce/.//api-util-1.0.0-M20.jar:/usr/lib/hadoop-mapreduce/.//jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archives-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archives.jar:/usr/lib/hadoop-mapreduce/.//jackson-databind-2.2.3.jar:/usr/lib/hadoop-mapreduce/.//jackson-mapper-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-core.jar:/usr/lib/hadoop-mapreduce/.//curator-recipes-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//java-xmlbuilder-0.4.jar:/usr/lib/hadoop-mapreduce/.//hamcrest-core-1.3.jar:/usr/lib/hadoop-mapreduce/.//asm-3.2.jar:/usr/lib/hadoop-mapreduce/.//hadoop-rumen.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-nativetask.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-nativetask-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop-mapreduce/.//jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop-mapreduce/.//hadoop-azure-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//httpcore-4.2.5.jar:/usr/lib/hadoop-mapreduce/.//httpclient-4.2.5.jar:/usr/lib/hadoop-mapreduce/.//curator-client-2.7.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop-mapreduce/.//jasper-compiler-5.5.23.jar:/usr/lib/hadoop-mapreduce/.//jets3t-0.9.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-examples.jar:/usr/lib/hadoop-mapreduce/.//commons-net-3.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-app.jar:/usr/lib/hadoop-mapreduce/.//hadoop-sls.jar:/usr/lib/hadoop-mapreduce/.//hadoop-gridmix.jar:/usr/lib/hadoop-mapreduce/.//stax-api-1.0-2.jar:/usr/lib/hadoop-mapreduce/.//jsp-api-2.1.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-examples-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archive-logs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-hs-plugins.jar:/usr/lib/hadoop-mapreduce/.//commons-io-2.4.jar:/usr/lib/hadoop-mapreduce/.//jackson-core-asl-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//servlet-api-2.5.jar:/usr/lib/hadoop-mapreduce/.//hadoop-sls-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//gson-2.2.4.jar:/usr/lib/hadoop-mapreduce/.//xmlenc-0.52.jar:/usr/lib/hadoop-mapreduce/.//hadoop-auth.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-shuffle-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-shuffle.jar:/usr/lib/hadoop-mapreduce/.//jackson-xc-1.8.8.jar:/usr/lib/hadoop-mapreduce/.//microsoft-windowsazure-storage-sdk-0.6.0.jar:/usr/lib/hadoop-mapreduce/.//jasper-runtime-5.5.23.jar:/usr/lib/hadoop-mapreduce/.//hadoop-streaming.jar:/usr/lib/hadoop-mapreduce/.//commons-configuration-1.6.jar:/usr/lib/hadoop-mapreduce/.//log4j-1.2.17.jar:/usr/lib/hadoop-mapreduce/.//hadoop-ant.jar:/usr/lib/hadoop-mapreduce/.//zookeeper.jar:/usr/lib/hadoop-mapreduce/.//mockito-all-1.8.5.jar:/usr/lib/hadoop-mapreduce/.//hadoop-mapreduce-client-jobclient.jar:/usr/lib/hadoop-mapreduce/.//hadoop-archive-logs.jar:/etc/hadoop/conf:/usr/lib/hadoop/parquet-tools.jar:/usr/lib/hadoop/parquet-hadoop-bundle.jar:/usr/lib/hadoop/parquet-format-javadoc.jar:/usr/lib/hadoop/parquet-avro.jar:/usr/lib/hadoop/parquet-pig.jar:/usr/lib/hadoop/hadoop-nfs.jar:/usr/lib/hadoop/parquet-pig-bundle.jar:/usr/lib/hadoop/parquet-column.jar:/usr/lib/hadoop/hadoop-common.jar:/usr/lib/hadoop/hadoop-common-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/parquet-format-sources.jar:/usr/lib/hadoop/hadoop-aws-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/hadoop-auth-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/parquet-protobuf.jar:/usr/lib/hadoop/hadoop-common-2.6.0-cdh5.8.0-tests.jar:/usr/lib/hadoop/hadoop-annotations-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/parquet-scrooge_2.10.jar:/usr/lib/hadoop/parquet-generator.jar:/usr/lib/hadoop/hadoop-common-tests.jar:/usr/lib/hadoop/parquet-common.jar:/usr/lib/hadoop/hadoop-aws.jar:/usr/lib/hadoop/parquet-test-hadoop2.jar:/usr/lib/hadoop/parquet-scala_2.10.jar:/usr/lib/hadoop/hadoop-nfs-2.6.0-cdh5.8.0.jar:/usr/lib/hadoop/parquet-jackson.jar:/usr/lib/hadoop/hadoop-auth.jar:/usr/lib/hadoop/parquet-encoding.jar:/usr/lib/hadoop/parquet-format.jar:/usr/lib/hadoop/parquet-cascading.jar:/usr/lib/hadoop/parquet-hadoop.jar:/usr/lib/hadoop/hadoop-annotations.jar:/usr/lib/hadoop/parquet-thrift.jar:/usr/lib/hadoop/lib/jsch-0.1.42.jar:/usr/lib/hadoop/lib/commons-collections-3.2.2.jar:/usr/lib/hadoop/lib/api-asn1-api-1.0.0-M20.jar:/usr/lib/hadoop/lib/apacheds-i18n-2.0.0-M15.jar:/usr/lib/hadoop/lib/guava-11.0.2.jar:/usr/lib/hadoop/lib/jaxb-api-2.2.2.jar:/usr/lib/hadoop/lib/commons-cli-1.2.jar:/usr/lib/hadoop/lib/activation-1.1.jar:/usr/lib/hadoop/lib/curator-framework-2.7.1.jar:/usr/lib/hadoop/lib/jersey-server-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-core-1.8.0.jar:/usr/lib/hadoop/lib/htrace-core4-4.0.1-incubating.jar:/usr/lib/hadoop/lib/commons-lang-2.6.jar:/usr/lib/hadoop/lib/avro.jar:/usr/lib/hadoop/lib/commons-httpclient-3.1.jar:/usr/lib/hadoop/lib/jersey-core-1.9.jar:/usr/lib/hadoop/lib/commons-codec-1.4.jar:/usr/lib/hadoop/lib/commons-compress-1.4.1.jar:/usr/lib/hadoop/lib/protobuf-java-2.5.0.jar:/usr/lib/hadoop/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/lib/hadoop/lib/commons-el-1.0.jar:/usr/lib/hadoop/lib/junit-4.11.jar:/usr/lib/hadoop/lib/jersey-json-1.9.jar:/usr/lib/hadoop/lib/commons-beanutils-1.7.0.jar:/usr/lib/hadoop/lib/commons-digester-1.8.jar:/usr/lib/hadoop/lib/jackson-jaxrs-1.8.8.jar:/usr/lib/hadoop/lib/jettison-1.1.jar:/usr/lib/hadoop/lib/xz-1.0.jar:/usr/lib/hadoop/lib/netty-3.6.2.Final.jar:/usr/lib/hadoop/lib/snappy-java-1.0.4.1.jar:/usr/lib/hadoop/lib/commons-math3-3.1.1.jar:/usr/lib/hadoop/lib/aws-java-sdk-s3-1.10.6.jar:/usr/lib/hadoop/lib/commons-logging-1.1.3.jar:/usr/lib/hadoop/lib/paranamer-2.3.jar:/usr/lib/hadoop/lib/jsr305-3.0.0.jar:/usr/lib/hadoop/lib/api-util-1.0.0-M20.jar:/usr/lib/hadoop/lib/jaxb-impl-2.2.3-1.jar:/usr/lib/hadoop/lib/aws-java-sdk-core-1.10.6.jar:/usr/lib/hadoop/lib/logredactor-1.0.3.jar:/usr/lib/hadoop/lib/curator-recipes-2.7.1.jar:/usr/lib/hadoop/lib/java-xmlbuilder-0.4.jar:/usr/lib/hadoop/lib/hamcrest-core-1.3.jar:/usr/lib/hadoop/lib/asm-3.2.jar:/usr/lib/hadoop/lib/jetty-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/jetty-util-6.1.26.cloudera.4.jar:/usr/lib/hadoop/lib/httpcore-4.2.5.jar:/usr/lib/hadoop/lib/httpclient-4.2.5.jar:/usr/lib/hadoop/lib/curator-client-2.7.1.jar:/usr/lib/hadoop/lib/jasper-compiler-5.5.23.jar:/usr/lib/hadoop/lib/jets3t-0.9.0.jar:/usr/lib/hadoop/lib/hue-plugins-3.9.0-cdh5.8.0.jar:/usr/lib/hadoop/lib/commons-net-3.1.jar:/usr/lib/hadoop/lib/stax-api-1.0-2.jar:/usr/lib/hadoop/lib/jsp-api-2.1.jar:/usr/lib/hadoop/lib/commons-io-2.4.jar:/usr/lib/hadoop/lib/servlet-api-2.5.jar:/usr/lib/hadoop/lib/slf4j-api-1.7.5.jar:/usr/lib/hadoop/lib/gson-2.2.4.jar:/usr/lib/hadoop/lib/xmlenc-0.52.jar:/usr/lib/hadoop/lib/slf4j-log4j12.jar:/usr/lib/hadoop/lib/aws-java-sdk-kms-1.10.6.jar:/usr/lib/hadoop/lib/jackson-xc-1.8.8.jar:/usr/lib/hadoop/lib/jasper-runtime-5.5.23.jar:/usr/lib/hadoop/lib/commons-configuration-1.6.jar:/usr/lib/hadoop/lib/log4j-1.2.17.jar:/usr/lib/hadoop/lib/zookeeper.jar:/usr/lib/hadoop/lib/mockito-all-1.8.5.jar:/usr/lib/zookeeper/zookeeper-3.4.5-cdh5.8.0.jar:/usr/lib/zookeeper/zookeeper.jar:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar:/usr/lib/zookeeper/lib/jline-2.11.jar:/usr/lib/zookeeper/lib/netty-3.10.5.Final.jar:/usr/lib/zookeeper/lib/log4j-1.2.16.jar:/usr/lib/zookeeper/lib/slf4j-api-1.7.5.jar:/usr/lib/zookeeper/lib/slf4j-log4j12.jar:
+2016-11-12 02:26:47,922 INFO  [main] zookeeper.ZooKeeper: Client environment:java.library.path=/usr/lib/hadoop/lib/native:/usr/lib/hbase/bin/../lib/native/Linux-amd64-64
+2016-11-12 02:26:47,922 INFO  [main] zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2016-11-12 02:26:47,922 INFO  [main] zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2016-11-12 02:26:47,922 INFO  [main] zookeeper.ZooKeeper: Client environment:os.name=Linux
+2016-11-12 02:26:47,928 INFO  [main] zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2016-11-12 02:26:47,928 INFO  [main] zookeeper.ZooKeeper: Client environment:os.version=2.6.32-573.el6.x86_64
+2016-11-12 02:26:47,928 INFO  [main] zookeeper.ZooKeeper: Client environment:user.name=cloudera
+2016-11-12 02:26:47,929 INFO  [main] zookeeper.ZooKeeper: Client environment:user.home=/home/cloudera
+2016-11-12 02:26:47,929 INFO  [main] zookeeper.ZooKeeper: Client environment:user.dir=/home/cloudera/projs/mag-oboi-c1021-hbase
+2016-11-12 02:26:47,938 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=90000 watcher=hconnection-0x499160830x0, quorum=localhost:2181, baseZNode=/hbase
+2016-11-12 02:26:48,092 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-12 02:26:48,143 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:57409, server: localhost/127.0.0.1:2181
+2016-11-12 02:26:48,201 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x15855553f3d003c, negotiated timeout = 40000
+2016-11-12 02:26:51,835 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x17dc87b7 connecting to ZooKeeper ensemble=localhost:2181
+2016-11-12 02:26:51,836 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=90000 watcher=hconnection-0x17dc87b70x0, quorum=localhost:2181, baseZNode=/hbase
+2016-11-12 02:26:51,839 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2016-11-12 02:26:51,841 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established, initiating session, client: /127.0.0.1:57412, server: localhost/127.0.0.1:2181
+2016-11-12 02:26:51,846 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x15855553f3d003d, negotiated timeout = 40000
+2016-11-12 02:26:52,238 WARN  [main] mapreduce.LoadIncrementalHFiles: Skipping non-directory hdfs://quickstart.cloudera:8020/user/cloudera/kaganovich-graph-2-hfiles/_SUCCESS
+2016-11-12 02:26:52,370 INFO  [main] Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+2016-11-12 02:26:53,580 INFO  [LoadIncrementalHFiles-0] hfile.CacheConfig: CacheConfig:disabled
+2016-11-12 02:26:54,020 INFO  [LoadIncrementalHFiles-0] mapreduce.LoadIncrementalHFiles: Trying to load hfile=hdfs://quickstart.cloudera:8020/user/cloudera/kaganovich-graph-2-hfiles/al/64d82a913b3943079ad1d5de3d0751be first=\x00\x00\x00\x05 last=\x00,gb
+2016-11-12 02:26:54,589 INFO  [main] client.ConnectionManager$HConnectionImplementation: Closing master protocol: MasterService
+2016-11-12 02:26:54,592 INFO  [main] client.ConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x15855553f3d003d
+2016-11-12 02:26:54,598 INFO  [main] zookeeper.ZooKeeper: Session: 0x15855553f3d003d closed
+2016-11-12 02:26:54,599 INFO  [main-EventThread] zookeeper.ClientCnxn: EventThread shut down
+Deleted /user/cloudera/kaganovich-graph-2-hfiles
+Deleted /user/cse6242/kaganovich-graph-2.tsv
+Graph2: fetching stats...
+2016-11-12 02:27:19,843 INFO  [main] Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+HBase Shell; enter 'help<RETURN>' for list of supported commands.
+Type "exit<RETURN>" to leave the HBase Shell
+Version 1.2.0-cdh5.8.0, rUnknown, Thu Jun 16 12:46:57 PDT 2016
+
+count 'kaganovich-graph-2'
+Current count: 1000, row: \x00\x00\x13a
+Current count: 2000, row: \x00\x00 \x8A
+Current count: 3000, row: \x00\x001\x8C
+Current count: 4000, row: \x00\x00A\xF9
+Current count: 5000, row: \x00\x00S\xFD
+Current count: 6000, row: \x00\x00ft
+Current count: 7000, row: \x00\x00u/
+Current count: 8000, row: \x00\x00\x7F\x9E
+Current count: 9000, row: \x00\x00\x8A\x82
+Current count: 10000, row: \x00\x00\x94\x8D
+Current count: 11000, row: \x00\x00\x9F%
+Current count: 12000, row: \x00\x00\xAA6
+Current count: 13000, row: \x00\x00\xB4\xD3
+Current count: 14000, row: \x00\x00\xBFJ
+Current count: 15000, row: \x00\x00\xC9*
+Current count: 16000, row: \x00\x00\xD3\x90
+Current count: 17000, row: \x00\x00\xE0\x8C
+Current count: 18000, row: \x00\x00\xEE/
+Current count: 19000, row: \x00\x01\x07:
+Current count: 20000, row: \x00\x01\x1EY
+Current count: 21000, row: \x00\x01(;
+Current count: 22000, row: \x00\x013\xBE
+Current count: 23000, row: \x00\x01>X
+Current count: 24000, row: \x00\x01G\xDD
+Current count: 25000, row: \x00\x01St
+Current count: 26000, row: \x00\x01_)
+Current count: 27000, row: \x00\x01h\xCE
+Current count: 28000, row: \x00\x01r\xBB
+Current count: 29000, row: \x00\x01|\xE3
+Current count: 30000, row: \x00\x01\x85\xB5
+Current count: 31000, row: \x00\x01\x90$
+Current count: 32000, row: \x00\x01\x9B\xA0
+Current count: 33000, row: \x00\x01\xC2\x0A
+Current count: 34000, row: \x00\x01\xD4\x9B
+Current count: 35000, row: \x00\x01\xE6\x01
+Current count: 36000, row: \x00\x01\xF4\xDD
+Current count: 37000, row: \x00\x02\x04\xDE
+Current count: 38000, row: \x00\x02\x14\xC9
+Current count: 39000, row: \x00\x02%\x8A
+Current count: 40000, row: \x00\x026w
+Current count: 41000, row: \x00\x02C\xCF
+Current count: 42000, row: \x00\x02R]
+Current count: 43000, row: \x00\x02`\x1B
+Current count: 44000, row: \x00\x02n\x8F
+Current count: 45000, row: \x00\x02zE
+Current count: 46000, row: \x00\x02\x86\x85
+Current count: 47000, row: \x00\x02\x97p
+Current count: 48000, row: \x00\x02\xA2\xBB
+Current count: 49000, row: \x00\x02\xAD\xA3
+Current count: 50000, row: \x00\x02\xB8q
+Current count: 51000, row: \x00\x02\xC4H
+Current count: 52000, row: \x00\x02\xD18
+Current count: 53000, row: \x00\x02\xDB\xEA
+Current count: 54000, row: \x00\x02\xE93
+Current count: 55000, row: \x00\x02\xF0\xD9
+Current count: 56000, row: \x00\x02\xF7A
+Current count: 57000, row: \x00\x02\xFE\x8C
+Current count: 58000, row: \x00\x03\x05U
+Current count: 59000, row: \x00\x03\x0CC
+Current count: 60000, row: \x00\x03\x12\xCE
+Current count: 61000, row: \x00\x03\x1BX
+Current count: 62000, row: \x00\x03!l
+Current count: 63000, row: \x00\x03-\xFB
+Current count: 64000, row: \x00\x03:\x10
+Current count: 65000, row: \x00\x03E\x8E
+Current count: 66000, row: \x00\x03Sg
+Current count: 67000, row: \x00\x03`\xC1
+Current count: 68000, row: \x00\x03l\xE9
+Current count: 69000, row: \x00\x03z>
+Current count: 70000, row: \x00\x03\x87;
+Current count: 71000, row: \x00\x03\x95r
+Current count: 72000, row: \x00\x03\xA2}
+Current count: 73000, row: \x00\x03\xB0\xEE
+Current count: 74000, row: \x00\x03\xBE\xAE
+Current count: 75000, row: \x00\x03\xCB\xA4
+Current count: 76000, row: \x00\x03\xD8\xED
+Current count: 77000, row: \x00\x03\xE6C
+Current count: 78000, row: \x00\x03\xF4%
+Current count: 79000, row: \x00\x04\x02\xCD
+Current count: 80000, row: \x00\x04\x10\x04
+Current count: 81000, row: \x00\x04\x1CO
+Current count: 82000, row: \x00\x04(\x90
+Current count: 83000, row: \x00\x046\xE2
+Current count: 84000, row: \x00\x04C\xA1
+Current count: 85000, row: \x00\x04O6
+Current count: 86000, row: \x00\x04^\xF7
+Current count: 87000, row: \x00\x04k\xEF
+Current count: 88000, row: \x00\x04w\xFC
+Current count: 89000, row: \x00\x04\x87Q
+Current count: 90000, row: \x00\x04\x99\x82
+Current count: 91000, row: \x00\x04\xB1\xDB
+Current count: 92000, row: \x00\x04\xC5o
+Current count: 93000, row: \x00\x04\xD5\xA0
+Current count: 94000, row: \x00\x04\xE7\xCD
+Current count: 95000, row: \x00\x04\xF6\xDF
+Current count: 96000, row: \x00\x05\x07\xB5
+Current count: 97000, row: \x00\x05\x181
+Current count: 98000, row: \x00\x05'D
+Current count: 99000, row: \x00\x057$
+Current count: 100000, row: \x00\x05E\xDC
+Current count: 101000, row: \x00\x05TU
+Current count: 102000, row: \x00\x05eh
+Current count: 103000, row: \x00\x05s=
+Current count: 104000, row: \x00\x05\x7Fp
+Current count: 105000, row: \x00\x05\x8BZ
+Current count: 106000, row: \x00\x05\x97\xA1
+Current count: 107000, row: \x00\x05\xA4\x16
+Current count: 108000, row: \x00\x05\xAB!
+Current count: 109000, row: \x00\x05\xB6q
+Current count: 110000, row: \x00\x05\xC2[
+Current count: 111000, row: \x00\x05\xCE\xB2
+Current count: 112000, row: \x00\x05\xD3j
+Current count: 113000, row: \x00\x05\xD8\x84
+Current count: 114000, row: \x00\x05\xE16
+Current count: 115000, row: \x00\x05\xEF!
+Current count: 116000, row: \x00\x05\xFC\x96
+Current count: 117000, row: \x00\x06\x0B+
+Current count: 118000, row: \x00\x06\x18\xF3
+Current count: 119000, row: \x00\x06$u
+Current count: 120000, row: \x00\x0634
+Current count: 121000, row: \x00\x06A\x95
+Current count: 122000, row: \x00\x06O\x8A
+Current count: 123000, row: \x00\x06]U
+Current count: 124000, row: \x00\x06h\xC7
+Current count: 125000, row: \x00\x06r\x10
+Current count: 126000, row: \x00\x06}\xC3
+Current count: 127000, row: \x00\x06\x8Bq
+Current count: 128000, row: \x00\x06\x97\x89
+Current count: 129000, row: \x00\x06\xA6\x08
+Current count: 130000, row: \x00\x06\xB5|
+Current count: 131000, row: \x00\x06\xC2\xD5
+Current count: 132000, row: \x00\x06\xCF\x03
+Current count: 133000, row: \x00\x06\xDF\x06
+Current count: 134000, row: \x00\x06\xEC\xEB
+Current count: 135000, row: \x00\x06\xFAQ
+Current count: 136000, row: \x00\x07\x09S
+Current count: 137000, row: \x00\x07\x16\x9F
+Current count: 138000, row: \x00\x07%\xE2
+Current count: 139000, row: \x00\x0754
+Current count: 140000, row: \x00\x07B\xE0
+Current count: 141000, row: \x00\x07R\x0A
+Current count: 142000, row: \x00\x07_v
+Current count: 143000, row: \x00\x07h\xF9
+Current count: 144000, row: \x00\x07x\xD4
+Current count: 145000, row: \x00\x07\x86\xAD
+Current count: 146000, row: \x00\x07\x94(
+Current count: 147000, row: \x00\x07\xA1\xCE
+Current count: 148000, row: \x00\x07\xB1\x06
+Current count: 149000, row: \x00\x07\xC1\xAB
+Current count: 150000, row: \x00\x07\xD0\x0C
+Current count: 151000, row: \x00\x07\xE0\x81
+Current count: 152000, row: \x00\x07\xEE\x89
+Current count: 153000, row: \x00\x08\x03\x1B
+Current count: 154000, row: \x00\x08[|
+Current count: 155000, row: \x00\x08\xA9Z
+Current count: 156000, row: \x00\x08\xDC\x8A
+Current count: 157000, row: \x00\x09\x1EM
+Current count: 158000, row: \x00\x09`\x0B
+Current count: 159000, row: \x00\x09\x98\x9D
+Current count: 160000, row: \x00\x09\xB0\x10
+Current count: 161000, row: \x00\x09\xBB 
+Current count: 162000, row: \x00\x09\xC6\xA6
+Current count: 163000, row: \x00\x09\xD1L
+Current count: 164000, row: \x00\x09\xF4\x11
+Current count: 165000, row: \x00\x0A\x11\xE4
+Current count: 166000, row: \x00\x0A%\x89
+Current count: 167000, row: \x00\x0A1z
+Current count: 168000, row: \x00\x0A:T
+Current count: 169000, row: \x00\x0AD\xD7
+Current count: 170000, row: \x00\x0AS\xBE
+Current count: 171000, row: \x00\x0A`0
+Current count: 172000, row: \x00\x0Am*
+Current count: 173000, row: \x00\x0Ax\xD0
+Current count: 174000, row: \x00\x0A\x85\xC1
+Current count: 175000, row: \x00\x0A\x91\xFF
+Current count: 176000, row: \x00\x0A\xA1\x8A
+Current count: 177000, row: \x00\x0A\xAD\x1B
+Current count: 178000, row: \x00\x0A\xBC\x02
+Current count: 179000, row: \x00\x0A\xD9\xB9
+Current count: 180000, row: \x00\x0B\x116
+Current count: 181000, row: \x00\x0B\x1F\x8B
+Current count: 182000, row: \x00\x0B,C
+Current count: 183000, row: \x00\x0B<K
+Current count: 184000, row: \x00\x0BLz
+Current count: 185000, row: \x00\x0B[\xB0
+Current count: 186000, row: \x00\x0Be\xB9
+Current count: 187000, row: \x00\x0Bi\xCC
+Current count: 188000, row: \x00\x0Bn\x0A
+Current count: 189000, row: \x00\x0Btp
+Current count: 190000, row: \x00\x0Bx\xED
+Current count: 191000, row: \x00\x0B\x81\x81
+Current count: 192000, row: \x00\x0B\x96\x80
+Current count: 193000, row: \x00\x0B\x9Fs
+Current count: 194000, row: \x00\x0B\xA5\xFB
+Current count: 195000, row: \x00\x0B\xAB\x81
+Current count: 196000, row: \x00\x0B\xAF\xFB
+Current count: 197000, row: \x00\x0B\xB4\x99
+Current count: 198000, row: \x00\x0B\xB9\x9F
+Current count: 199000, row: \x00\x0B\xC0~
+Current count: 200000, row: \x00\x0B\xC8\x8F
+Current count: 201000, row: \x00\x0B\xD4\xB4
+Current count: 202000, row: \x00\x0C\x068
+Current count: 203000, row: \x00\x0C\x13O
+Current count: 204000, row: \x00\x0C!\x16
+Current count: 205000, row: \x00\x0C/e
+Current count: 206000, row: \x00\x0C;\xB4
+Current count: 207000, row: \x00\x0CG4
+Current count: 208000, row: \x00\x0CT\xF6
+Current count: 209000, row: \x00\x0CY{
+Current count: 210000, row: \x00\x0C]\x9C
+Current count: 211000, row: \x00\x0Ca\xA1
+Current count: 212000, row: \x00\x0Ce\xA1
+Current count: 213000, row: \x00\x0Ci\xC1
+Current count: 214000, row: \x00\x0Cm\xC1
+Current count: 215000, row: \x00\x0Cq\xE1
+Current count: 216000, row: \x00\x0Cu\xEF
+Current count: 217000, row: \x00\x0Cy\xF9
+Current count: 218000, row: \x00\x0C~\x0F
+Current count: 219000, row: \x00\x0C\x82.
+Current count: 220000, row: \x00\x0C\x864
+Current count: 221000, row: \x00\x0C\x8B\x0C
+Current count: 222000, row: \x00\x0C\x8F{
+Current count: 223000, row: \x00\x0C\x93\x9D
+Current count: 224000, row: \x00\x0C\x9Fg
+Current count: 225000, row: \x00\x0C\xAF\xB1
+Current count: 226000, row: \x00\x0C\xBD\x03
+Current count: 227000, row: \x00\x0C\xCB+
+Current count: 228000, row: \x00\x0C\xD1P
+Current count: 229000, row: \x00\x0C\xD7L
+Current count: 230000, row: \x00\x0C\xDCx
+Current count: 231000, row: \x00\x0C\xE5\x06
+Current count: 232000, row: \x00\x0C\xF5\xA6
+Current count: 233000, row: \x00\x0D\x03J
+Current count: 234000, row: \x00\x0D\x12\xAC
+Current count: 235000, row: \x00\x0D!a
+Current count: 236000, row: \x00\x0D1\x8E
+Current count: 237000, row: \x00\x0DIX
+Current count: 238000, row: \x00\x0DZ\xB5
+Current count: 239000, row: \x00\x0DhO
+Current count: 240000, row: \x00\x0Du]
+Current count: 241000, row: \x00\x0D\xA6\xD3
+Current count: 242000, row: \x00\x0D\xB8\xAB
+Current count: 243000, row: \x00\x0D\xC7D
+Current count: 244000, row: \x00\x0D\xD2y
+Current count: 245000, row: \x00\x0D\xDF)
+Current count: 246000, row: \x00\x0D\xEA\xF0
+Current count: 247000, row: \x00\x0D\xFA\x1F
+Current count: 248000, row: \x00\x0E\x07|
+Current count: 249000, row: \x00\x0E\x11\x90
+Current count: 250000, row: \x00\x0E\x1B5
+Current count: 251000, row: \x00\x0E&\xA7
+Current count: 252000, row: \x00\x0E0\xB7
+Current count: 253000, row: \x00\x0E:\xDC
+Current count: 254000, row: \x00\x0ED\xC4
+Current count: 255000, row: \x00\x0EO6
+Current count: 256000, row: \x00\x0EZ\x0A
+Current count: 257000, row: \x00\x0Ed\xE0
+Current count: 258000, row: \x00\x0E\x8F\xC4
+Current count: 259000, row: \x00\x0E\xEB\xD7
+Current count: 260000, row: \x00\x0F4L
+Current count: 261000, row: \x00\x0FT\xC1
+Current count: 262000, row: \x00\x0FZ'
+Current count: 263000, row: \x00\x0Fa$
+Current count: 264000, row: \x00\x0Fl\xCE
+Current count: 265000, row: \x00\x0Ftw
+Current count: 266000, row: \x00\x0Fz\xB6
+Current count: 267000, row: \x00\x0F\x7F\xF2
+Current count: 268000, row: \x00\x0F\x87\xA2
+Current count: 269000, row: \x00\x0F\x8D\xC5
+Current count: 270000, row: \x00\x0F\x94P
+Current count: 271000, row: \x00\x0F\x9B$
+Current count: 272000, row: \x00\x0F\xA2\xE3
+Current count: 273000, row: \x00\x0F\xAAq
+Current count: 274000, row: \x00\x0F\xB3*
+Current count: 275000, row: \x00\x0F\xC0\x83
+Current count: 276000, row: \x00\x0F\xCC\xC5
+Current count: 277000, row: \x00\x0F\xDD\xC0
+Current count: 278000, row: \x00\x0F\xEB\x98
+Current count: 279000, row: \x00\x0F\xF9e
+Current count: 280000, row: \x00\x10\x04\x1E
+Current count: 281000, row: \x00\x10\x0F\xCE
+Current count: 282000, row: \x00\x10\x1A\x07
+Current count: 283000, row: \x00\x10%\x13
+Current count: 284000, row: \x00\x101\x1C
+Current count: 285000, row: \x00\x10>\x1E
+Current count: 286000, row: \x00\x10M\xCC
+Current count: 287000, row: \x00\x10\x5Cr
+Current count: 288000, row: \x00\x10i\xD0
+Current count: 289000, row: \x00\x10x\x8C
+Current count: 290000, row: \x00\x10\x83\x8B
+Current count: 291000, row: \x00\x10\x95\xA6
+Current count: 292000, row: \x00\x10\xA7*
+Current count: 293000, row: \x00\x10\xD8\x8C
+Current count: 294000, row: \x00\x10\xF8N
+Current count: 295000, row: \x00\x11\x10B
+Current count: 296000, row: \x00\x11#\x8A
+Current count: 297000, row: \x00\x111\xED
+Current count: 298000, row: \x00\x11;\x9A
+Current count: 299000, row: \x00\x11K\x03
+Current count: 300000, row: \x00\x11`a
+Current count: 301000, row: \x00\x11rd
+Current count: 302000, row: \x00\x11\x82\x8B
+Current count: 303000, row: \x00\x11\x92\xB1
+Current count: 304000, row: \x00\x11\x97{
+Current count: 305000, row: \x00\x11\xA9\x80
+Current count: 306000, row: \x00\x11\xB2E
+Current count: 307000, row: \x00\x11\xBC\xA3
+Current count: 308000, row: \x00\x11\xC8Q
+Current count: 309000, row: \x00\x11\xD2P
+Current count: 310000, row: \x00\x11\xDE\x8C
+Current count: 311000, row: \x00\x11\xE7\xD8
+Current count: 312000, row: \x00\x11\xF1.
+Current count: 313000, row: \x00\x11\xFDU
+Current count: 314000, row: \x00\x12\x08\xDB
+Current count: 315000, row: \x00\x12\x14\x84
+Current count: 316000, row: \x00\x12#j
+Current count: 317000, row: \x00\x120\xB0
+Current count: 318000, row: \x00\x12;\xD7
+Current count: 319000, row: \x00\x12G%
+Current count: 320000, row: \x00\x12T\xC8
+Current count: 321000, row: \x00\x12`2
+Current count: 322000, row: \x00\x12j{
+Current count: 323000, row: \x00\x12t\x92
+Current count: 324000, row: \x00\x12|&
+Current count: 325000, row: \x00\x12\x89\x12
+Current count: 326000, row: \x00\x12\x93\xC2
+Current count: 327000, row: \x00\x12\xA0p
+Current count: 328000, row: \x00\x12\xAB!
+Current count: 329000, row: \x00\x12\xB6\xEA
+Current count: 330000, row: \x00\x12\xC3[
+Current count: 331000, row: \x00\x12\xCE\x99
+Current count: 332000, row: \x00\x12\xDC\x17
+Current count: 333000, row: \x00\x12\xE7\xD0
+Current count: 334000, row: \x00\x12\xF4U
+Current count: 335000, row: \x00\x13\x00~
+Current count: 336000, row: \x00\x13\x0A{
+Current count: 337000, row: \x00\x13\x11E
+Current count: 338000, row: \x00\x13\x18\xB6
+Current count: 339000, row: \x00\x13\x1D\xF7
+Current count: 340000, row: \x00\x13!\xF7
+Current count: 341000, row: \x00\x13&\x04
+Current count: 342000, row: \x00\x13*\x00
+Current count: 343000, row: \x00\x13.\x03
+Current count: 344000, row: \x00\x132\x07
+Current count: 345000, row: \x00\x136\x13
+Current count: 346000, row: \x00\x13:\x1A
+Current count: 347000, row: \x00\x13>\x1F
+Current count: 348000, row: \x00\x13B%
+Current count: 349000, row: \x00\x13F6
+Current count: 350000, row: \x00\x13Li
+Current count: 351000, row: \x00\x13T\x17
+Current count: 352000, row: \x00\x13X+
+Current count: 353000, row: \x00\x13\x5C*
+Current count: 354000, row: \x00\x13d\xB7
+Current count: 355000, row: \x00\x13l`
+Current count: 356000, row: \x00\x13v\xCF
+Current count: 357000, row: \x00\x13\x82g
+Current count: 358000, row: \x00\x13\x8A\x80
+Current count: 359000, row: \x00\x13\x93J
+Current count: 360000, row: \x00\x13\x9D\x12
+Current count: 361000, row: \x00\x13\xAA@
+Current count: 362000, row: \x00\x13\xB6\xF1
+Current count: 363000, row: \x00\x13\xC5P
+Current count: 364000, row: \x00\x13\xD1\x8B
+Current count: 365000, row: \x00\x13\xDD\xD3
+Current count: 366000, row: \x00\x13\xEB\xA1
+Current count: 367000, row: \x00\x13\xF5\xC2
+Current count: 368000, row: \x00\x13\xFC\x1E
+Current count: 369000, row: \x00\x14\x03\xB9
+Current count: 370000, row: \x00\x14\x0E\x0E
+Current count: 371000, row: \x00\x14\x19S
+Current count: 372000, row: \x00\x14$@
+Current count: 373000, row: \x00\x14.\x09
+Current count: 374000, row: \x00\x147\x0F
+Current count: 375000, row: \x00\x14@\x85
+Current count: 376000, row: \x00\x14K\x00
+Current count: 377000, row: \x00\x14P~
+Current count: 378000, row: \x00\x14U1
+Current count: 379000, row: \x00\x14`4
+Current count: 380000, row: \x00\x14i\x8E
+Current count: 381000, row: \x00\x14s\xFB
+Current count: 382000, row: \x00\x14{@
+Current count: 383000, row: \x00\x14\x7F3
+Current count: 384000, row: \x00\x14\x83\x1C
+Current count: 385000, row: \x00\x14\x87\x0C
+Current count: 386000, row: \x00\x14\x8A\xFD
+Current count: 387000, row: \x00\x14\x8E\xED
+Current count: 388000, row: \x00\x14\x92\xE3
+Current count: 389000, row: \x00\x14\x96\xE1
+Current count: 390000, row: \x00\x14\x9A\xDE
+Current count: 391000, row: \x00\x14\x9E\xDB
+Current count: 392000, row: \x00\x14\xA2\xD2
+Current count: 393000, row: \x00\x14\xA6\xCA
+Current count: 394000, row: \x00\x14\xAA\xC8
+Current count: 395000, row: \x00\x14\xB1/
+Current count: 396000, row: \x00\x14\xB5O
+Current count: 397000, row: \x00\x14\xB9T
+Current count: 398000, row: \x00\x14\xBDd
+Current count: 399000, row: \x00\x14\xC1n
+Current count: 400000, row: \x00\x14\xC5g
+Current count: 401000, row: \x00\x14\xCFn
+Current count: 402000, row: \x00\x14\xD9\x9C
+Current count: 403000, row: \x00\x14\xE4\xE6
+Current count: 404000, row: \x00\x14\xF05
+Current count: 405000, row: \x00\x14\xFA\xC1
+Current count: 406000, row: \x00\x15\x05\xC8
+Current count: 407000, row: \x00\x15\x0CT
+Current count: 408000, row: \x00\x15\x17\x84
+Current count: 409000, row: \x00\x15 Y
+Current count: 410000, row: \x00\x15%\xB3
+Current count: 411000, row: \x00\x15+\x9F
+Current count: 412000, row: \x00\x151\x98
+Current count: 413000, row: \x00\x155\xBE
+Current count: 414000, row: \x00\x159\xF8
+Current count: 415000, row: \x00\x15>\xAD
+Current count: 416000, row: \x00\x15E\x95
+Current count: 417000, row: \x00\x15N\x97
+Current count: 418000, row: \x00\x15V\x80
+Current count: 419000, row: \x00\x15\x5C\xCC
+Current count: 420000, row: \x00\x15b\xE2
+Current count: 421000, row: \x00\x15j\x13
+Current count: 422000, row: \x00\x15p\xAC
+Current count: 423000, row: \x00\x15t\xC3
+Current count: 424000, row: \x00\x15x\xBD
+Current count: 425000, row: \x00\x15|\xB8
+Current count: 426000, row: \x00\x15\x80\xDE
+Current count: 427000, row: \x00\x15\x8B\xAD
+Current count: 428000, row: \x00\x15\x95<
+Current count: 429000, row: \x00\x15\xA0P
+Current count: 430000, row: \x00\x15\xAA\xF4
+Current count: 431000, row: \x00\x15\xB4\xAF
+Current count: 432000, row: \x00\x15\xBE\xBE
+Current count: 433000, row: \x00\x15\xCA\xC7
+Current count: 434000, row: \x00\x15\xD5\x87
+Current count: 435000, row: \x00\x15\xE1\x83
+Current count: 436000, row: \x00\x15\xEB\xB9
+Current count: 437000, row: \x00\x15\xF5\xA7
+Current count: 438000, row: \x00\x15\xFF\xD9
+Current count: 439000, row: \x00\x16\x0Dp
+Current count: 440000, row: \x00\x16\x11{
+Current count: 441000, row: \x00\x16\x19\xD0
+Current count: 442000, row: \x00\x160\xC5
+Current count: 443000, row: \x00\x168\xDC
+Current count: 444000, row: \x00\x16>o
+Current count: 445000, row: \x00\x16E\x8B
+Current count: 446000, row: \x00\x16L\x09
+Current count: 447000, row: \x00\x16S\x12
+Current count: 448000, row: \x00\x16Y\xE9
+Current count: 449000, row: \x00\x16`r
+Current count: 450000, row: \x00\x16f\xF6
+Current count: 451000, row: \x00\x16m\xA4
+Current count: 452000, row: \x00\x16s\xFD
+Current count: 453000, row: \x00\x16z\x86
+Current count: 454000, row: \x00\x16\x81_
+Current count: 455000, row: \x00\x16\x88\x81
+Current count: 456000, row: \x00\x16\x8Ff
+Current count: 457000, row: \x00\x16\x95\xAF
+Current count: 458000, row: \x00\x16\x9CH
+Current count: 459000, row: \x00\x16\xA2\xCC
+Current count: 460000, row: \x00\x16\xA8\x96
+Current count: 461000, row: \x00\x16\xAF\xCF
+Current count: 462000, row: \x00\x16\xBB\x18
+Current count: 463000, row: \x00\x16\xC5\xDF
+Current count: 464000, row: \x00\x16\xCD\xCE
+Current count: 465000, row: \x00\x16\xD6\xED
+Current count: 466000, row: \x00\x16\xDE\xCE
+Current count: 467000, row: \x00\x16\xE7\xDA
+Current count: 468000, row: \x00\x16\xF1\x80
+Current count: 469000, row: \x00\x16\xFA\x10
+Current count: 470000, row: \x00\x17\x03\x05
+Current count: 471000, row: \x00\x17\x09\x89
+Current count: 472000, row: \x00\x17\x14"
+Current count: 473000, row: \x00\x17\x1CK
+Current count: 474000, row: \x00\x17$.
+Current count: 475000, row: \x00\x17+\x0E
+Current count: 476000, row: \x00\x173n
+Current count: 477000, row: \x00\x17;u
+Current count: 478000, row: \x00\x17?\x94
+Current count: 479000, row: \x00\x17C\xB4
+Current count: 480000, row: \x00\x17G\xD4
+Current count: 481000, row: \x00\x17K\xFE
+Current count: 482000, row: \x00\x17P\x12
+Current count: 483000, row: \x00\x17T,
+Current count: 484000, row: \x00\x17XR
+Current count: 485000, row: \x00\x17\x5C\x5C
+Current count: 486000, row: \x00\x17`X
+Current count: 487000, row: \x00\x17dR
+Current count: 488000, row: \x00\x17h_
+Current count: 489000, row: \x00\x17ls
+Current count: 490000, row: \x00\x17p~
+Current count: 491000, row: \x00\x17t\xB1
+Current count: 492000, row: \x00\x17yi
+Current count: 493000, row: \x00\x17}\x98
+Current count: 494000, row: \x00\x17\x81\xDA
+Current count: 495000, row: \x00\x17\x89\x8E
+Current count: 496000, row: \x00\x17\x92}
+Current count: 497000, row: \x00\x17\x9B\xDA
+Current count: 498000, row: \x00\x17\xA4\xF7
+Current count: 499000, row: \x00\x17\xAE\xF0
+Current count: 500000, row: \x00\x17\xB7\xBA
+Current count: 501000, row: \x00\x17\xC4\xEF
+Current count: 502000, row: \x00\x17\xCF\xBD
+Current count: 503000, row: \x00\x17\xD9o
+Current count: 504000, row: \x00\x17\xE2\xFF
+Current count: 505000, row: \x00\x17\xEB4
+Current count: 506000, row: \x00\x17\xF4G
+Current count: 507000, row: \x00\x17\xFE\xB8
+Current count: 508000, row: \x00\x18\x09\x8B
+Current count: 509000, row: \x00\x18\x13\xD8
+Current count: 510000, row: \x00\x18\x1C\x9A
+Current count: 511000, row: \x00\x18)\x11
+Current count: 512000, row: \x00\x182\xC2
+Current count: 513000, row: \x00\x18=q
+Current count: 514000, row: \x00\x18E\xB3
+Current count: 515000, row: \x00\x18Q\x90
+Current count: 516000, row: \x00\x18\x5C!
+Current count: 517000, row: \x00\x18hV
+Current count: 518000, row: \x00\x18rp
+Current count: 519000, row: \x00\x18{\x84
+Current count: 520000, row: \x00\x18\x85\xD3
+Current count: 521000, row: \x00\x18\x8F\x1F
+Current count: 522000, row: \x00\x18\x9A\xE0
+Current count: 523000, row: \x00\x18\xA7\xA0
+Current count: 524000, row: \x00\x18\xB4I
+Current count: 525000, row: \x00\x18\xBF\xBD
+Current count: 526000, row: \x00\x18\xCA+
+Current count: 527000, row: \x00\x18\xD7&
+Current count: 528000, row: \x00\x18\xE2\xAC
+Current count: 529000, row: \x00\x18\xEE\xCB
+Current count: 530000, row: \x00\x18\xF7\xDF
+Current count: 531000, row: \x00\x19\x04\x0D
+Current count: 532000, row: \x00\x19\x0E\xFB
+Current count: 533000, row: \x00\x19\x19\xC4
+Current count: 534000, row: \x00\x19#\x93
+Current count: 535000, row: \x00\x19(\xC2
+Current count: 536000, row: \x00\x191y
+Current count: 537000, row: \x00\x19;\xD7
+Current count: 538000, row: \x00\x19H`
+Current count: 539000, row: \x00\x19R\xC5
+Current count: 540000, row: \x00\x19\x5C\xF4
+Current count: 541000, row: \x00\x19fg
+Current count: 542000, row: \x00\x19p\x14
+Current count: 543000, row: \x00\x19z!
+Current count: 544000, row: \x00\x19\x81\xBF
+Current count: 545000, row: \x00\x19\x8A\x85
+Current count: 546000, row: \x00\x19\x93\x0A
+Current count: 547000, row: \x00\x19\x9C\x16
+Current count: 548000, row: \x00\x19\xA3\xB5
+Current count: 549000, row: \x00\x19\xABq
+Current count: 550000, row: \x00\x19\xB0~
+Current count: 551000, row: \x00\x19\xB6\x1B
+Current count: 552000, row: \x00\x19\xBCW
+Current count: 553000, row: \x00\x19\xC3\xB9
+Current count: 554000, row: \x00\x19\xCC\x9C
+Current count: 555000, row: \x00\x19\xD4O
+Current count: 556000, row: \x00\x19\xDB\xC3
+Current count: 557000, row: \x00\x19\xE0\xA7
+Current count: 558000, row: \x00\x19\xE6f
+Current count: 559000, row: \x00\x19\xF0X
+Current count: 560000, row: \x00\x19\xFA\xA7
+Current count: 561000, row: \x00\x1A\x03\xC0
+Current count: 562000, row: \x00\x1A\x0C\xB0
+Current count: 563000, row: \x00\x1A\x16\xE8
+Current count: 564000, row: \x00\x1A\x1E\xBC
+Current count: 565000, row: \x00\x1A'\x95
+Current count: 566000, row: \x00\x1A0\xD4
+Current count: 567000, row: \x00\x1A9\x02
+Current count: 568000, row: \x00\x1A?j
+Current count: 569000, row: \x00\x1AH\xA6
+Current count: 570000, row: \x00\x1AO\xA2
+Current count: 571000, row: \x00\x1AY\x03
+Current count: 572000, row: \x00\x1Ac\xAD
+Current count: 573000, row: \x00\x1Al\xAD
+Current count: 574000, row: \x00\x1Av\xA3
+Current count: 575000, row: \x00\x1A\x7F\x8D
+Current count: 576000, row: \x00\x1A\x89?
+Current count: 577000, row: \x00\x1A\x94G
+Current count: 578000, row: \x00\x1A\x9Dm
+Current count: 579000, row: \x00\x1A\xA8\xB3
+Current count: 580000, row: \x00\x1A\xB3\xE6
+Current count: 581000, row: \x00\x1A\xC0s
+Current count: 582000, row: \x00\x1A\xCD\x85
+Current count: 583000, row: \x00\x1A\xD8\x98
+Current count: 584000, row: \x00\x1A\xE6\xC8
+Current count: 585000, row: \x00\x1A\xF2/
+Current count: 586000, row: \x00\x1A\xFD\x98
+Current count: 587000, row: \x00\x1B\x06\x86
+Current count: 588000, row: \x00\x1B\x0F\x8B
+Current count: 589000, row: \x00\x1B\x19\x15
+Current count: 590000, row: \x00\x1B$$
+Current count: 591000, row: \x00\x1B/\x0B
+Current count: 592000, row: \x00\x1B8\xD5
+Current count: 593000, row: \x00\x1BCk
+Current count: 594000, row: \x00\x1BNq
+Current count: 595000, row: \x00\x1BYP
+Current count: 596000, row: \x00\x1Ba\xE4
+Current count: 597000, row: \x00\x1Bj\xEF
+Current count: 598000, row: \x00\x1Bt\xAB
+Current count: 599000, row: \x00\x1B~\xE4
+Current count: 600000, row: \x00\x1B\x89\xDA
+Current count: 601000, row: \x00\x1B\x93\x1D
+Current count: 602000, row: \x00\x1B\x9Dt
+Current count: 603000, row: \x00\x1B\xA6\x8A
+Current count: 604000, row: \x00\x1B\xB1h
+Current count: 605000, row: \x00\x1B\xB9\x92
+Current count: 606000, row: \x00\x1B\xC0\xF3
+Current count: 607000, row: \x00\x1B\xC9\x06
+Current count: 608000, row: \x00\x1B\xD34
+Current count: 609000, row: \x00\x1B\xDD\xB6
+Current count: 610000, row: \x00\x1B\xE8@
+Current count: 611000, row: \x00\x1B\xF1{
+Current count: 612000, row: \x00\x1B\xFA\xC2
+Current count: 613000, row: \x00\x1C\x04\xF6
+Current count: 614000, row: \x00\x1C\x0E\x05
+Current count: 615000, row: \x00\x1C\x18s
+Current count: 616000, row: \x00\x1C"\x1A
+Current count: 617000, row: \x00\x1C,8
+Current count: 618000, row: \x00\x1C5a
+Current count: 619000, row: \x00\x1C=\xC7
+Current count: 620000, row: \x00\x1CG\xAA
+Current count: 621000, row: \x00\x1CQ-
+Current count: 622000, row: \x00\x1CZ&
+Current count: 623000, row: \x00\x1Cb\xB2
+Current count: 624000, row: \x00\x1CjH
+Current count: 625000, row: \x00\x1Cr\x10
+Current count: 626000, row: \x00\x1C{/
+Current count: 627000, row: \x00\x1C\x84\xE7
+Current count: 628000, row: \x00\x1C\x8D\xFC
+Current count: 629000, row: \x00\x1C\x97\xFE
+Current count: 630000, row: \x00\x1C\xA0\xAF
+Current count: 631000, row: \x00\x1C\xAA)
+Current count: 632000, row: \x00\x1C\xB4\xA9
+Current count: 633000, row: \x00\x1C\xBE-
+Current count: 634000, row: \x00\x1C\xC7\xEF
+Current count: 635000, row: \x00\x1C\xD2\xB2
+Current count: 636000, row: \x00\x1C\xDCP
+Current count: 637000, row: \x00\x1C\xE4\xC0
+Current count: 638000, row: \x00\x1C\xF0*
+Current count: 639000, row: \x00\x1C\xF9N
+Current count: 640000, row: \x00\x1D\x03\xCD
+Current count: 641000, row: \x00\x1D\x10|
+Current count: 642000, row: \x00\x1D\x1A\xD4
+Current count: 643000, row: \x00\x1D%\x9F
+Current count: 644000, row: \x00\x1D2G
+Current count: 645000, row: \x00\x1DM"
+Current count: 646000, row: \x00\x1DW\xA8
+Current count: 647000, row: \x00\x1Dk\xDA
+Current count: 648000, row: \x00\x1Dv\x95
+Current count: 649000, row: \x00\x1D\x82\x98
+Current count: 650000, row: \x00\x1D\x8C\x0E
+Current count: 651000, row: \x00\x1D\x92\xB9
+Current count: 652000, row: \x00\x1D\x9B\x8A
+Current count: 653000, row: \x00\x1D\xA4\xD9
+Current count: 654000, row: \x00\x1D\xAF{
+Current count: 655000, row: \x00\x1D\xBA\xE4
+Current count: 656000, row: \x00\x1D\xC6\xA2
+Current count: 657000, row: \x00\x1D\xD1\xA6
+Current count: 658000, row: \x00\x1D\xDCL
+Current count: 659000, row: \x00\x1D\xE4\x0A
+Current count: 660000, row: \x00\x1D\xEA\x87
+Current count: 661000, row: \x00\x1D\xF4\xEB
+Current count: 662000, row: \x00\x1D\xFD\x86
+Current count: 663000, row: \x00\x1E\x07\xF2
+Current count: 664000, row: \x00\x1E\x10\xAE
+Current count: 665000, row: \x00\x1E\x18\xF2
+Current count: 666000, row: \x00\x1E"\xAC
+Current count: 667000, row: \x00\x1E/g
+Current count: 668000, row: \x00\x1E8\x0C
+Current count: 669000, row: \x00\x1EB\xBB
+Current count: 670000, row: \x00\x1EMv
+Current count: 671000, row: \x00\x1ET\xC4
+Current count: 672000, row: \x00\x1E[.
+Current count: 673000, row: \x00\x1Ec\x92
+Current count: 674000, row: \x00\x1Ekp
+Current count: 675000, row: \x00\x1Eu\x18
+Current count: 676000, row: \x00\x1E\x80\xBD
+Current count: 677000, row: \x00\x1E\x8A\xC5
+Current count: 678000, row: \x00\x1E\x96\xC4
+Current count: 679000, row: \x00\x1E\xA0\x99
+Current count: 680000, row: \x00\x1E\xA9\x18
+Current count: 681000, row: \x00\x1E\xB0\xEC
+Current count: 682000, row: \x00\x1E\xB9X
+Current count: 683000, row: \x00\x1E\xC2\xBE
+Current count: 684000, row: \x00\x1E\xCC\xD1
+Current count: 685000, row: \x00\x1E\xD7\x17
+Current count: 686000, row: \x00\x1E\xDFn
+Current count: 687000, row: \x00\x1E\xE8i
+Current count: 688000, row: \x00\x1E\xF14
+Current count: 689000, row: \x00\x1E\xF5\x87
+Current count: 690000, row: \x00\x1E\xFA5
+Current count: 691000, row: \x00\x1E\xFFZ
+Current count: 692000, row: \x00\x1F\x04\xF3
+Current count: 693000, row: \x00\x1F\x09\x99
+Current count: 694000, row: \x00\x1F\x0E\xDC
+Current count: 695000, row: \x00\x1F\x16\xFF
+Current count: 696000, row: \x00\x1F\x1D\x84
+Current count: 697000, row: \x00\x1F$X
+Current count: 698000, row: \x00\x1F+\x1F
+Current count: 699000, row: \x00\x1F18
+Current count: 700000, row: \x00\x1F75
+Current count: 701000, row: \x00\x1F=C
+Current count: 702000, row: \x00\x1FBQ
+Current count: 703000, row: \x00\x1FG4
+Current count: 704000, row: \x00\x1FK\xA0
+Current count: 705000, row: \x00\x1FP\x1A
+Current count: 706000, row: \x00\x1FTg
+Current count: 707000, row: \x00\x1FYn
+Current count: 708000, row: \x00\x1F^7
+Current count: 709000, row: \x00\x1Fcy
+Current count: 710000, row: \x00\x1Fh\xE8
+Current count: 711000, row: \x00\x1Fn\x16
+Current count: 712000, row: \x00\x1Ft;
+Current count: 713000, row: \x00\x1Fx\xD6
+Current count: 714000, row: \x00\x1F}7
+Current count: 715000, row: \x00\x1F\x81\x9E
+Current count: 716000, row: \x00\x1F\x85\xF7
+Current count: 717000, row: \x00\x1F\x8A\x1B
+Current count: 718000, row: \x00\x1F\x8E=
+Current count: 719000, row: \x00\x1F\x92\xD9
+Current count: 720000, row: \x00\x1F\x9BD
+Current count: 721000, row: \x00\x1F\xA1\xA9
+Current count: 722000, row: \x00\x1F\xA8\xFA
+Current count: 723000, row: \x00\x1F\xAD\xD6
+Current count: 724000, row: \x00\x1F\xB2|
+Current count: 725000, row: \x00\x1F\xB6\xEC
+Current count: 726000, row: \x00\x1F\xBBf
+Current count: 727000, row: \x00\x1F\xBF\xFE
+Current count: 728000, row: \x00\x1F\xC5\xCF
+Current count: 729000, row: \x00\x1F\xCAn
+Current count: 730000, row: \x00\x1F\xCE\x83
+Current count: 731000, row: \x00\x1F\xD2\xD8
+Current count: 732000, row: \x00\x1F\xD7\x8C
+Current count: 733000, row: \x00\x1F\xDD\x86
+Current count: 734000, row: \x00\x1F\xE1\xD6
+Current count: 735000, row: \x00\x1F\xE8\x09
+Current count: 736000, row: \x00\x1F\xED\x9C
+Current count: 737000, row: \x00\x1F\xF1\xF7
+Current count: 738000, row: \x00\x1F\xF7\x0E
+Current count: 739000, row: \x00\x1F\xFB\xFD
+Current count: 740000, row: \x00 \x009
+Current count: 741000, row: \x00 \x04\xCA
+Current count: 742000, row: \x00 \x09\x88
+Current count: 743000, row: \x00 \x0E\x8D
+Current count: 744000, row: \x00 \x14\xD3
+Current count: 745000, row: \x00 \x1A\x82
+Current count: 746000, row: \x00  H
+Current count: 747000, row: \x00 &U
+Current count: 748000, row: \x00 ,>
+Current count: 749000, row: \x00 0\xA6
+Current count: 750000, row: \x00 4\xB3
+Current count: 751000, row: \x00 :\xB4
+Current count: 752000, row: \x00 EX
+Current count: 753000, row: \x00 L\xFD
+Current count: 754000, row: \x00 VM
+Current count: 755000, row: \x00 _\x9E
+Current count: 756000, row: \x00 i&
+Current count: 757000, row: \x00 s)
+Current count: 758000, row: \x00 }k
+Current count: 759000, row: \x00 \x87H
+Current count: 760000, row: \x00 \x8F\xCC
+Current count: 761000, row: \x00 \x9CJ
+Current count: 762000, row: \x00 \xA8\x19
+Current count: 763000, row: \x00 \xB06
+Current count: 764000, row: \x00 \xB9r
+Current count: 765000, row: \x00 \xC3\xC1
+Current count: 766000, row: \x00 \xCF\xAB
+Current count: 767000, row: \x00 \xD9y
+Current count: 768000, row: \x00 \xE5\x1E
+Current count: 769000, row: \x00 \xF2?
+Current count: 770000, row: \x00 \xFBg
+Current count: 771000, row: \x00!\x05\x11
+Current count: 772000, row: \x00!\x0Bd
+Current count: 773000, row: \x00!\x10\x0F
+Current count: 774000, row: \x00!\x14B
+Current count: 775000, row: \x00!\x19`
+Current count: 776000, row: \x00! ^
+Current count: 777000, row: \x00!)\xA2
+Current count: 778000, row: \x00!3\x89
+Current count: 779000, row: \x00!:\x9C
+Current count: 780000, row: \x00!?\x08
+Current count: 781000, row: \x00!D\x1E
+Current count: 782000, row: \x00!L\x13
+Current count: 783000, row: \x00!R\xB3
+Current count: 784000, row: \x00!X\xA4
+Current count: 785000, row: \x00!^_
+Current count: 786000, row: \x00!ds
+Current count: 787000, row: \x00!ji
+Current count: 788000, row: \x00!|O
+Current count: 789000, row: \x00!\x95\x1B
+Current count: 790000, row: \x00!\xA0\xF3
+Current count: 791000, row: \x00!\xA8M
+Current count: 792000, row: \x00!\xB1\xF0
+Current count: 793000, row: \x00!\xBB\xFF
+Current count: 794000, row: \x00!\xC6K
+Current count: 795000, row: \x00!\xD1p
+Current count: 796000, row: \x00!\xDAo
+Current count: 797000, row: \x00!\xE4\x0D
+Current count: 798000, row: \x00!\xEF\x83
+Current count: 799000, row: \x00!\xF8\x93
+Current count: 800000, row: \x00"\x03\xD8
+Current count: 801000, row: \x00"\x0D\xDE
+Current count: 802000, row: \x00"\x16\xA5
+Current count: 803000, row: \x00"\x1F\xD8
+Current count: 804000, row: \x00")v
+Current count: 805000, row: \x00"3\x1D
+Current count: 806000, row: \x00"=a
+Current count: 807000, row: \x00"G`
+Current count: 808000, row: \x00"Q9
+Current count: 809000, row: \x00"Y\xF2
+Current count: 810000, row: \x00"b_
+Current count: 811000, row: \x00"kl
+Current count: 812000, row: \x00"t\xAD
+Current count: 813000, row: \x00"\x7F6
+Current count: 814000, row: \x00"\x86)
+Current count: 815000, row: \x00"\x8C|
+Current count: 816000, row: \x00"\x99\x09
+Current count: 817000, row: \x00"\xA5\xD0
+Current count: 818000, row: \x00"\xAF\xF2
+Current count: 819000, row: \x00"\xB9\xFA
+Current count: 820000, row: \x00"\xD8J
+Current count: 821000, row: \x00"\xE6 
+Current count: 822000, row: \x00"\xF2E
+Current count: 823000, row: \x00"\xFF\x02
+Current count: 824000, row: \x00#\x09M
+Current count: 825000, row: \x00#\x16!
+Current count: 826000, row: \x00#"\xAB
+Current count: 827000, row: \x00#.\x90
+Current count: 828000, row: \x00#9\xCB
+Current count: 829000, row: \x00#EI
+Current count: 830000, row: \x00#J\x09
+Current count: 831000, row: \x00#P#
+Current count: 832000, row: \x00#Z,
+Current count: 833000, row: \x00#e\xB3
+Current count: 834000, row: \x00#q\x04
+Current count: 835000, row: \x00#z\xFB
+Current count: 836000, row: \x00#\x84S
+Current count: 837000, row: \x00#\x8A\xCA
+Current count: 838000, row: \x00#\x8F|
+Current count: 839000, row: \x00#\x94#
+Current count: 840000, row: \x00#\x98\x88
+Current count: 841000, row: \x00#\xA2\x89
+Current count: 842000, row: \x00#\xAED
+Current count: 843000, row: \x00#\xB9\x15
+Current count: 844000, row: \x00#\xC3"
+Current count: 845000, row: \x00#\xCD\xFB
+Current count: 846000, row: \x00#\xD5\xE6
+Current count: 847000, row: \x00#\xE2p
+Current count: 848000, row: \x00$\x01G
+Current count: 849000, row: \x00$\x13\x94
+Current count: 850000, row: \x00$\x18E
+Current count: 851000, row: \x00$\x1C]
+Current count: 852000, row: \x00$ X
+Current count: 853000, row: \x00$+#
+Current count: 854000, row: \x00$/U
+Current count: 855000, row: \x00$5\xBB
+Current count: 856000, row: \x00$G6
+Current count: 857000, row: \x00$K\xBF
+Current count: 858000, row: \x00$P<
+Current count: 859000, row: \x00$UT
+Current count: 860000, row: \x00$c\x0A
+Current count: 861000, row: \x00$n\x96
+Current count: 862000, row: \x00$v\x1B
+Current count: 863000, row: \x00$z\x82
+Current count: 864000, row: \x00$\x80\xC4
+Current count: 865000, row: \x00$\x86\x1E
+Current count: 866000, row: \x00$\x8B\x1D
+Current count: 867000, row: \x00$\x90L
+Current count: 868000, row: \x00$\x94\xC5
+Current count: 869000, row: \x00$\x99x
+Current count: 870000, row: \x00$\x9E<
+Current count: 871000, row: \x00$\xA6\xD7
+Current count: 872000, row: \x00$\xAB`
+Current count: 873000, row: \x00$\xB1D
+Current count: 874000, row: \x00$\xB6t
+Current count: 875000, row: \x00$\xBB{
+Current count: 876000, row: \x00$\xC1\xBE
+Current count: 877000, row: \x00$\xC7;
+Current count: 878000, row: \x00$\xCBR
+Current count: 879000, row: \x00$\xCFB
+Current count: 880000, row: \x00$\xD3I
+Current count: 881000, row: \x00$\xD7^
+Current count: 882000, row: \x00$\xDB\xA6
+Current count: 883000, row: \x00$\xE0N
+Current count: 884000, row: \x00$\xE4\x8A
+Current count: 885000, row: \x00$\xE8\x9D
+Current count: 886000, row: \x00$\xEC\x94
+Current count: 887000, row: \x00$\xF1\x0E
+Current count: 888000, row: \x00$\xF5\x96
+Current count: 889000, row: \x00$\xF9\xC9
+Current count: 890000, row: \x00$\xFFX
+Current count: 891000, row: \x00%\x03\xA6
+Current count: 892000, row: \x00%\x09\x15
+Current count: 893000, row: \x00%\x0DL
+Current count: 894000, row: \x00%\x13O
+Current count: 895000, row: \x00%\x18\xD3
+Current count: 896000, row: \x00%!\x00
+Current count: 897000, row: \x00%&\xA4
+Current count: 898000, row: \x00%/\x18
+Current count: 899000, row: \x00%8\x94
+Current count: 900000, row: \x00%B\x1D
+Current count: 901000, row: \x00%J6
+Current count: 902000, row: \x00%R:
+Current count: 903000, row: \x00%[\x10
+Current count: 904000, row: \x00%c\xB2
+Current count: 905000, row: \x00%k\xFC
+Current count: 906000, row: \x00%s\xDC
+Current count: 907000, row: \x00%|\xC9
+Current count: 908000, row: \x00%\x85P
+Current count: 909000, row: \x00%\x8F\x13
+Current count: 910000, row: \x00%\x99\x82
+Current count: 911000, row: \x00%\xA1\x91
+Current count: 912000, row: \x00%\xA62
+Current count: 913000, row: \x00%\xAA\x98
+Current count: 914000, row: \x00%\xAF@
+Current count: 915000, row: \x00%\xB5(
+Current count: 916000, row: \x00%\xBA\xB8
+Current count: 917000, row: \x00%\xBF\x00
+Current count: 918000, row: \x00%\xC3X
+Current count: 919000, row: \x00%\xC7|
+Current count: 920000, row: \x00%\xCB\xA3
+Current count: 921000, row: \x00%\xD1A
+Current count: 922000, row: \x00%\xD5\x9C
+Current count: 923000, row: \x00%\xD9\xAF
+Current count: 924000, row: \x00%\xDF\xAF
+Current count: 925000, row: \x00%\xE4\xD1
+Current count: 926000, row: \x00%\xE9\xE6
+Current count: 927000, row: \x00%\xEEJ
+Current count: 928000, row: \x00%\xF2k
+Current count: 929000, row: \x00%\xF6\xD4
+Current count: 930000, row: \x00%\xFB\x98
+Current count: 931000, row: \x00&\x00d
+Current count: 932000, row: \x00&\x04\xAA
+Current count: 933000, row: \x00&\x09\x15
+Current count: 934000, row: \x00&\x0D\xED
+Current count: 935000, row: \x00&\x12p
+Current count: 936000, row: \x00&\x16\xBE
+Current count: 937000, row: \x00&\x1C\xB5
+Current count: 938000, row: \x00&!\x11
+Current count: 939000, row: \x00&%L
+Current count: 940000, row: \x00&)i
+Current count: 941000, row: \x00&.\xFE
+Current count: 942000, row: \x00&3\x84
+Current count: 943000, row: \x00&7\xE1
+Current count: 944000, row: \x00&<\x09
+Current count: 945000, row: \x00&At
+Current count: 946000, row: \x00&E\xF4
+Current count: 947000, row: \x00&JD
+Current count: 948000, row: \x00&Nu
+Current count: 949000, row: \x00&S\xD7
+Current count: 950000, row: \x00&X>
+Current count: 951000, row: \x00&\x5Cy
+Current count: 952000, row: \x00&`\xB4
+Current count: 953000, row: \x00&f#
+Current count: 954000, row: \x00&jz
+Current count: 955000, row: \x00&n\xC3
+Current count: 956000, row: \x00&r\xF8
+Current count: 957000, row: \x00&w|
+Current count: 958000, row: \x00&|\x19
+Current count: 959000, row: \x00&\x80\x94
+Current count: 960000, row: \x00&\x85\xE7
+Current count: 961000, row: \x00&\x8A\x8F
+Current count: 962000, row: \x00&\x8F}
+Current count: 963000, row: \x00&\x95D
+Current count: 964000, row: \x00&\x99\xDB
+Current count: 965000, row: \x00&\x9E\x12
+Current count: 966000, row: \x00&\xA3f
+Current count: 967000, row: \x00&\xA8\xAE
+Current count: 968000, row: \x00&\xB2@
+Current count: 969000, row: \x00&\xBC\xD1
+Current count: 970000, row: \x00&\xC7'
+Current count: 971000, row: \x00&\xD0\xC4
+Current count: 972000, row: \x00&\xDC\xC0
+Current count: 973000, row: \x00&\xE6#
+Current count: 974000, row: \x00&\xEA`
+Current count: 975000, row: \x00&\xF1\xE0
+Current count: 976000, row: \x00&\xFE\xA6
+Current count: 977000, row: \x00'\x08\xAB
+Current count: 978000, row: \x00'\x11\xC7
+Current count: 979000, row: \x00'\x1C:
+Current count: 980000, row: \x00')7
+Current count: 981000, row: \x00'2\x1A
+Current count: 982000, row: \x00':\xFF
+Current count: 983000, row: \x00'G(
+Current count: 984000, row: \x00'Oi
+Current count: 985000, row: \x00'Z\xA1
+Current count: 986000, row: \x00'e\xCD
+Current count: 987000, row: \x00'mc
+Current count: 988000, row: \x00's`
+Current count: 989000, row: \x00'}\xEE
+Current count: 990000, row: \x00'\x89\x99
+Current count: 991000, row: \x00'\x94\xC9
+Current count: 992000, row: \x00'\x9F$
+Current count: 993000, row: \x00'\xA6\xC8
+Current count: 994000, row: \x00'\xB0!
+Current count: 995000, row: \x00'\xBB6
+Current count: 996000, row: \x00'\xC3\xF9
+Current count: 997000, row: \x00'\xCE\x18
+Current count: 998000, row: \x00'\xD8k
+Current count: 999000, row: \x00'\xDF\xA3
+Current count: 1000000, row: \x00'\xE5\xA6
+Current count: 1001000, row: \x00'\xED\xF5
+Current count: 1002000, row: \x00'\xF7!
+Current count: 1003000, row: \x00'\xFF\x80
+Current count: 1004000, row: \x00(\x09"
+Current count: 1005000, row: \x00(\x10u
+Current count: 1006000, row: \x00(\x1CY
+Current count: 1007000, row: \x00(&\x82
+Current count: 1008000, row: \x00(0i
+Current count: 1009000, row: \x00(;\xEA
+Current count: 1010000, row: \x00(F\xA8
+Current count: 1011000, row: \x00(Q:
+Current count: 1012000, row: \x00([`
+Current count: 1013000, row: \x00(f\x16
+Current count: 1014000, row: \x00(og
+Current count: 1015000, row: \x00(y2
+Current count: 1016000, row: \x00(\x82\x05
+Current count: 1017000, row: \x00(\x8A\xDD
+Current count: 1018000, row: \x00(\x95\x06
+Current count: 1019000, row: \x00(\x9E\x95
+Current count: 1020000, row: \x00(\xA7\xFD
+Current count: 1021000, row: \x00(\xB2\x1E
+Current count: 1022000, row: \x00(\xBD\x8E
+Current count: 1023000, row: \x00(\xC7]
+Current count: 1024000, row: \x00(\xD2Y
+Current count: 1025000, row: \x00(\xDD\x81
+Current count: 1026000, row: \x00(\xE6\xF0
+Current count: 1027000, row: \x00(\xF1e
+Current count: 1028000, row: \x00(\xFAl
+Current count: 1029000, row: \x00)\x00\x86
+Current count: 1030000, row: \x00)\x05\xCD
+Current count: 1031000, row: \x00)\x0F\x16
+Current count: 1032000, row: \x00)\x168
+Current count: 1033000, row: \x00)\x1Ff
+Current count: 1034000, row: \x00)(4
+Current count: 1035000, row: \x00)1i
+Current count: 1036000, row: \x00);\xAE
+Current count: 1037000, row: \x00)G\xC7
+Current count: 1038000, row: \x00)R\xDA
+Current count: 1039000, row: \x00)\x5CF
+Current count: 1040000, row: \x00)eV
+Current count: 1041000, row: \x00)o\x13
+Current count: 1042000, row: \x00)x\xFA
+Current count: 1043000, row: \x00)\x83\xEC
+Current count: 1044000, row: \x00)\x8D\xE6
+Current count: 1045000, row: \x00)\x99\xF0
+Current count: 1046000, row: \x00)\xA3\x1E
+Current count: 1047000, row: \x00)\xAC\xE8
+Current count: 1048000, row: \x00)\xB9\xA9
+Current count: 1049000, row: \x00)\xC4\x04
+Current count: 1050000, row: \x00)\xCE\x9A
+Current count: 1051000, row: \x00)\xD7\x9B
+Current count: 1052000, row: \x00)\xE1\xEF
+Current count: 1053000, row: \x00)\xEA9
+Current count: 1054000, row: \x00)\xF2\x91
+Current count: 1055000, row: \x00)\xFAr
+Current count: 1056000, row: \x00*\x02\xE4
+Current count: 1057000, row: \x00*\x0CM
+Current count: 1058000, row: \x00*\x15\x17
+Current count: 1059000, row: \x00*\x1E\x18
+Current count: 1060000, row: \x00*'`
+Current count: 1061000, row: \x00*0\x1C
+Current count: 1062000, row: \x00*7\xEA
+Current count: 1063000, row: \x00*@\xE1
+Current count: 1064000, row: \x00*H\xD7
+Current count: 1065000, row: \x00*QY
+Current count: 1066000, row: \x00*\x5C\x86
+Current count: 1067000, row: \x00*f%
+Current count: 1068000, row: \x00*o\x98
+Current count: 1069000, row: \x00*zF
+Current count: 1070000, row: \x00*\x83[
+Current count: 1071000, row: \x00*\x8D\x98
+Current count: 1072000, row: \x00*\x98\x96
+Current count: 1073000, row: \x00*\xA0\xFE
+Current count: 1074000, row: \x00*\xAC\xC2
+Current count: 1075000, row: \x00*\xB3\x18
+Current count: 1076000, row: \x00*\xB7\x19
+Current count: 1077000, row: \x00*\xBF\xFB
+Current count: 1078000, row: \x00*\xC9B
+Current count: 1079000, row: \x00*\xCF\xF6
+Current count: 1080000, row: \x00*\xD4\x9B
+Current count: 1081000, row: \x00*\xDB\x18
+Current count: 1082000, row: \x00*\xE0b
+Current count: 1083000, row: \x00*\xE8V
+Current count: 1084000, row: \x00*\xEC\xF5
+Current count: 1085000, row: \x00*\xF1\x17
+Current count: 1086000, row: \x00*\xF5*
+Current count: 1087000, row: \x00*\xFAN
+Current count: 1088000, row: \x00*\xFE\xC0
+Current count: 1089000, row: \x00+\x02\xE7
+Current count: 1090000, row: \x00+\x06\xD7
+Current count: 1091000, row: \x00+\x0A\xD7
+Current count: 1092000, row: \x00+\x0F\x07
+Current count: 1093000, row: \x00+\x13B
+Current count: 1094000, row: \x00+\x17}
+Current count: 1095000, row: \x00+\x1B\xAB
+Current count: 1096000, row: \x00+\x1F\xD9
+Current count: 1097000, row: \x00+#\xE2
+Current count: 1098000, row: \x00+(\x01
+Current count: 1099000, row: \x00+,P
+Current count: 1100000, row: \x00+0\xB5
+Current count: 1101000, row: \x00+5g
+Current count: 1102000, row: \x00+:~
+Current count: 1103000, row: \x00+@\x1E
+Current count: 1104000, row: \x00+D;
+Current count: 1105000, row: \x00+I\xB7
+Current count: 1106000, row: \x00+OO
+Current count: 1107000, row: \x00+Ty
+Current count: 1108000, row: \x00+X\xAE
+Current count: 1109000, row: \x00+^E
+Current count: 1110000, row: \x00+k{
+Current count: 1111000, row: \x00+rs
+Current count: 1112000, row: \x00+wV
+Current count: 1113000, row: \x00+~$
+Current count: 1114000, row: \x00+\x83\xAB
+Current count: 1115000, row: \x00+\x89\x18
+Current count: 1116000, row: \x00+\x8Fc
+Current count: 1117000, row: \x00+\x94\xCD
+Current count: 1118000, row: \x00+\x99\xBE
+Current count: 1119000, row: \x00+\x9E\xDC
+Current count: 1120000, row: \x00+\xA5\xA6
+Current count: 1121000, row: \x00+\xACQ
+Current count: 1122000, row: \x00+\xB1k
+Current count: 1123000, row: \x00+\xB6\x97
+Current count: 1124000, row: \x00+\xBA\xEF
+Current count: 1125000, row: \x00+\xBF\x1A
+Current count: 1126000, row: \x00+\xC3[
+Current count: 1127000, row: \x00+\xC7\xFC
+Current count: 1128000, row: \x00+\xCD\x0F
+Current count: 1129000, row: \x00+\xD2f
+Current count: 1130000, row: \x00+\xD8V
+Current count: 1131000, row: \x00+\xDF\x01
+Current count: 1132000, row: \x00+\xE4[
+Current count: 1133000, row: \x00+\xE9\xFF
+Current count: 1134000, row: \x00+\xEF"
+Current count: 1135000, row: \x00+\xF3L
+Current count: 1136000, row: \x00+\xF7\xC1
+Current count: 1137000, row: \x00+\xFCN
+Current count: 1138000, row: \x00,\x02U
+Current count: 1139000, row: \x00,\x09t
+Current count: 1140000, row: \x00,\x0FY
+Current count: 1141000, row: \x00,\x14f
+Current count: 1142000, row: \x00,\x1A/
+Current count: 1143000, row: \x00,#\x02
+Current count: 1144000, row: \x00,*)
+Current count: 1145000, row: \x00,4\x16
+Current count: 1146000, row: \x00,=\xED
+Current count: 1147000, row: \x00,F\xEA
+Current count: 1148000, row: \x00,O\x9C
+Current count: 1149000, row: \x00,[1
+Current count: 1150000, row: \x00,dL
+1150305 row(s) in 182.3740 seconds
+
+1150305
+Graph2: 1150305 records were created

@@ -1,0 +1,116 @@
+Для загрузки .tsv файлов в hbase таблицы использовался механизм bulk импорта, описанный в http://blog.cloudera.com/blog/2013/09/how-to-use-hbase-bulk-loading-and-why/. Общий принцип заключается в первоначальной генерации множества hfile-ов по .tsv файлам и последующей их загрузке в hbase таблицы с использованием LoadIncrementalHFiles класса. Последний позволяет избежать использования стандартного механизма записи в hbase (через журнал в memstore и только потом flush), что значительно ускоряет процесс импорта.
+
+####################################################################################################
+
+Содержимое директории:
+
+◘ hbase-bulkimport - mapreduce job для генерации hfile-ов (используется в hbase-kaganovich.sh)
+◘ hbase-kaganovich.sh - скрипт для импорта двух графов в hbase. Создает и заполняет две таблицы:
+
+    hbase(main):001:0> describe 'kaganovich-graph-1'
+    Table kaganovich-graph-1 is ENABLED                                       
+    kaganovich-graph-1                                                        
+    COLUMN FAMILIES DESCRIPTION                                               
+    {NAME => 'al', DATA_BLOCK_ENCODING => 'NONE', BLOOMFILTER => 'ROW', REPLIC
+    ATION_SCOPE => '0', VERSIONS => '1', COMPRESSION => 'NONE', MIN_VERSIONS =
+    > '0', TTL => 'FOREVER', KEEP_DELETED_CELLS => 'FALSE', BLOCKSIZE => '6553
+    6', IN_MEMORY => 'false', BLOCKCACHE => 'true'}                           
+    1 row(s) in 1.8500 seconds
+
+    Из hbase-kaganovich.log:
+
+        Graph1: fetching stats...
+        2016-11-12 02:03:01,162 INFO  [main] Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+        HBase Shell; enter 'help<RETURN>' for list of supported commands.
+        Type "exit<RETURN>" to leave the HBase Shell
+        Version 1.2.0-cdh5.8.0, rUnknown, Thu Jun 16 12:46:57 PDT 2016
+
+        count 'kaganovich-graph-1'
+        77897 row(s) in 22.0700 seconds
+
+        77897
+
+    ##################################################
+
+    hbase(main):002:0> describe 'kaganovich-graph-2'
+    Table kaganovich-graph-2 is ENABLED                                       
+    kaganovich-graph-2                                                        
+    COLUMN FAMILIES DESCRIPTION                                               
+    {NAME => 'al', DATA_BLOCK_ENCODING => 'NONE', BLOOMFILTER => 'ROW', REPLIC
+    ATION_SCOPE => '0', VERSIONS => '1', COMPRESSION => 'NONE', MIN_VERSIONS =
+    > '0', TTL => 'FOREVER', KEEP_DELETED_CELLS => 'FALSE', BLOCKSIZE => '6553
+    6', IN_MEMORY => 'false', BLOCKCACHE => 'true'}                           
+    1 row(s) in 0.0840 seconds
+
+    Из hbase-kaganovich.log:
+        Graph2: fetching stats...
+        2016-11-12 02:27:19,843 INFO  [main] Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+        HBase Shell; enter 'help<RETURN>' for list of supported commands.
+        Type "exit<RETURN>" to leave the HBase Shell
+        Version 1.2.0-cdh5.8.0, rUnknown, Thu Jun 16 12:46:57 PDT 2016
+
+        count 'kaganovich-graph-2'
+        1150305 row(s) in 182.3740 seconds
+
+        1150305
+
+    ##################################################
+
+    Для хранения каждого из графов используется список связности. Ключом в строке является поле tgt из .tsv. Семейство колонок одно - 'al'. Идентификатором колонки является поле src из .tsv (входящие вершины). Значением в клетке является вес (weight) соответствующего входящего ребра.
+
+◘ hbase-kaganovich.log - log тестового запуска скрипта hbase-kaganovich.sh
+◘ task2-hbase - решение задачи C1021 для случая использования hbase
+
+    Реализовано два алгоритма. 
+    Первый вариант (run2-time-hbase-0.log) схож с предыдущим решением C1021: исходная RDD преобразуется в список пар (tgt, weight) и после для нее производится reduceByKey. 
+    Второй вариант (run2-time-hbase-1.log) не использует reduceByKey и подсчитывает суммарный вес для вершины в момент обработки соответствующей строки таблицы. 
+
+◘ run2-time-hbase-0.log - log двух запусков первого алгоритма
+
+    Время работы:
+
+        real    3m14.821s
+        user    1m53.904s
+        sys 0m16.159s
+
+        ##################################################
+
+        real    2m55.679s
+        user    1m49.976s
+        sys 0m12.265s
+
+◘ run2-time-hbase-1.log - log двух запусков второго алгоритма
+
+    Время работы:
+
+        real    2m14.932s
+        user    1m1.838s
+        sys 0m12.262s
+
+        ##################################################
+
+        real    2m17.959s
+        user    1m10.288s
+        sys 0m9.628s
+
+◘ run2-time-hdfs.log - log двух запусков предыдущего решения на hdfs
+
+    Время работы:
+
+        real    3m8.407s
+        user    2m36.332s
+        sys 0m11.368s
+
+        ##################################################
+
+        real    3m0.926s
+        user    2m35.685s
+        sys 0m10.875s
+
+◘ task2output* - ответы для первого и второго графов (для hbase и hdfs)
+◘ graph-cmp.sh - скрипт для сравнения ответов
+◘ run*.sh - скрипты для запуска task2-hbase
+
+####################################################################################################
+
+Сравнивая три log файла run2-time*, можно отметить, что при решении задачи одним и тем же алгоритмом (run2-time-hbase-0.log, run2-time-hdfs.log) мы получили сопоставимое время работы для hbase и hdfs. Скорее всего это связано с тем, что в данной реализации из hbase производится только чтение. С другой стороны, использование удобной модели данных для хранения графа в hbase позволяет решить задачу более быстрым способом (run2-time-hbase-1.log).
