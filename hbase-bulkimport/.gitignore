@@ -2,5 +2,5 @@
 .idea/
 
 target/*
-!target/hbase-bulkimport-1.0-SNAPSHOT-job
+!target/hbase-bulkimport-1.0-SNAPSHOT-job.jar
 
